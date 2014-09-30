@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- ============================================================= -->
+<!--                    HEADER                                     -->
+<!-- ============================================================= -->
+<!--  MODULE:    DITA Character Domain                             -->
+<!--  VERSION:   1.0                                               -->
+<!--  DATE:      September 2014                                    -->
+<!--                                                               -->
+<!-- ============================================================= -->
+
+<!-- ============================================================= -->
+<!--                    PUBLIC DOCUMENT TYPE DEFINITION            -->
+<!--                    TYPICAL INVOCATION                         -->
+<!--                                                               -->
+<!--  Refer to this file by the following public identifier or an 
+      appropriate system identifier 
+PUBLIC "-//ANTENNA HOUSE//ENTITIES DITA Character Domain//EN"
+      Delivered as file "characterDomain.ent"                      -->
+
+<!-- The public ID above refers to the latest version of this file.
+     To refer to this specific version, you may use this value:
+PUBLIC "-//ANTENNA HOUSE//ENTITIES DITA 1.2 Character Domain//EN"  -->
+
+<!-- ============================================================= -->
+<!-- SYSTEM:     Darwin Information Typing Architecture (DITA)     -->
+<!--                                                               -->
+<!-- PURPOSE:    Declaring the substitution context and domain     -->
+<!--             entity declarations for the character domain      -->
+<!--                                                               -->
+<!-- ORIGINAL CREATION DATE:                                       -->
+<!--             October 2011                                      -->
+<!--                                                               -->
+<!--             (C) Copyright Antenna House, Inc. 2014            -->
+<!--             All Rights Reserved.                              -->
+<!--                                                               -->
+<!--  UPDATES:                                                     -->
+<!--    Added "br" element. 2014-09-08 AH                          -->
+<!-- ============================================================= -->
+
+
+<!-- ============================================================= -->
+<!--                    CHARACTER DOMAIN ENTITIES                  -->
+<!-- ============================================================= -->
+
+<!ENTITY % ch-d-ph      
+  "check |
+   br 
+  "
+>
+
+<!ENTITY ch-d-att     
+  "(topic ch-d)"
+>
+
+
+<!-- ================== End Character Domain Entities ============ -->
