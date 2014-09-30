@@ -1,16 +1,15 @@
-﻿ah-dita
-=======
+# ah-dita #
 ah-dita is the DITA 1.2 specialization that enables authoring the style information by "fo" property for PDF output. 
 It is composed of set of DTD files and it can be used as plug-in for [DITA Open Toolkit] [3].
-This specialization works with [PDF5] [7] plug-in V2.1.4 branch.
+This specialization works with [PDF5] [7] plug-in V2.1.4 or later.
 
-com.antennahouse.dita12.dtd.1.0 folder
---------------------------------------
-This folder contains plug-in files. To install this plug-in, 
+## com.antennahouse.dita12.dtd folder ##
+
+This folder contains plug-in files. To install this plug-in into DITA-OT, 
 copy this folder to [DITA-OT]/plugins folder and run "ant -f integrator.xml".
 
-Examples
---------
+## Examples ##
+
 Here are some examples authored by this specialization:
 
 ![Set FO property](images/set_fo_property.png)
@@ -38,7 +37,7 @@ Here are some examples authored by this specialization:
     <table fo="font-size:12pt;font-family:Arial;">
       <tgroup cols="3">
         <colspec colnum="1" align="center"/>
-        <thead fo="text-align:center;background-color:lavender;font-family:Arial;">
+        <thead fo="text-align:center;background-color:lavender;">
           <row>
             <entry fo="border-bottom-width:2pt;border-bottom-style:double;">No.</entry>
             <entry fo="border-bottom-width:2pt;border-bottom-style:double;">Item</entry>
@@ -47,13 +46,34 @@ Here are some examples authored by this specialization:
         </thead>
 ```
 
-Copyright
----------
+## How to use ##
+
+### Setup your XML editor ###
+
+Setup your XML editor to use this specializtion DTD.
+
+### Change public identifier ###
+
+Use follwoing public identifier for your document type declaration.
+
+```xml
+<!DOCTYPE bookmap PUBLIC "-//ANTENNA HOUSE//DTD DITA BookMap//EN" "bookmap.dtd">
+<!DOCTYPE map PUBLIC "-//ANTENNA HOUSE//DTD DITA Map//EN" "map.dtd">
+<!DOCTYPE topic PUBLIC "-//ANTENNA HOUSE//DTD DITA Topic//EN" "topic.dtd">
+<!DOCTYPE task PUBLIC "-//ANTENNA HOUSE//DTD DITA Task//EN" "task.dtd">
+<!DOCTYPE concept PUBLIC "-//ANTENNA HOUSE//DTD DITA Concept//EN" "concept.dtd">
+<!DOCTYPE reference PUBLIC "-//ANTENNA HOUSE//DTD DITA Reference//EN" "reference.dtd">
+<!DOCTYPE task PUBLIC "-//ANTENNA HOUSE//DTD DITA General Task//EN" "generalTask.dtd">
+<!DOCTYPE glossentry PUBLIC "-//ANTENNA HOUSE//DTD DITA 1.2 Glossary Entry//EN" "glossentry.dtd">
+```
+
+## Copyright ##
+
 Copyright (C) 2009-2014 Antenna House, Inc. All rights reserved.  
 Antenna House is a trademark of [Antenna House, Inc.] [2]
 
-License
--------
+## License ##
+
 This software is licenced under the [Common Public License v1.0] [1].
 
 [1]: http://opensource.org/licenses/cpl1.0.php "Common Public License v1.0"
