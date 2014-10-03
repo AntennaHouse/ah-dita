@@ -79,6 +79,8 @@ Add fo attribute using XSL-FO properties in CSS notation.
 
 ![Add fo attribute](images/fo_attr_insert.png)
 
+You can publish it using [PDF5] [7] plug-in. 
+
 
 ## Copyright ##
 
