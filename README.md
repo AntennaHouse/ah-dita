@@ -67,6 +67,19 @@ Use follwoing public identifier for your document type declaration.
 <!DOCTYPE glossentry PUBLIC "-//ANTENNA HOUSE//DTD DITA 1.2 Glossary Entry//EN" "glossentry.dtd">
 ```
 
+### Add fo attribute ###
+
+Add fo attribute using XSL-FO properties in CSS notation.
+
+```xml
+<p fo="color:red;">The quick brown fox jumps over the lazy dog</p>
+```
+
+![Select fo attribute](images/fo_attr.png)
+
+![Add fo attribute](images/fo_attr_insert.png)
+
+
 ## Copyright ##
 
 Copyright (C) 2009-2014 Antenna House, Inc. All rights reserved.  
