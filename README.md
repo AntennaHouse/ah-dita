@@ -1,5 +1,5 @@
 # ah-dita #
-ah-dita is the DITA 1.2 specialization that enables authoring the style information by "fo" property for PDF output. 
+ah-dita is the DITA 1.2 specialization that enables authoring the style information by "fo:prop" property for PDF output. 
 It is composed of set of DTD files and it can be used as plug-in for [DITA Open Toolkit] [3].
 This specialization works with [PDF5] [7] plug-in V2.1.4 or later.
 
@@ -15,35 +15,35 @@ Here are some examples authored by this specialization:
 ![Set FO property](images/set_fo_property.png)
 
 ```xml
-    <p>The quick brown fox jumps over the lazy dog</p>
-    <p fo="text-decoration:line-through;color:mediumvioletred;font-size:1.5em;">The quick brown fox jumps over the lazy dog</p>
-    <p fo="text-decoration:underline;color:steelblue;font-size:1.5em;">The quick brown fox jumps over the lazy dog</p>
-    <p fo="border:1pt solid black;padding:1mm;color:teal;font-size:1.5em;">The quick brown fox jumps over the lazy dog</p>
-    <p fo="padding:1mm;color:white;font-size:1.5em;background-color:darkblue;">The quick brown fox jumps over the lazy dog</p>
+<p>The quick brown fox jumps over the lazy dog</p>
+<p fo:prop="text-decoration:line-through;color:mediumvioletred;font-size:1.5em;">The quick brown fox jumps over the lazy dog</p>
+<p fo:prop="text-decoration:underline;color:steelblue;font-size:1.5em;">The quick brown fox jumps over the lazy dog</p>
+<p fo:prop="border:1pt solid black;padding:1mm;color:teal;font-size:1.5em;">The quick brown fox jumps over the lazy dog</p>
+<p fo:prop="padding:1mm;color:white;font-size:1.5em;background-color:darkblue;">The quick brown fox jumps over the lazy dog</p>
 ```
 
 ![Assigning fonts](images/assigning_fonts.png)
 
 ```xml
-    <p>TOC is written as "<ph fo="font-family:MS Gothic;color:midnightblue;">目次</ph>" in <ph fo="color:darkgreen;">Japanese.</ph></p>
-    <p>TOC is written as "<ph fo="font-family:SimHei;color:midnightblue;">目录</ph>" in <ph fo="color:green;">Simplified Chinese.</ph></p>
-    <p>TOC is written as "<ph fo="font-family:Microsoft JhengHei;color:midnightblue;">目錄</ph>" in <ph fo="color:forestgreen;">Traditional Chinese.</ph></p>
-    <p>TOC is written as "<ph fo="font-family:Gulim;color:midnightblue;">목차</ph>" in <ph fo="color:seagreen;">Korean.</ph></p>
+<p>TOC is written as "<ph fo:prop="font-family:MS Gothic;color:midnightblue;">目次</ph>" in <ph fo:prop="color:darkgreen;">Japanese.</ph></p>
+<p>TOC is written as "<ph fo:prop="font-family:SimHei;color:midnightblue;">目录</ph>" in <ph fo:prop="color:green;">Simplified Chinese.</ph></p>
+<p>TOC is written as "<ph fo:prop="font-family:Microsoft JhengHei;color:midnightblue;">目錄</ph>" in <ph fo:prop="color:forestgreen;">Traditional Chinese.</ph></p>
+<p>TOC is written as "<ph fo:prop="font-family:Gulim;color:midnightblue;">목차</ph>" in <ph fo:prop="color:seagreen;">Korean.</ph></p>
 ```
 
 ![Table customization](images/table_customization.png)
 
 ```xml
-    <table fo="font-size:12pt;font-family:Arial;">
-      <tgroup cols="3">
-        <colspec colnum="1" align="center"/>
-        <thead fo="text-align:center;background-color:lavender;">
-          <row>
-            <entry fo="border-bottom-width:2pt;border-bottom-style:double;">No.</entry>
-            <entry fo="border-bottom-width:2pt;border-bottom-style:double;">Item</entry>
-            <entry fo="border-bottom-width:2pt;border-bottom-style:double;">Role</entry>
-          </row>
-        </thead>
+<table fo:prop="font-size:12pt;font-family:Arial;">
+  <tgroup cols="3">
+    <colspec colnum="1" align="center"/>
+    <thead fo:prop="text-align:center;background-color:lavender;">
+      <row>
+        <entry fo:prop="border-bottom-width:2pt;border-bottom-style:double;">No.</entry>
+        <entry fo:prop="border-bottom-width:2pt;border-bottom-style:double;">Item</entry>
+        <entry fo:prop="border-bottom-width:2pt;border-bottom-style:double;">Role</entry>
+      </row>
+    </thead>
 ```
 
 ## How to use ##
@@ -69,10 +69,10 @@ Use follwoing public identifier for your document type declaration.
 
 ### Add fo attribute ###
 
-Add fo attribute using XSL-FO properties in CSS notation.
+Add fo:prop attribute using XSL-FO properties in CSS notation.
 
 ```xml
-<p fo="color:red;">The quick brown fox jumps over the lazy dog</p>
+<p fo:prop="color:red;">The quick brown fox jumps over the lazy dog</p>
 ```
 
 ![Select fo attribute](images/fo_attr.png)
