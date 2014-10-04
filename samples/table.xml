@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//ANTENNA HOUSE//DTD DITA Topic//EN" "topic.dtd">
+<topic id="topic_r1z_1bx_xn">
+  <title>Table customization</title>
+  <body fo:prop="font-size:12pt;">
+    <p>a. Standard table</p>
+    <table fo:prop="font-size:12pt;">
+      <tgroup cols="3">
+        <colspec colnum="1" align="center"/>
+        <thead>
+          <row>
+            <entry>No.</entry>
+            <entry>Item</entry>
+            <entry>Role</entry>
+          </row>
+        </thead>
+        <tbody>
+          <row>
+            <entry>1.</entry>
+            <entry>font-size</entry>
+            <entry>Specify the font size</entry>
+          </row>
+          <row>
+            <entry>2.</entry>
+            <entry>font-weight</entry>
+            <entry>Specify the font weight</entry>
+          </row>
+          <row>
+            <entry>3.</entry>
+            <entry>font-style</entry>
+            <entry>Specify font style. (Italic or normal)</entry>
+          </row>
+          <row>
+            <entry>4.</entry>
+            <entry>text-decoration</entry>
+            <entry>Specify text decoration. (Underline, strike-through, upper-line, blinking)</entry>
+          </row>
+        </tbody>
+      </tgroup>
+    </table>
+    <p>b. Customizing by fo property</p>
+    <table fo:prop="font-size:12pt;font-family:Arial;">
+      <tgroup cols="3">
+        <colspec colnum="1" align="center"/>
+        <thead fo:prop="text-align:center;background-color:lavender;">
+          <row>
+            <entry fo:prop="border-bottom-width:2pt;border-bottom-style:double;">No.</entry>
+            <entry fo:prop="border-bottom-width:2pt;border-bottom-style:double;">Item</entry>
+            <entry fo:prop="border-bottom-width:2pt;border-bottom-style:double;">Role</entry>
+          </row>
+        </thead>
+        <tbody>
+          <row>
+            <entry>1.</entry>
+            <entry>font-size</entry>
+            <entry>Specify the font size</entry>
+          </row>
+          <row>
+            <entry>2.</entry>
+            <entry>font-weight</entry>
+            <entry>Specify the font weight</entry>
+          </row>
+          <row>
+            <entry>3.</entry>
+            <entry>font-style</entry>
+            <entry>Specify font style. (Italic or normal)</entry>
+          </row>
+          <row>
+            <entry>4.</entry>
+            <entry>text-decoration</entry>
+            <entry>Specify text decoration. (Underline, strike-through, upper-line, blinking)</entry>
+          </row>
+        </tbody>
+      </tgroup>
+    </table>
+  </body>
+</topic>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE map PUBLIC "-//OASIS//DTD DITA Map//EN" "map.dtd">
+<map xml:lang="en">
+ <title>DITA style specialization sample</title>
+ <topicref href="topic.xml"/>
+ <topicref href="font.xml"/>
+ <topicref href="table.xml"/>
+</map>

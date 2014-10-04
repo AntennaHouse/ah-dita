@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//ANTENNA HOUSE//DTD DITA Topic//EN" "topic.dtd">
+<topic id="topic_mwt_5dl_4p">
+  <title>Assigning fonts</title>
+  <body fo:prop="font-size:14pt;">
+    <p>TOC is written as "<ph fo:prop="font-family:MS Gothic;color:midnightblue;">目次</ph>" in <ph fo:prop="color:darkgreen;">Japanese.</ph></p>
+    <p>TOC is written as "<ph fo:prop="font-family:SimHei;color:midnightblue;">目录</ph>" in <ph fo:prop="color:green;">Simplified Chinese.</ph></p>
+    <p>TOC is written as "<ph fo:prop="font-family:Microsoft JhengHei;color:midnightblue;">目錄</ph>" in <ph fo:prop="color:forestgreen;">Traditional Chinese.</ph></p>
+    <p>TOC is written as "<ph fo:prop="font-family:Gulim;color:midnightblue;">목차</ph>" in <ph fo:prop="color:seagreen;">Korean.</ph></p>
+  </body>
+</topic>
