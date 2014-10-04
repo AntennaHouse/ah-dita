@@ -206,7 +206,7 @@ PUBLIC "-//ANTENNA HOUSE//DTD DITA 1.2 BookMap//EN"                        -->
 %map-type;
 
 <!ENTITY % bookmap-type PUBLIC 
-"-//OASIS//ELEMENTS DITA 1.2 BookMap//EN" 
+"-//ANTENNA HOUSE//ELEMENTS DITA 1.2 BookMap//EN" 
 "bookmap.mod"                                                        >
 %bookmap-type;
 

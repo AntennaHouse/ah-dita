@@ -350,7 +350,8 @@ PUBLIC "-//ANTENNA HOUSE//ELEMENTS DITA Map//EN"
                                   #IMPLIED
               %localization-atts;
               %topicref-atts;
-              %select-atts;"
+              %select-atts;
+              %style-ns-atts;"
 >
 <!ELEMENT map    %map.content;>
 <!ATTLIST map    

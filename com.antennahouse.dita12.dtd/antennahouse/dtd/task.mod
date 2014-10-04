@@ -185,6 +185,7 @@ PUBLIC "-//ANTENNA HOUSE//ELEMENTS DITA Task//EN"
               %select-atts;
               %localization-atts;
               %style-atts;
+              %style-ns-atts;
               outputclass 
                         CDATA 
                                   #IMPLIED"

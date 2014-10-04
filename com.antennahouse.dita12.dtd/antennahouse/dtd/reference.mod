@@ -133,6 +133,7 @@ PUBLIC "-//ANTENNA HOUSE//ELEMENTS DITA Reference//EN"
               %select-atts;
               %localization-atts;
               %style-atts;
+              %style-ns-atts;
               outputclass 
                         CDATA 
                                   #IMPLIED"

@@ -553,17 +553,23 @@ PUBLIC "-//ANTENNA HOUSE//ELEMENTS DITA Common Elements//EN"
 >
 
 <!ENTITY % style-atts 
-             'fo 
+             'fo:prop 
                         CDATA 
                                   #IMPLIED
-              fo-style 
+              fo:style 
                         CDATA 
                                   #IMPLIED
-              css 
+              css:prop 
                         CDATA 
                                   #IMPLIED'
 >
-
+<!ENTITY % style-ns-atts 
+             'xmlns:fo 
+                        CDATA 
+                                  #FIXED "http://www.w3.org/1999/XSL/Format"
+              xmlns:css
+                        CDATA     #FIXED "http://www.w3.org/TR/CSS2"'
+>
 <!-- Attributes related to localization that are used everywhere   -->
 <!ENTITY % localization-atts 
              'translate 

@@ -215,7 +215,9 @@
     <!-- Bookmap document type and module -->
     <public publicId="-//ANTENNA HOUSE//DTD DITA BookMap//EN" uri="bookmap.dtd"/>
     <public publicId="-//ANTENNA HOUSE//DTD DITA 1.2 BookMap//EN" uri="bookmap.dtd"/>
-
+    <public publicId="-//ANTENNA HOUSE//ELEMENTS DITA BookMap//EN" uri="bookmap.mod"/>
+    <public publicId="-//ANTENNA HOUSE//ELEMENTS DITA 1.2 BookMap//EN" uri="bookmap.mod"/>
+    
     <!-- Subject scheme package for controlled vocabularies -->
     <!--
     <public publicId="-//OASIS//DTD DITA Subject Scheme Map//EN" uri="subjectScheme/dtd/subjectScheme.dtd"/>
