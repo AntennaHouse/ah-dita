@@ -79,6 +79,12 @@ Add fo:prop attribute using XSL-FO properties in CSS notation.
 
 ![Add fo attribute](images/fo_attr_insert.png)
 
+The namespace prefix "fo" is declared in the DTD as follows:
+
+```xml
+xmlns:fo="http://www.w3.org/1999/XSL/Format"
+```
+
 You can publish it using [PDF5] [7] plug-in. 
 
 
