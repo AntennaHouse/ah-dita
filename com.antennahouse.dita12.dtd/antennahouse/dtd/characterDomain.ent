@@ -43,7 +43,7 @@ PUBLIC "-//ANTENNA HOUSE//ENTITIES DITA 1.2 Character Domain//EN"  -->
 <!-- ============================================================= -->
 
 <!ENTITY % ch-d-ph      
-  "check |
+  "cm |
    br 
   "
 >

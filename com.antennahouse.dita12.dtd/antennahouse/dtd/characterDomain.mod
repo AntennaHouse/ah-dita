@@ -41,7 +41,7 @@ PUBLIC "-//ANTENNA HOUSE//ELEMENTS DITA 1.2 Character Domain//EN"  -->
 <!--                   ELEMENT NAME ENTITIES                       -->
 <!-- ============================================================= -->
 
-<!ENTITY % check       "check"                                       >
+<!ENTITY % cm          "cm"                                          >
 <!ENTITY % br          "br"                                          >
 
 <!-- ============================================================= -->
@@ -49,11 +49,11 @@ PUBLIC "-//ANTENNA HOUSE//ELEMENTS DITA 1.2 Character Domain//EN"  -->
 <!-- ============================================================= -->
 
 
-<!--                    LONG NAME: Special character               -->
-<!ENTITY % check.content
+<!--                    LONG NAME: Check mark                      -->
+<!ENTITY % cm.content
                        "EMPTY"
 >
-<!ENTITY % check.attributes
+<!ENTITY % cm.attributes
              'value 
                         (yes|no|dc)
                                   #REQUIRED
@@ -62,8 +62,8 @@ PUBLIC "-//ANTENNA HOUSE//ELEMENTS DITA 1.2 Character Domain//EN"  -->
                         CDATA 
                                   #IMPLIED'
 >
-<!ELEMENT check %check.content;>
-<!ATTLIST check %check.attributes;>
+<!ELEMENT cm %cm.content;>
+<!ATTLIST cm %cm.attributes;>
 
 <!--                    LONG NAME: Line break                      -->
 <!ENTITY % br.content
@@ -83,8 +83,8 @@ PUBLIC "-//ANTENNA HOUSE//ELEMENTS DITA 1.2 Character Domain//EN"  -->
 <!-- ============================================================= -->
 
 
-<!ATTLIST check  %global-atts;  class CDATA "+ topic/ph ch-d/check "  >
-<!ATTLIST br     %global-atts;  class CDATA "+ topic/ph ch-d/br "     >
+<!ATTLIST cm     %global-atts;  class CDATA "+ topic/ph ch-d/cm "    >
+<!ATTLIST br     %global-atts;  class CDATA "+ topic/ph ch-d/br "    >
 
 
-<!-- ================== DITA Character Domain ===================== -->
+<!-- ================== DITA Character Domain ==================== -->
