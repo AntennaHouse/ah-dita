@@ -27,7 +27,7 @@
     <!-- Base map DTD (no tech-comm domains -->
 
     <public publicId="-//ANTENNA HOUSE//DTD DITA Base Map//EN" uri="basemap.dtd"/>
-    <public publicId="-//ANTENNE HOUSE//DTD DITA 1.2 Base Map//EN" uri="basemap.dtd"/>
+    <public publicId="-//ANTENNA HOUSE//DTD DITA 1.2 Base Map//EN" uri="basemap.dtd"/>
 
     <!-- Common files for topics and maps -->
 
