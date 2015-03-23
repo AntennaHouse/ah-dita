@@ -95,7 +95,7 @@ Antenna House is a trademark of [Antenna House, Inc.] [2]
 
 ## License ##
 
-This software is licenced under the [Apache License Version 2.0] [1].
+This software is licenced under the [Apache License, Version 2.0] [1].
 
 [1]: http://www.apache.org/licenses/LICENSE-2.0 "Apache License, Version 2.0"
 [2]: http://www.antennahouse.com/ "Antenna House, Inc."
