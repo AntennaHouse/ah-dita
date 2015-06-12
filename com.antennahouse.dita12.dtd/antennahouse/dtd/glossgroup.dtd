@@ -59,6 +59,10 @@ PUBLIC "-//ANTENNA HOUSE//DTD DITA 1.2 Glossary Group//EN"         -->
 <!--                    DOMAIN ENTITY DECLARATIONS                 -->
 <!-- ============================================================= -->
 
+<!ENTITY % ch-d-dec     
+  PUBLIC "-//ANTENNA HOUSE//ENTITIES DITA 1.2 Character Domain//EN" 
+         "../dtd/characterDomain.ent"
+>%ch-d-dec;
 
 <!ENTITY % hi-d-dec     
   PUBLIC "-//OASIS//ENTITIES DITA 1.2 Highlight Domain//EN" 
@@ -123,6 +127,7 @@ PUBLIC "-//ANTENNA HOUSE//DTD DITA 1.2 Glossary Group//EN"         -->
                          %ui-d-keyword;
                         ">
 <!ENTITY % ph           "ph | 
+                         %ch-d-ph; |
                          %hi-d-ph; | 
                          %pr-d-ph; | 
                          %sw-d-ph; | 
@@ -174,6 +179,7 @@ PUBLIC "-//ANTENNA HOUSE//DTD DITA 1.2 Glossary Group//EN"         -->
                           "&concept-att;
                            &glossentry-att;
                            &glossgroup-att;
+                           &ch-d-att;
                            &hi-d-att; 
                            &ut-d-att; 
                            &indexing-d-att;
@@ -219,6 +225,10 @@ PUBLIC "-//ANTENNA HOUSE//DTD DITA 1.2 Glossary Group//EN"         -->
 <!--                    DOMAIN ELEMENT INTEGRATION                 -->
 <!-- ============================================================= -->
 
+<!ENTITY % ch-d-def     
+  PUBLIC "-//ANTENNA HOUSE//ELEMENTS DITA 1.2 Character Domain//EN" 
+         "../dtd/characterDomain.mod"
+>%ch-d-def;
 
 <!ENTITY % hi-d-def     
   PUBLIC "-//OASIS//ELEMENTS DITA 1.2 Highlight Domain//EN" 

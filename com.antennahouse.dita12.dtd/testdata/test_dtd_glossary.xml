@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE glossentry PUBLIC "-//ANTENNA HOUSE//DTD DITA 1.2 Glossary//EN" "glossary.dtd">
-<glossentry id="glossentry_bst_2zf_kp">
+<glossentry id="glossentry_bst_2zf_kp" fo:prop="font-size:2em;">
     <glossterm fo:prop="font-size:2em;">Glossterm <br/><cm value="yes"/></glossterm>
-    <glossdef><p>AAA</p></glossdef>
+    <glossdef fo:prop="font-size:2em;"><p>AAA<br/><cm value="yes"/></p></glossdef>
 </glossentry>

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE task PUBLIC "-//ANTENNA HOUSE//DTD DITA Task//EN" "task.dtd">
-<task id="task_tyk_xtf_kp">
-    <title fo:prop="font-family:Arial;">title</title>
+<task id="task_tyk_xtf_kp" fo:prop="font-weight:bold;">
+    <title fo:prop="font-family:Arial;">title<br/><cm value="yes"/></title>
     <shortdesc/>
     <taskbody fo:prop="font-weight:bold;">
         <context>

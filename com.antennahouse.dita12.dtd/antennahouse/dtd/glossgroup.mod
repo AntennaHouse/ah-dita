@@ -80,6 +80,7 @@ PUBLIC "-//ANTENNA HOUSE//ELEMENTS DITA Glossary Group//EN"
               %select-atts;
               %localization-atts;
               %style-atts; 
+              %style-ns-atts; 
               outputclass 
                         CDATA 
                                   #IMPLIED"
