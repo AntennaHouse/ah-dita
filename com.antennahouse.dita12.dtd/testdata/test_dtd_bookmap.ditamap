@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE bookmap PUBLIC "-//ANTENNA HOUSE//DTD DITA BookMap//EN" "bookmap.dtd">
+<bookmap>
+    <booktitle>
+        <mainbooktitle fo:prop="color:blue;">Main book title<ph>AAA<br/><cm value="no"/></ph></mainbooktitle>
+    </booktitle>
+    <chapter navtitle="Chapter 1">
+        <topicref href="test_dtd_concept.xml" fo:prop="break-before:page;">
+            <topicmeta>
+                <navtitle>Navtitle <ph><br/><cm value="dc"/></ph></navtitle>
+            </topicmeta>
+        </topicref>
+    </chapter>
+</bookmap>

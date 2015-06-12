@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//ANTENNA HOUSE//DTD DITA Topic//EN" "topic.dtd">
+<topic id="topic_bgp_cwd_vn">
+  <title fo:prop="font-weight:bold;" css:prop="font-style:underline;">Topic title</title>
+  <body fo:prop="font-weight:bold;">
+    <p fo:prop="font-family:Arial;">Topic paragraph</p>
+    <table fo:prop="color:blue;">
+      <tgroup cols="1" fo:prop="color:red;">
+        <tbody fo:prop="color:red;">
+          <row fo:prop="keep-together.within-column:always;">
+            <entry fo:prop="padding:2pt;" css:prop="padding:2pt;boredr:1pt solid red;"></entry>
+          </row>
+        </tbody>
+      </tgroup>
+    </table>
+    <bodydiv fo:prop="keep-together.within-column:alwayas;">
+      <p fo:prop="color:red;">Paragraph<br/><cm value="yes"/></p>
+    </bodydiv>
+  </body>
+</topic>

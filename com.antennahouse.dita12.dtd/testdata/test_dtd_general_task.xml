@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE task PUBLIC "-//ANTENNA HOUSE//DTD DITA General Task//EN" "generalTask.dtd">
+<task id="task_bhg_z5f_kp">
+    <title></title>
+    <shortdesc/>
+    <taskbody fo:prop="font-size:2em;">
+        <context>
+            <p>Paragraph <br/><cm value="dc"/></p>
+        </context>
+    </taskbody>
+</task>

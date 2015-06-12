@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE reference PUBLIC "-//ANTENNA HOUSE//DTD DITA Reference//EN" "reference.dtd">
+<reference id="reference_i3c_t5f_n4" fo:prop="font-style:normal;">
+  <title fo:prop="color:red;">Reference title</title>
+  <shortdesc fo:prop="color:green;">Short reference description.</shortdesc>
+  <refbody fo:prop="background-color:#FCFCFC;">
+    <refsyn fo:prop="border:thin solid black;">
+      <synph fo:prop="font-style:italic;">
+        <var>object</var>
+        <delim>.</delim>
+        <kwd>property</kwd>
+        <delim> = </delim>
+        <var>trueorfalse</var>
+      </synph>
+    </refsyn>
+    <properties fo:prop="font-family:Arial;">
+      <property fo:prop="background-color:white;">
+        <proptype fo:prop="font-weight:bold;">Prop name</proptype>
+        <propvalue fo:prop="font-weight:bold;">Prop value</propvalue>
+      </property>
+    </properties>
+    <refbodydiv fo:prop="background-color:maroon;">
+      <section fo:prop="font-family:Courier New;">
+        <p fo:prop="font-family:Times New Roman;">Paragraph<br/><cm value="yes"/></p>
+      </section>
+    </refbodydiv>
+  </refbody>
+</reference>

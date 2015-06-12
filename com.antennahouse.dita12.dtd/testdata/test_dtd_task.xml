@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE task PUBLIC "-//ANTENNA HOUSE//DTD DITA Task//EN" "task.dtd">
+<task id="task_tyk_xtf_kp">
+    <title fo:prop="font-family:Arial;">title</title>
+    <shortdesc/>
+    <taskbody fo:prop="font-weight:bold;">
+        <context>
+            <p>Paragraph <br/><cm value="no"/></p>
+        </context>
+        <steps>
+            <step>
+                <cmd></cmd>
+            </step>
+        </steps>
+    </taskbody>
+</task>

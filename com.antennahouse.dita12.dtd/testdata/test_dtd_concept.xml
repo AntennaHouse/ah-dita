@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//ANTENNA HOUSE//DTD DITA Concept//EN" "concept.dtd">
+<concept id="concept_sn5_frj_vn" fo:prop="font-weight:bold;">
+ <title fo:prop="font-weight:bold;">Concept title</title>
+ <shortdesc fo:prop="font-family:Arial;"></shortdesc>
+ <conbody fo:prop="color:green;">
+  <p fo:prop="font-family:bold;">Concept definition.<br/><cm value="yes"/></p>
+  <conbodydiv fo:prop="border:thin solid black;">
+   <section fo:prop="font-weight:bold;">
+    <p>Paragraph</p>
+    <simpletable fo:prop="border:thin solid black;">
+     <strow fo:prop="border:thin solid black;">
+      <stentry fo:prop="border:thin solid black;">Stentry</stentry>
+     </strow>
+    </simpletable>
+    <table>
+     <tgroup cols="2" fo:prop="border:thin solid black;">
+      <colspec colname="col1" colnum="1"/>
+      <colspec colname="col2" colnum="2"/>
+      <thead>
+       <row>
+        <entry>Thead</entry>
+        <entry>Thead</entry>
+       </row>
+      </thead>
+      <tbody fo:prop="background-color:white;">
+       <row fo:prop="background-color:blue;">
+        <entry fo:prop="background-color:yellow;">Entry</entry>
+        <entry fo:prop="background-color:yellow;">Entry</entry>
+       </row>
+      </tbody>
+     </tgroup>
+    </table>
+   </section>
+  </conbodydiv>
+ </conbody>
+</concept>
