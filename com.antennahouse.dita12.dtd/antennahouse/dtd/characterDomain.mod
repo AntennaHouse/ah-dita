@@ -55,7 +55,7 @@ PUBLIC "-//ANTENNA HOUSE//ELEMENTS DITA 1.2 Character Domain//EN"  -->
 >
 <!ENTITY % cm.attributes
              'value 
-                        (yes|no|dc)
+                        (yes|no|dc|-dita-use-conref-target)
                                   #REQUIRED
               %univ-atts; 
               outputclass 

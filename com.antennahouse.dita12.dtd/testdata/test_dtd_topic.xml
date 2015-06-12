@@ -8,7 +8,7 @@
       <tgroup cols="1" fo:prop="color:red;">
         <tbody fo:prop="color:red;">
           <row fo:prop="keep-together.within-column:always;">
-            <entry fo:prop="padding:2pt;" css:prop="padding:2pt;boredr:1pt solid red;"></entry>
+            <entry fo:prop="padding:2pt;" css:prop="padding:2pt;boredr:1pt solid red;"><br/><cm value="yes"/></entry>
           </row>
         </tbody>
       </tgroup>
