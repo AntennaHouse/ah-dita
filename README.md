@@ -1,12 +1,15 @@
 # ah-dita #
-ah-dita is the DITA 1.2 specialization that enables authoring the style information by "fo:prop" property for PDF output. 
+ah-dita is the DITA 1.2 specialization that enables authoring the style information by "fo:prop" property for PDF output.
 It is composed of set of DTD files and it can be used as plug-in for [DITA Open Toolkit] [3].
 This specialization works with [PDF5] [7] plug-in V2.1.4 or later.
 
 ## com.antennahouse.dita12.dtd folder ##
 
-This folder contains plug-in files. To install this plug-in into DITA-OT, 
-copy this folder to [DITA-OT]/plugins folder and run "ant -f integrator.xml".
+This folder contains plug-in files for DTD. To install this plug-in into DITA-OT, copy this folder to [DITA-OT]/plugins folder and run "ant -f integrator.xml".
+
+## com.antennahouse.dita12.xsd folder ##
+
+This folder contains plug-in files for XML Schema. The installation process is the same as plug-in for DTD.
 
 ## Examples ##
 
@@ -85,7 +88,7 @@ The namespace prefix "fo" is declared in the DTD as follows:
 xmlns:fo="http://www.w3.org/1999/XSL/Format"
 ```
 
-You can publish it using [PDF5] [7] plug-in. 
+You can publish it using [PDF5] [7] plug-in.
 
 
 ## Copyright ##
