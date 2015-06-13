@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<bookmap xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:noNamespaceSchemaLocation="urn:x-antennahouse:dita:xsd:bookmap.xsd"
+    xmlns:fo="http://www.w3.org/1999/XSL/Format"
+    xmlns:css="http://www.w3.org/TR/CSS2"
+    >
+    <booktitle>
+        <mainbooktitle fo:prop="color:blue;">Main book title<ph>AAA<br/><cm value="no"/></ph></mainbooktitle>
+    </booktitle>
+    <chapter navtitle="Chapter 1">
+        <topicref href="test_xsd_concept.xml" fo:prop="break-before:page;">
+            <topicmeta>
+                <navtitle>Navtitle <ph><br/><cm value="dc"/></ph></navtitle>
+            </topicmeta>
+        </topicref>
+    </chapter>
+</bookmap>

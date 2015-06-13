@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- ============================================================= -->
+<!--                    HEADER                                     -->
+<!-- ============================================================= -->
+<!--  MODULE:    DITA Common Elements XSD Module                   -->
+<!--  VERSION:   1.2                                               -->
+<!--  DATE:      Octoober  2009                                    -->
+<!--                                                               -->
+<!-- ============================================================= -->
+<!-- ============================================================= -->
+<!-- SYSTEM:     Darwin Information Typing Architecture (DITA)     -->
+<!--                                                               -->
+<!-- PURPOSE:    W3C XML Schema to describe DITA common elements   -->
+<!--                                                               -->
+<!-- ORIGINAL CREATION DATE:                                       -->
+<!--             June  2006                                        -->
+<!--                                                               -->
+<!--             (C) Copyright OASIS-Open.org 2006, 2009           -->
+<!--             All Rights Reserved.                              -->
+<!--  UPDATES:                                                     -->
+<!--    2014.04.18 AH:   Add fo,css attribute                      -->
+<!-- ============================================================= -->
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+    xmlns:vc="http://www.w3.org/2007/XMLSchema-versioning" vc:minVersion="1.0" vc:maxVersion="1.1"
+    xmlns:fo="http://www.w3.org/1999/XSL/Format"
+    xmlns:css="http://www.w3.org/TR/CSS2">
+
+	<xs:import schemaLocation="ah_fo_style.xsd" namespace="http://www.w3.org/1999/XSL/Format"/>
+	<xs:import schemaLocation="ah_css_style.xsd" namespace="http://www.w3.org/TR/CSS2"/>
+	
+	<xs:redefine schemaLocation="urn:oasis:names:tc:dita:xsd:commonElementMod.xsd:1.2">
+		
+		<xs:attributeGroup name="univ-atts">
+			<xs:annotation>
+				<xs:documentation>Universal attributes is a parameter entity declaration in the topic XSD that
+					includes all of the attributes in the select-atts and id-atts attribute groups. 
+				</xs:documentation>
+			</xs:annotation>
+			<xs:attributeGroup ref="univ-atts"/>
+			<xs:attributeGroup ref="fo:style-atts"/>
+			<xs:attributeGroup ref="css:style-atts"/>
+		</xs:attributeGroup>
+		
+		<xs:attributeGroup name="univ-atts-translate-no">
+			<xs:attributeGroup ref="univ-atts-translate-no"/>
+			<xs:attributeGroup ref="fo:style-atts"/>
+			<xs:attributeGroup ref="css:style-atts"/>
+		</xs:attributeGroup>
+
+		<xs:attributeGroup name="title.attributes">
+			<xs:attributeGroup ref="title.attributes"/>
+			<xs:attributeGroup ref="fo:style-atts"/>
+			<xs:attributeGroup ref="css:style-atts"/>
+		</xs:attributeGroup>
+
+	</xs:redefine>
+	
+</xs:schema>

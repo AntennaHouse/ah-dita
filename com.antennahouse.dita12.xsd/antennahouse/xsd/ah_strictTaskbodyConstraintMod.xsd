@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<xs:schema
+  xmlns:xs="http://www.w3.org/2001/XMLSchema"
+  xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/"
+  xmlns:fo="http://www.w3.org/1999/XSL/Format"
+  xmlns:css="http://www.w3.org/TR/CSS2"
+  elementFormDefault="qualified"
+  attributeFormDefault="unqualified"
+>
+  
+  <xs:annotation xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:appinfo>
+      <dita:domainsModule xmlns:dita="http://dita.oasis-open.org/architecture/2005/">(topic task strictTaskbody-c)</dita:domainsModule>
+    </xs:appinfo>
+    <xs:documentation> 
+      
+    </xs:documentation>
+  </xs:annotation>
+  
+  <xs:import schemaLocation="ah_fo_style.xsd" namespace="http://www.w3.org/1999/XSL/Format"/>
+  <xs:import schemaLocation="ah_css_style.xsd" namespace="http://www.w3.org/TR/CSS2"/>
+
+  <!--xs:redefine schemaLocation="urn:x-antennahouse:dita:xsd:taskMod.xsd"-->
+  <xs:redefine schemaLocation="urn:oasis:names:tc:dita:xsd:taskMod.xsd">
+
+    <xs:attributeGroup name="task.attributes">
+      <xs:attributeGroup ref="task.attributes"/>
+      <xs:attributeGroup ref="fo:style-atts"/>
+      <xs:attributeGroup ref="css:style-atts"/>
+    </xs:attributeGroup>
+    
+    <xs:attributeGroup name="taskbody.attributes">
+      <xs:attributeGroup ref="taskbody.attributes"/>
+      <xs:attributeGroup ref="fo:style-atts"/>
+      <xs:attributeGroup ref="css:style-atts"/>
+    </xs:attributeGroup>
+
+    <xs:attributeGroup name="univ-atts-no-importance-task">
+      <xs:attributeGroup ref="univ-atts-no-importance-task"/>
+      <xs:attributeGroup ref="fo:style-atts"/>
+      <xs:attributeGroup ref="css:style-atts"/>
+    </xs:attributeGroup>
+
+    <xs:group name="taskPreStep" xmlns:xs="http://www.w3.org/2001/XMLSchema">  
+      <xs:sequence>
+        <xs:choice> 
+          <xs:sequence>
+            <xs:group ref="prereq"  minOccurs="0"/>
+            <xs:group ref="context"  minOccurs="0"/>
+          </xs:sequence>
+        </xs:choice>
+      </xs:sequence>
+    </xs:group>
+
+    <xs:group name="taskPostStep" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+      <xs:sequence>
+        <xs:sequence>
+          <xs:group ref="result"  minOccurs="0"/>
+          <xs:group ref="example"  minOccurs="0"/>
+          <xs:group ref="postreq"  minOccurs="0"/>
+        </xs:sequence>
+      </xs:sequence>
+    </xs:group>  
+    
+    <xs:group name="taskStep">
+      <xs:sequence>
+        <xs:choice minOccurs="0" maxOccurs="1">
+          <xs:group ref="steps" />
+          <xs:group ref="steps-unordered" />
+        </xs:choice>
+      </xs:sequence>
+    </xs:group>
+
+    <xs:group name="task-info-types">
+      <xs:choice>
+        <xs:group ref="task-info-types"/>
+      </xs:choice>
+    </xs:group>
+   
+  </xs:redefine>
+
+</xs:schema>

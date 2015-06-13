@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- ============================================================= -->
+<!--                    HEADER                                     -->
+<!-- ============================================================= -->
+<!--  MODULE:    DITA Reference XSD  Module                        -->
+<!--  VERSION:   1.2                                               -->
+<!--  DATE:      July 2007                                         -->
+<!--                                                               -->
+<!-- ============================================================= -->
+
+<!-- ============================================================= -->
+<!-- SYSTEM:     Darwin Information Typing Architecture (DITA)     -->
+<!--                                                               -->
+<!-- PURPOSE:    XSD to describe DITA References                   -->
+<!--                                                               -->
+<!-- ORIGINAL CREATION DATE:                                       -->
+<!--             March 2001                                        -->
+<!--                                                               -->
+<!--             (C) Copyright OASIS-Open.org 2005, 2009           -->
+<!--             (C) Copyright IBM Corporation 2001, 2004.         -->
+<!--             All Rights Reserved.                              -->
+<!-- ============================================================= -->
+ <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" 
+            elementFormDefault="qualified" 
+            attributeFormDefault="unqualified" 
+            xmlns:fo="http://www.w3.org/1999/XSL/Format"
+            xmlns:css="http://www.w3.org/TR/CSS2"
+            xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/">
+
+   <xs:import schemaLocation="ah_fo_style.xsd" namespace="http://www.w3.org/1999/XSL/Format"/>
+   <xs:import schemaLocation="ah_css_style.xsd" namespace="http://www.w3.org/TR/CSS2"/>
+   
+   <xs:redefine schemaLocation="urn:oasis:names:tc:dita:xsd:referenceMod.xsd:1.2">
+     
+     <xs:attributeGroup name="reference.attributes">
+       <xs:attributeGroup ref="reference.attributes"/>
+       <xs:attributeGroup ref="fo:style-atts"/>
+       <xs:attributeGroup ref="css:style-atts"/>
+     </xs:attributeGroup>
+
+     <xs:attributeGroup name="refbody.attributes">
+       <xs:attributeGroup ref="refbody.attributes"/>
+       <xs:attributeGroup ref="fo:style-atts"/>
+       <xs:attributeGroup ref="css:style-atts"/>
+     </xs:attributeGroup>
+     
+   </xs:redefine>
+   
+</xs:schema>

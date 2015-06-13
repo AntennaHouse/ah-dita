@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<glossentry id="glossentry_cln_bsp_3s" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:noNamespaceSchemaLocation="urn:x-antennahouse:dita:xsd:glossentry.xsd" xmlns:fo="http://www.w3.org/1999/XSL/Format" fo:prop="font-size:2em;">
+    <glossterm fo:prop="font-size:2em;">Glossterm <br/><cm value="yes"/></glossterm>
+    <glossdef fo:prop="font-size:2em;"><p>AAA<br/><cm value="yes"/></p></glossdef>
+</glossentry>

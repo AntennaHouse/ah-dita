@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+    xmlns:fo="http://www.w3.org/1999/XSL/Format"
+    xmlns:vc="http://www.w3.org/2007/XMLSchema-versioning" 
+    elementFormDefault="qualified"
+    attributeFormDefault="qualified"
+    targetNamespace="http://www.w3.org/1999/XSL/Format"
+    vc:minVersion="1.0" vc:maxVersion="1.1">
+    
+    <xs:attributeGroup name="style-atts">
+        <xs:annotation>
+            <xs:documentation>Style attributes (%style-atts-fo;) is a parameter entity declaration in the
+                topic XSD that includes attributes that enable the styling of elements in a DITA topic: 
+                <keyword>fo:prop</keyword>,<keyword>fo:style</keyword>.
+                2014-04-19 t.makita Antenna House,Inc.
+            </xs:documentation>
+        </xs:annotation>
+        <xs:attribute name="prop" type="xs:string"/>
+        <xs:attribute name="style" type="xs:string"/>
+    </xs:attributeGroup>
+    
+</xs:schema>

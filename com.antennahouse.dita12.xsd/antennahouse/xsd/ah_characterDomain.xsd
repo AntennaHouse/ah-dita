@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- ============================================================= -->
+<!--                    HEADER                                     -->
+<!-- ============================================================= -->
+<!--  MODULE:    DITA Character Domain                             -->
+<!--  VERSION:   1.0                                               -->
+<!--  DATE:      September 2014                                    -->
+<!--                                                               -->
+<!-- ============================================================= -->
+
+<!-- ============================================================= -->
+<!-- SYSTEM:     Darwin Information Typing Architecture (DITA)     -->
+<!--                                                               -->
+<!-- PURPOSE:    Define elements and specialization attributes     -->
+<!--             for Highlight Domain                              -->
+<!--                                                               -->
+<!-- ORIGINAL CREATION DATE:                                       -->
+<!--             October 2011                                      -->
+<!--                                                               -->
+<!--             (C) Copyright Antenna House, Inc. 2014            -->
+<!--             All Rights Reserved.                              -->
+<!--                                                               -->
+<!--  UPDATES:                                                     -->
+<!--    Added "br" element. 2014-09-08 AH                          -->
+<!-- ============================================================= -->
+
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified" attributeFormDefault="unqualified">
+  
+  <xs:annotation>
+    <xs:appinfo>
+      <dita:domainsModule xmlns:dita="http://dita.oasis-open.org/architecture/2005/">(topic ch-d)</dita:domainsModule>
+    </xs:appinfo>
+    <xs:documentation>
+    </xs:documentation>
+  </xs:annotation>
+
+  <xs:group name="ch-d-ph">
+    <xs:choice>
+      <xs:element ref="cm" />
+      <xs:element ref="br" />
+    </xs:choice>
+  </xs:group>
+  
+  <xs:group name="cm">
+      <xs:sequence>
+         <xs:choice>
+            <xs:element ref="cm"/>
+         </xs:choice>
+      </xs:sequence>
+   </xs:group>
+
+   <xs:group name="br">
+      <xs:sequence>
+         <xs:choice>
+            <xs:element ref="br"/>
+         </xs:choice>
+      </xs:sequence>
+   </xs:group>
+
+  <!-- Basic form: Single Effect Formatting Phrases -->
+  <xs:element name="cm">
+    <xs:annotation>
+      <xs:documentation>
+        The check mark (&lt;<keyword>cm</keyword>&gt;) element expresses the mark that have several states.
+        Specify @value="yes|no|dc" according to the intended mark status. 
+      </xs:documentation>
+    </xs:annotation>
+    <xs:complexType>
+      <xs:complexContent>
+        <xs:extension base="cm.class">
+          <xs:attribute ref="class" default="+ topic/ph ch-d/cm "/>
+        </xs:extension>
+      </xs:complexContent>
+    </xs:complexType>
+  </xs:element>
+  <xs:complexType name="cm.class" mixed="false">
+        <xs:attributeGroup ref="cm.attributes"/>
+  </xs:complexType>
+  
+  <xs:attributeGroup name="cm.attributes">
+    <xs:attributeGroup ref="global-atts"/>
+    <xs:attributeGroup ref="univ-atts"/>
+    <xs:attribute name="outputclass" type="xs:string"/>
+    <xs:attribute name="value">
+      <xs:simpleType>
+        <xs:restriction base="xs:string">
+          <xs:enumeration value="yes"/>
+          <xs:enumeration value="no"/>
+          <xs:enumeration value="dc"/>
+          <xs:enumeration value="-dita-use-conref-target"/>
+        </xs:restriction>
+      </xs:simpleType>
+    </xs:attribute>
+  </xs:attributeGroup>
+
+  <xs:element name="br">
+    <xs:annotation>
+      <xs:documentation>
+        A br (&lt;<keyword>br</keyword>&gt;) indicates that text line should be breaked at this point.
+      </xs:documentation>
+    </xs:annotation>
+    <xs:complexType>
+      <xs:complexContent>
+        <xs:extension base="br.class">
+          <xs:attribute ref="class" default="+ topic/ph ch-d/br "/>
+        </xs:extension>
+      </xs:complexContent>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:complexType name="br.class" mixed="false">
+        <xs:attributeGroup ref="br.attributes"/>
+  </xs:complexType>
+  
+  <xs:attributeGroup name="br.attributes">
+    <xs:attributeGroup ref="global-atts"/>
+    <xs:attributeGroup ref="univ-atts"/>
+    <xs:attribute name="outputclass" type="xs:string"/>
+  </xs:attributeGroup>
+
+</xs:schema>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<task id="task_lyr_53s_zn" xmlns:fo="http://www.w3.org/1999/XSL/Format"
+    xmlns:css="http://www.w3.org/TR/CSS2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:noNamespaceSchemaLocation="urn:x-antennahouse:dita:xsd:task.xsd"
+    fo:prop="font-family:Arial;">
+    <title fo:prop="font-family:Arial;" css:prop="font-family:Arial;">Task title<cm value="yes"/><br/></title>
+    <shortdesc/>
+    <taskbody fo:prop="font-family:Arial;">
+        <context fo:prop="font-family:Arial;">
+            <p>Context for the current task<cm value="yes"/><br/></p>
+        </context>
+        <steps fo:prop="font-family:Arial;">
+            <step fo:prop="font-family:Arial;">
+                <cmd fo:prop="font-family:Arial;">Task step.</cmd>
+                <substeps fo:prop="font-family:Arial;">
+                    <substep fo:prop="font-family:Arial;">
+                        <cmd fo:prop="font-family:Arial;"/>
+                        <info fo:prop="font-family:Arial;">Info 
+                            <synph fo:prop="font-family:Arial;">
+                                <var fo:prop="font-family:Arial;">object</var>
+                                <delim fo:prop="font-family:Arial;">.</delim>
+                                <kwd fo:prop="font-family:Arial;">property</kwd>
+                                <delim fo:prop="font-family:Arial;"> = </delim>
+                                <var fo:prop="font-family:Arial;">trueorfalse</var>
+                            </synph>
+                        </info>
+                        <stepresult fo:prop="font-family:Arial;">Step result</stepresult>
+                    </substep>
+                </substeps>
+            </step>
+        </steps>
+    </taskbody>
+</task>

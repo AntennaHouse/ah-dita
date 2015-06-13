@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<task id="task_q5t_s5s_zn" 
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xmlns:fo="http://www.w3.org/1999/XSL/Format"
+      xmlns:css="http://www.w3.org/TR/CSS2"
+      xsi:noNamespaceSchemaLocation="urn:x-antennahouse:dita:xsd:generalTask.xsd" 
+      fo:prop="font-family:Arial;" css:prop="font-family:Arial;">
+    <title fo:prop="font-family:Arial;" css:prop="font-family:Arial;">Task title<cm value="yes"/><br/></title>
+    <shortdesc  fo:prop="font-family:Arial;" css:prop="font-family:Arial;">Short desc<cm value="yes"/><br/></shortdesc>
+    <taskbody fo:prop="font-family:Arial;" css:prop="font-family:Arial;">
+        <context fo:prop="font-family:Arial;" css:prop="font-family:Arial;">
+            <p>Context for the current task<cm value="yes"/><br/></p>
+        </context>
+        <steps fo:prop="font-family:Arial;" css:prop="font-family:Arial;">
+            <step fo:prop="font-family:Arial;" css:prop="font-family:Arial;">
+                <cmd fo:prop="font-family:Arial;" css:prop="font-family:Arial;">Task step.</cmd>
+                <substeps fo:prop="font-family:Arial;" css:prop="font-family:Arial;">
+                    <substep fo:prop="font-family:Arial;" css:prop="font-family:Arial;">
+                        <cmd fo:prop="font-family:Arial;" css:prop="font-family:Arial;"><cm value="yes"/><br/></cmd>
+                    </substep>
+                </substeps>
+                <choices fo:prop="font-family:Arial;" css:prop="font-family:Arial;">
+                    <choice fo:prop="font-family:Arial;" css:prop="font-family:Arial;">Choice 1</choice>
+                    <choice fo:prop="font-family:Arial;" css:prop="font-family:Arial;">Choice 2</choice>
+                </choices>
+                <info fo:prop="font-family:Arial;" css:prop="font-family:Arial;">
+                    <synph fo:prop="font-family:Arial;" css:prop="font-family:Arial;">
+                        <var fo:prop="font-family:Arial;" css:prop="font-family:Arial;">object</var>
+                        <delim fo:prop="font-family:Arial;" css:prop="font-family:Arial;">.</delim>
+                        <kwd fo:prop="font-family:Arial;" css:prop="font-family:Arial;">property</kwd>
+                        <delim fo:prop="font-family:Arial;" css:prop="font-family:Arial;"> = </delim>
+                        <var fo:prop="font-family:Arial;" css:prop="font-family:Arial;">trueorfalse</var>
+                    </synph>
+                </info>
+            </step>
+        </steps>
+    </taskbody>
+</task>

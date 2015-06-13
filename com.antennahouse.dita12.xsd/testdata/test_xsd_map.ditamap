@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map title="DITA Topic Map" 
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:format="http://www.w3.org/1999/XSL/Format"
+    xmlns:css2="http://www.w3.org/TR/CSS2"
+    xsi:noNamespaceSchemaLocation="urn:x-antennahouse:dita:xsd:map.xsd">
+    <title>Title<ph><br/><cm value="yes"/></ph></title>
+    <topicref href="test_xsd_topic.xml" format="dita" type="topic" format:prop="font-family:Arial;"  css2:prop="font-family:Arial;">
+        <topicmeta>
+            <linktext>Link text<ph>aaa<br/><cm value="yes"/></ph></linktext>
+        </topicmeta>
+    </topicref>
+</map>
+    
+    
+

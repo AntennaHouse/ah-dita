@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glossgroup id="glossgroup_rdc_2xv_3s" 
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:noNamespaceSchemaLocation="urn:x-antennahouse:dita:xsd:glossarygroup.xsd"
+  xmlns:fo="http://www.w3.org/1999/XSL/Format"
+  xmlns:css="http://www.w3.org/TR/CSS2">
+  <title fo:prop="font-family:Arial;">Glossentry Group<br/><cm value="yes"/></title>
+  <glossentry id="ddl" fo:prop="font-family:Arial;">
+    <glossterm fo:prop="font-family:Arial;">Glossterm<br/><cm value="yes"/></glossterm>
+    <glossdef fo:prop="font-family:Arial;">Glossdef<br/><cm value="yes"/></glossdef>
+  </glossentry>
+  <glossgroup id="glossgroup_tss_vfp_4s" fo:prop="font-family:Arial;">
+    <title fo:prop="font-family:Arial;">Nested glossgroup</title>
+    <glossentry id="ddm" fo:prop="font-family:Arial;">
+      <glossterm fo:prop="font-family:Arial;">Nested Glossterm</glossterm>
+      <glossdef fo:prop="font-family:Arial;">Nested Glossdef</glossdef>
+    </glossentry>
+  </glossgroup>
+</glossgroup>
