@@ -53,11 +53,11 @@ Here are some examples authored by this specialization:
 
 ### Setup your XML editor ###
 
-Setup your XML editor to use this specializtion DTD.
+Setup your XML editor to use this specialization DTD.
 
 ### Change public identifier ###
 
-Use follwoing public identifier for your document type declaration.
+Use following public identifier for your document type declaration.
 
 ```xml
 <!DOCTYPE bookmap PUBLIC "-//ANTENNA HOUSE//DTD DITA BookMap//EN" "bookmap.dtd">
