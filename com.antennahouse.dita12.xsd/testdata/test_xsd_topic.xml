@@ -34,5 +34,10 @@
         <var fo:prop="font-family:Arial;" css:prop="font-family:Arial;">trueorfalse</var>
       </synph>
     </p>
+    <image href="http://www.antenna.co.jp/image/logo.png" scope="external" placement="float-left"/>
+    <fig float="left">
+      <image href="http://www.antenna.co.jp/image/logo.png" scope="external" placement="break"/>
+      <p>Description of the logo.png</p>
+    </fig>
   </body>
 </topic>
