@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- ============================================================= -->
+<!--                    HEADER                                     -->
+<!-- ============================================================= -->
+<!--  MODULE:    DITA Common Elements XSD Module                   -->
+<!--  VERSION:   1.2                                               -->
+<!--  DATE:      Octoober  2009                                    -->
+<!--                                                               -->
+<!-- ============================================================= -->
+<!-- ============================================================= -->
+<!-- SYSTEM:     Darwin Information Typing Architecture (DITA)     -->
+<!--                                                               -->
+<!-- PURPOSE:    W3C XML Schema to describe DITA common elements   -->
+<!--                                                               -->
+<!-- ORIGINAL CREATION DATE:                                       -->
+<!--             June  2006                                        -->
+<!--                                                               -->
+<!--             (C) Copyright OASIS-Open.org 2006, 2009           -->
+<!--             All Rights Reserved.                              -->
+<!--  UPDATES:                                                     -->
+<!--    2014.04.18 AH:   Add fo,css attribute                      -->
+<!--    2015.07.03 AH:   Add @float attribute to fig,figgroup      -->
+<!-- ============================================================= -->
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+    xmlns:vc="http://www.w3.org/2007/XMLSchema-versioning"  
+    xmlns:fo="http://www.w3.org/1999/XSL/Format"
+    xmlns:css="http://www.w3.org/TR/CSS2">
+
+	<xs:import schemaLocation="ah_fo_style.xsd" namespace="http://www.w3.org/1999/XSL/Format"/>
+	<xs:import schemaLocation="ah_css_style.xsd" namespace="http://www.w3.org/TR/CSS2"/>
+	
+	<xs:redefine schemaLocation="urn:oasis:names:tc:dita:xsd:commonElementMod.xsd:1.2">
+		
+		<xs:attributeGroup name="univ-atts">
+			<xs:annotation>
+				<xs:documentation>Universal attributes is a parameter entity declaration in the topic XSD that
+					includes all of the attributes in the select-atts and id-atts attribute groups. 
+				</xs:documentation>
+			</xs:annotation>
+			<xs:attributeGroup ref="univ-atts"/>
+			<xs:attributeGroup ref="fo:style-atts"/>
+			<xs:attributeGroup ref="css:style-atts"/>
+		</xs:attributeGroup>
+		
+		<xs:attributeGroup name="univ-atts-translate-no">
+			<xs:attributeGroup ref="univ-atts-translate-no"/>
+			<xs:attributeGroup ref="fo:style-atts"/>
+			<xs:attributeGroup ref="css:style-atts"/>
+		</xs:attributeGroup>
+
+		<xs:attributeGroup name="title.attributes">
+			<xs:attributeGroup ref="title.attributes"/>
+			<xs:attributeGroup ref="fo:style-atts"/>
+			<xs:attributeGroup ref="css:style-atts"/>
+		</xs:attributeGroup>
+
+		<xs:attributeGroup name="fig.attributes">
+			<xs:attributeGroup ref="fig.attributes"/>
+			<xs:attributeGroup ref="fig.float.attributes"/>
+		</xs:attributeGroup>
+
+		<xs:attributeGroup name="figgroup.attributes">
+			<xs:attributeGroup ref="figgroup.attributes"/>
+			<xs:attributeGroup ref="fig.float.attributes"/>
+		</xs:attributeGroup>
+		
+		<!-- Adding desc after the title element cannot be allowed in xs:group redefinition. -->
+		<!--xs:group name="figgroup.content">
+			<xs:sequence>
+				<xs:sequence>
+					<xs:group ref="title" minOccurs="0"/>
+					<xs:group ref="desc" minOccurs="0"/>
+					<xs:choice minOccurs="0" maxOccurs="unbounded">
+						<xs:group ref="figgroup"/>
+						<xs:group ref="basic.ph"/>
+						<xs:group ref="basic.block.notbnofg"/>
+						<xs:group ref="fn"/>
+						<xs:group ref="data.elements.incl"/>
+						<xs:group ref="foreign.unknown.incl"/>
+					</xs:choice>
+				</xs:sequence>
+			</xs:sequence>
+		</xs:group-->
+
+		<!-- We can only add new elenents before or after the redefined group.
+			 But it is not the desired construct.
+		 -->
+		<!--xs:group name="figgroup.content">
+			<xs:sequence>
+				<xs:sequence>
+					<xs:group ref="figgroup.content"/>
+					<xs:group ref="desc" minOccurs="0"/>
+				</xs:sequence>
+			</xs:sequence>
+		</xs:group-->
+		
+		<!--xs:group name="figgroup.content">
+			<xs:sequence>
+				<xs:sequence>
+					<xs:group ref="desc" minOccurs="0"/>
+					<xs:group ref="figgroup.content"/>
+				</xs:sequence>
+			</xs:sequence>
+		</xs:group-->
+
+	</xs:redefine>
+
+	<xs:attributeGroup name="fig.float.attributes">
+		<xs:attribute name="float" default="none">
+			<xs:simpleType>
+				<xs:restriction base="xs:string">
+					<xs:enumeration value="none"/>
+					<xs:enumeration value="left"/>
+					<xs:enumeration value="right"/>
+				</xs:restriction>
+			</xs:simpleType>
+		</xs:attribute>
+	</xs:attributeGroup>
+
+</xs:schema>

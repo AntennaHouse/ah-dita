@@ -41,9 +41,11 @@
     </fig>
     <fig float="none">
       <figgroup float="left">
+        <desc>float="left" example</desc>
         <image href="http://www.antenna.co.jp/image/logo.png" scope="external" placement="break"/>
       </figgroup>
       <figgroup float="right">
+        <desc>float="left" example</desc>
         <image href="http://www.antenna.co.jp/image/logo.png" scope="external" placement="break"/>
       </figgroup>
     </fig>
