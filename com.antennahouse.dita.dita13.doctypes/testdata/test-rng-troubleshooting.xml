@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-model href="urn:x-antennahouse:dita:rng:troubleshooting.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="urn:x-antennahouse:dita:rng:troubleshooting.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<troubleshooting id="trouble_mqt_22d_qs" xmlns:fo="http://www.w3.org/1999/XSL/Format" fo:prop="font-style:Arial">
+  <title fo:prop="font-style:Arial">Troubleshooting specialization example<br/><cm value="yes"/></title>
+  <troublebody fo:prop="font-style:Arial">
+    <condition fo:prop="font-style:Arial">
+      <p fo:prop="font-style:Arial"></p>
+    </condition>
+    <troubleSolution fo:prop="font-style:Arial">
+      <cause fo:prop="font-style:Arial">
+        <title fo:prop="font-style:Arial"><br/><cm value="yes"/></title>
+        <p fo:prop="font-style:Arial"><br/><cm value="yes"/></p>
+      </cause>
+      <remedy fo:prop="font-style:Arial">
+        <responsibleParty fo:prop="font-style:Arial"><br/><cm value="yes"/></responsibleParty>
+        <steps-unordered fo:prop="font-style:Arial">
+          <step fo:prop="font-style:Arial">
+            <cmd fo:prop="font-style:Arial"><br/><cm value="yes"/></cmd>
+          </step>
+        </steps-unordered>
+      </remedy>
+    </troubleSolution>
+  </troublebody>
+</troubleshooting>

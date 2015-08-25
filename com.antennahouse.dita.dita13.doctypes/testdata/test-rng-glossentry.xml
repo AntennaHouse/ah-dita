@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-model href="urn:x-antennahouse:dita:rng:glossentry.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="urn:x-antennahouse:dita:rng:glossentry.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<glossentry id="glossentry_xxq_t5k_qs" xmlns:fo="http://www.w3.org/1999/XSL/Format" fo:prop="font-style:Arial">
+    <glossterm fo:prop="font-style:Arial">glossterm<br/><cm value="yes"/></glossterm>
+    <glossdef fo:prop="font-style:Arial">glossdef<br/><cm value="yes"/></glossdef>
+    <glossBody  fo:prop="font-style:Arial">
+        <glossPartOfSpeech value="noun" fo:prop="font-style:Arial"/>
+        <glossStatus fo:prop="font-style:Arial"></glossStatus>
+        <glossProperty fo:prop="font-style:Arial"></glossProperty>
+        <glossSurfaceForm fo:prop="font-style:Arial"></glossSurfaceForm>
+        <glossUsage fo:prop="font-style:Arial"></glossUsage>
+        <glossScopeNote fo:prop="font-style:Arial"></glossScopeNote>
+        <glossSymbol fo:prop="font-style:Arial"></glossSymbol>
+        <glossAlt fo:prop="font-style:Arial"></glossAlt>
+    </glossBody>
+</glossentry>

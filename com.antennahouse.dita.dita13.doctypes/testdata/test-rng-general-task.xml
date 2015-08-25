@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="urn:x-antennahouse:dita:rng:generalTask.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="urn:x-antennahouse:dita:rng:generalTask.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<task id="task_lsr_1nb_qs" xmlns:fo="http://www.w3.org/1999/XSL/Format" fo:prop="font-style:Arial">
+    <title fo:prop="font-style:Arial" id="title_001">General task specialization example<br/><cm value="yes"/></title>
+    <shortdesc fo:prop="font-style:bold;"></shortdesc>
+    <taskbody fo:prop="font-style:bold;">
+        <context fo:prop="font-style:bold;">
+            <p fo:prop="font-style:bold;"></p>
+        </context>
+        <steps fo:prop="font-style:bold;">
+            <step fo:prop="font-style:bold;">
+                <cmd fo:prop="font-style:bold;"></cmd>
+                <choices fo:prop="font-style:bold;">
+                    <choice fo:prop="font-style:bold;"></choice>
+                </choices>
+                <choicetable fo:prop="font-style:bold;">
+                    <chrow fo:prop="font-style:bold;">
+                        <choption fo:prop="font-style:bold;"></choption>
+                        <chdesc fo:prop="font-style:bold;"></chdesc>
+                    </chrow>
+                </choicetable>
+                <info fo:prop="font-style:bold;"></info>
+                <itemgroup fo:prop="font-style:bold;"></itemgroup>
+                <stepresult fo:prop="font-style:bold;"></stepresult>
+                <steptroubleshooting fo:prop="font-style:bold;"></steptroubleshooting>
+            </step>
+            <stepsection fo:prop="font-style:bold;"></stepsection>
+            <step>
+                <cmd></cmd>
+            </step>
+        </steps>
+        <example fo:prop="font-style:bold;"></example>
+        <postreq fo:prop="font-style:bold;"></postreq>
+    </taskbody>
+</task>

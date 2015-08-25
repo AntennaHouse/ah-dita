@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="urn:oasis:names:tc:dita:rng:vocabularyModuleDesc.rng"
+                         schematypens="http://relaxng.org/ns/structure/1.0"?>
+<grammar xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0" xmlns:dita="http://dita.oasis-open.org/architecture/2005/" xmlns="http://relaxng.org/ns/structure/1.0"
+  datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes">
+  <moduleDesc xmlns="http://dita.oasis-open.org/architecture/2005/">
+    <moduleTitle>DITA Reference</moduleTitle>
+    <headerComment xml:space="preserve"><![CDATA[
+=============================================================
+                   HEADER                                    
+=============================================================
+ MODULE:    DITA Reference                                   
+ VERSION:   1.2                                              
+ DATE:      November 2009                                    
+                                                             
+=============================================================
+
+=============================================================
+                   PUBLIC DOCUMENT TYPE DEFINITION           
+                   TYPICAL INVOCATION                        
+                                                             
+ Refer to this file by the following public identifier or an 
+      appropriate system identifier 
+PUBLIC "-//OASIS//ELEMENTS DITA Reference//EN"
+      Delivered as file "reference.mod"                           
+
+=============================================================
+SYSTEM:     Darwin Information Typing Architecture (DITA)    
+                                                             
+PURPOSE:    Declaring the elements and specialization        
+            attributes for Reference                         
+                                                             
+ORIGINAL CREATION DATE:                                      
+            March 2001                                       
+                                                             
+            (C) Copyright OASIS Open 2005, 2009.             
+            (C) Copyright IBM Corporation 2001, 2004.        
+            All Rights Reserved.                             
+                                                             
+ UPDATES:                                                    
+   2005.11.15 RDA: Removed old declaration for               
+                   referenceClasses entity                   
+   2005.11.15 RDA: Corrected LONG NAME for propdeschd        
+   2006.06.07 RDA: Added <abstract> element                  
+   2006.06.07 RDA: Make universal attributes universal       
+                     (DITA 1.1 proposal #12)                 
+   2006.11.30 RDA: Remove #FIXED from DITAArchVersion        
+   2007.12.01 EK:  Reformatted DTD modules for DITA 1.2       
+   2008.01.30 RDA: Replace @conref defn. with %conref-atts;  
+   2008.02.13 RDA: Create .content and .attributes entities  
+   2008.05.06 RDA: Added refbodydiv              
+   2015.07.09 AH:  Added style-atts to reference
+=============================================================
+]]></headerComment>
+    <moduleMetadata>
+      <moduleType>topic</moduleType>
+      <moduleShortName>reference</moduleShortName>
+      <modulePublicIds>
+        <dtdMod>-//ANTENNA HOUSE//ELEMENTS DITA<var presep=" " name="ditaver"/> Reference//EN</dtdMod>
+        <dtdEnt>-//ANTENNA HOUSE//ENTITIES DITA<var presep=" " name="ditaver"/> Reference//EN</dtdEnt>
+        <xsdMod>urn:x-antennahouse:dita:xsd:referenceMod.xsd<var presep=":" name="ditaver"/></xsdMod>
+        <xsdGrp>urn:x-antennahouse:dita:xsd:referenceGrp.xsd<var presep=":" name="ditaver"/></xsdGrp>
+        <rncMod>urn:x-antennahouse:dita:rnc:referenceMod.rnc<var presep=":" name="ditaver"/></rncMod>
+        <rngMod>urn:x-antennahouse:dita:rng:referenceMod.rng<var presep=":" name="ditaver"/></rngMod>
+      </modulePublicIds>
+      <domainsContribution>(topic reference)</domainsContribution>
+    </moduleMetadata>
+  </moduleDesc>
+  <div>
+    <a:documentation>MODULE OVERRIDES</a:documentation>
+    <include href="urn:oasis:names:tc:dita:rng:referenceMod.rng">
+      <define name="reference.attributes">
+        <attribute name="id">
+          <data type="ID"/>
+        </attribute>
+        <ref name="conref-atts"/>
+        <ref name="select-atts"/>
+        <ref name="localization-atts"/>
+        <optional>
+          <attribute name="outputclass"/>
+        </optional>
+        <ref name="style-atts"/>
+      </define>
+      <define name="refbody.attributes">
+        <ref name="id-atts"/>
+        <ref name="localization-atts"/>
+        <optional>
+          <attribute name="base"/>
+        </optional>
+        <ref name="base-attribute-extensions"/>
+        <optional>
+          <attribute name="outputclass"/>
+        </optional>
+        <ref name="style-atts"/>
+      </define>
+    </include>
+  </div>
+</grammar>

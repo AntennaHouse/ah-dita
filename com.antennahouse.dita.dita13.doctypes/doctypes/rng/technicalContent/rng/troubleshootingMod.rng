@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="urn:oasis:names:tc:dita:rng:vocabularyModuleDesc.rng"
+                         schematypens="http://relaxng.org/ns/structure/1.0"?>
+<grammar xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0" xmlns:dita="http://dita.oasis-open.org/architecture/2005/" xmlns="http://relaxng.org/ns/structure/1.0"
+  datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes">
+  <moduleDesc xmlns="http://dita.oasis-open.org/architecture/2005/">
+    <moduleTitle>DITA Troubleshooting Domain</moduleTitle>
+    <headerComment xml:space="preserve"><![CDATA[
+=============================================================
+                   HEADER                                    
+=============================================================
+ MODULE:    DITA Troubleshooting Domain                                      
+ VERSION:   1.3                                              
+ DATE:      March 2014                                    
+                                                             
+=============================================================
+
+=============================================================
+                   PUBLIC DOCUMENT TYPE DEFINITION           
+                   TYPICAL INVOCATION                        
+                                                             
+ Refer to this file by the following public identifier or an 
+      appropriate system identifier 
+PUBLIC "-//OASIS//ELEMENTS DITA Troubleshooting//EN"
+      Delivered as file "troubleshooting.mod"                                
+
+=============================================================
+SYSTEM:     Darwin Information Typing Architecture (DITA)    
+                                                             
+PURPOSE:    Declaring the elements and specialization        
+            attributes for the DITA Troubleshootings                    
+                                                             
+ORIGINAL CREATION DATE:                                      
+            March 2014                                       
+                                                             
+            (C) Copyright OASIS Open 2014             
+            All Rights Reserved.                             
+                                                             
+=============================================================
+]]></headerComment>
+    <moduleMetadata>
+      <moduleType>topic</moduleType>
+      <moduleShortName>troubleshooting</moduleShortName>
+      <modulePublicIds>
+        <dtdMod>-//ANTENNA HOUSE//ELEMENTS DITA<var presep=" " name="ditaver"/> Troubleshooting//EN</dtdMod>
+        <dtdEnt>-//ANTENNA HOUSE//ENTITIES DITA<var presep=" " name="ditaver"/> Troubleshooting//EN</dtdEnt>
+        <xsdGrp>urn:x-antennahouse:dita:xsd:troubleshootingGrp.xsd<var presep=":" name="ditaver"/></xsdGrp>
+        <xsdMod>urn:x-antennahouse:dita:xsd:troubleshootingMod.xsd<var presep=":" name="ditaver"/></xsdMod>
+        <rncMod>urn:x-antennahouse:dita:rnc:troubleshootingMod.rnc<var presep=":" name="ditaver"/></rncMod>
+        <rngMod>urn:x-antennahouse:dita:rng:troubleshootingMod.rng<var presep=":" name="ditaver"/></rngMod>
+      </modulePublicIds>
+      <domainsContribution>(topic troubleshooting++task)</domainsContribution> 
+      <domainsContribution>(topic task)</domainsContribution>
+    </moduleMetadata>
+  </moduleDesc>
+  <div>
+    <a:documentation>MODULE OVERRIDES</a:documentation>
+    <include href="urn:oasis:names:tc:dita:rng:troubleshootingMod.rng">
+      <define name="troubleshooting.attributes">
+        <attribute name="id">
+          <data type="ID"/>
+        </attribute>
+        <ref name="conref-atts"/>
+        <ref name="select-atts"/>
+        <ref name="localization-atts"/>
+        <optional>
+          <attribute name="outputclass"/>
+        </optional>
+        <ref name="style-atts"/>
+      </define>
+      <define name="troublebody.attributes">
+        <ref name="id-atts"/>
+        <ref name="localization-atts"/>
+        <optional>
+          <attribute name="base"/>
+        </optional>
+        <ref name="base-attribute-extensions"/>
+        <optional>
+          <attribute name="outputclass"/>
+        </optional>
+        <ref name="style-atts"/>
+      </define>
+    </include>
+  </div>
+</grammar>

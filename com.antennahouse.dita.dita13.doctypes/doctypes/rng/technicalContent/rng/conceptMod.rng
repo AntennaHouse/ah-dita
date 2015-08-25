@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="urn:oasis:names:tc:dita:rng:vocabularyModuleDesc.rng"
+                         schematypens="http://relaxng.org/ns/structure/1.0"?>
+<grammar xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0" xmlns="http://relaxng.org/ns/structure/1.0" xmlns:dita="http://dita.oasis-open.org/architecture/2005/"
+  datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes">
+  <moduleDesc xmlns="http://dita.oasis-open.org/architecture/2005/">
+    <moduleTitle>DITA Concept</moduleTitle>
+    <headerComment xml:space="preserve"><![CDATA[
+=============================================================
+                   HEADER                                    
+=============================================================
+ MODULE:    DITA Concept                                     
+ VERSION:   1.2                                              
+ DATE:      November 2009                                    
+                                                             
+=============================================================
+
+=============================================================
+                   PUBLIC DOCUMENT TYPE DEFINITION           
+                   TYPICAL INVOCATION                        
+                                                             
+ Refer to this file by the following public identifier or an 
+      appropriate system identifier 
+PUBLIC "-//OASIS//ELEMENTS DITA Concept//EN"
+      Delivered as file "concept.mod"                             
+
+=============================================================
+SYSTEM:     Darwin Information Typing Architecture (DITA)    
+                                                             
+PURPOSE:    Define elements and specialization atttributes   
+            for Concepts                                     
+                                                             
+ORIGINAL CREATION DATE:                                      
+            March 2001                                       
+                                                             
+            (C) Copyright OASIS Open 2005, 2009.             
+            (C) Copyright IBM Corporation 2001, 2004.        
+            All Rights Reserved.                             
+ UPDATES:                                                    
+   2005.11.15 RDA: Removed old declaration for               
+                   conceptClasses entity                     
+   2006.06.07 RDA: Added <abstract> element                  
+   2006.06.07 RDA: Make universal attributes universal       
+                     (DITA 1.1 proposal #12)                 
+   2006.11.30 RDA: Remove #FIXED from DITAArchVersion        
+   2007.12.01 EK:  Reformatted DTD modules for DITA 1.2       
+   2008.01.30 RDA: Replace @conref defn. with %conref-atts;  
+   2008.02.13 RDA: Create .content and .attributes entities  
+   2008.05.06 RDA: Added conbodydiv      
+   2015.07.09 AH:  Added style-atts to concept
+=============================================================
+]]></headerComment>
+    <moduleMetadata>
+      <moduleType>topic</moduleType>
+      <moduleShortName>concept</moduleShortName>
+      <modulePublicIds>
+        <dtdMod>-//ANTENNA HOUSE//ELEMENTS DITA<var presep=" " name="ditaver"/> Concept//EN</dtdMod>
+        <dtdEnt>-//ANTENNA HOUSE//ENTITIES DITA<var presep=" " name="ditaver"/> Concept//EN</dtdEnt>
+        <xsdMod>urn:x-antennahouse:dita:xsd:conceptMod.xsd<var presep=":" name="ditaver"/></xsdMod>
+        <xsdGrp>urn:x-antennahouse:dita:xsd:conceptGrp.xsd<var presep=":" name="ditaver"/></xsdGrp>
+        <rncMod>urn:x-antennahouse:dita:rnc:conceptMod.rnc<var presep=":" name="ditaver"/></rncMod>
+        <rngMod>urn:x-antennahouse:dita:rng:conceptMod.rng<var presep=":" name="ditaver"/></rngMod>
+      </modulePublicIds>
+      <domainsContribution>(topic concept)</domainsContribution>
+    </moduleMetadata>
+  </moduleDesc>
+  <div>
+    <a:documentation>MODULE OVERRIDES</a:documentation>
+    <include href="urn:oasis:names:tc:dita:rng:conceptMod.rng">
+      <define name="concept.attributes">
+        <attribute name="id">
+          <data type="ID"/>
+        </attribute>
+        <ref name="conref-atts"/>
+        <ref name="select-atts"/>
+        <ref name="localization-atts"/>
+        <optional>
+          <attribute name="outputclass"/>
+        </optional>
+        <ref name="style-atts"/>
+      </define>
+      <define name="conbody.attributes">
+        <ref name="id-atts"/>
+        <ref name="localization-atts"/>
+        <optional>
+          <attribute name="base"/>
+        </optional>
+        <ref name="base-attribute-extensions"/>
+        <optional>
+          <attribute name="outputclass"/>
+        </optional>
+        <ref name="style-atts"/>
+      </define>
+    </include>
+  </div>
+</grammar>

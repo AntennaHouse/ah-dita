@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="urn:oasis:names:tc:dita:rng:vocabularyModuleDesc.rng"
+                         schematypens="http://relaxng.org/ns/structure/1.0"?>
+<grammar xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0" 
+    xmlns:dita="http://dita.oasis-open.org/architecture/2005/" 
+    xmlns="http://relaxng.org/ns/structure/1.0">
+    <moduleDesc xmlns="http://dita.oasis-open.org/architecture/2005/">
+        <moduleTitle>DITA XML Construct Domain</moduleTitle>
+        <headerComment xml:space="preserve"><![CDATA[
+============================================================= 
+                    HEADER                                     
+ ============================================================= 
+  MODULE:    DITA Character Domain                             
+  VERSION:   1.3                                                
+  DATE:      July 2015                                      
+                                                               
+ ============================================================= 
+
+ =============================================================      
+ ]]></headerComment>
+        <moduleMetadata>
+            <moduleType>elementdomain</moduleType>
+            <moduleShortName>ch-d</moduleShortName>
+            <modulePublicIds>
+                <dtdMod>-//ANTENNA HOUSE//ELEMENTS DITA<var presep=" " name="ditaver"/> Character Domain//EN</dtdMod>
+                <dtdEnt>-//ANTENNA HOUSE//ENTITIES DITA<var presep=" " name="ditaver"/> Character Domain//EN</dtdEnt>
+                <xsdMod>urn:x-antennahouse:dita:xsd:characterDomain.xsd<var presep=":" name="ditaver"/></xsdMod>
+                <rncMod>urn:x-antennahouse:dita:rnc:characterDomain.rnc<var presep=":" name="ditaver"/></rncMod>
+                <rngMod>urn:x-antennahouse:dita:rng:characterDomain.rng<var presep=":" name="ditaver"/></rngMod>
+            </modulePublicIds>
+            <domainsContribution>(topic ch-d)</domainsContribution>
+        </moduleMetadata>
+    </moduleDesc>
+    <div>
+        <a:documentation>DOMAIN EXTENSION PATTERNS</a:documentation>
+        <define name="ch-d-ph">
+            <choice>
+                <ref name="cm.element"/>
+                <ref name="br.element"/>
+            </choice>
+        </define>
+        <define name="ph" combine="choice">
+            <ref name="ch-d-ph"/>
+        </define>
+    </div>
+    <div>
+        <a:documentation>ELEMENT TYPE DECLARATIONS</a:documentation>
+        <div>
+            <a:documentation xml:space="preserve"> LONG NAME: Check mark</a:documentation>
+            <define name="cm.content">
+                <empty/>
+            </define>
+            <define name="cm.attributes">
+                <ref name="univ-atts"/>
+                <optional>
+                    <attribute name="outputclass"/>
+                </optional>
+                <attribute name="value">
+                    <choice>
+                        <value>yes</value>
+                        <value>no</value>
+                        <value>dc</value>
+                        <value>-dita-use-conref-target</value>
+                    </choice>
+                </attribute>
+            </define>
+            <define name="cm.element">
+                <element name="cm" dita:longName="Check Mark">
+                    <a:documentation>The check mark (&lt;<keyword>cm</keyword>&gt;) element expresses the mark that have several states.
+                        Specify @value="yes|no|dc" according to the intended mark status.</a:documentation>
+                    <ref name="cm.attlist"/>
+                    <ref name="cm.content"/>
+                </element>
+            </define>
+            <define name="cm.attlist" combine="interleave">
+                <ref name="cm.attributes"/>
+            </define>
+        </div>
+        <div>
+            <a:documentation xml:space="preserve"> LONG NAME: Line Break</a:documentation>
+            <define name="br.content">
+                <empty/>
+            </define>
+            <define name="br.attributes">
+                <ref name="univ-atts"/>
+                <optional>
+                    <attribute name="outputclass"/>
+                </optional>
+            </define>
+            <define name="br.element">
+                <element name="br" dita:longName="Break">
+                    <a:documentation>A br (&lt;<keyword>br</keyword>&gt;) indicates that text line should be breaked at this point.</a:documentation>
+                    <ref name="br.attlist"/>
+                    <ref name="br.content"/>
+                </element>
+            </define>
+            <define name="br.attlist" combine="interleave">
+                <ref name="br.attributes"/>
+            </define>
+        </div>
+    </div>
+    <div>
+        <a:documentation>SPECIALIZATION ATTRIBUTE DECLARATIONS</a:documentation>
+        <define name="cm.attlist" combine="interleave">
+            <ref name="global-atts"/>
+            <optional>
+                <attribute name="class" a:defaultValue="+ topic/ph ch-d/cm "/>
+            </optional>
+        </define>
+        <define name="br.attlist" combine="interleave">
+            <ref name="global-atts"/>
+            <optional>
+                <attribute name="class" a:defaultValue="+ topic/ph ch-d/br "/>
+            </optional>
+        </define>
+    </div>
+</grammar>

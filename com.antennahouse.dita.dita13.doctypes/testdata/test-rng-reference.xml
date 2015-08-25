@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="urn:x-antennahouse:dita:rng:reference.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="urn:x-antennahouse:dita:rng:reference.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<reference id="reference_uhz_gdp_ps" xmlns:fo="http://www.w3.org/1999/XSL/Format" fo:prop="font-family:Arial;">
+ <title fo:prop="font-family:Arial;" rev="1.1" id="title_aaa">Reference specialization example<br/><cm value="yes"/></title>
+ <shortdesc fo:prop="font-style:bold;"></shortdesc>
+ <refbody fo:prop="font-style:bold;">
+  <section>
+   <p>Paragraph with<ph><br/><cm value="yes"/></ph></p>
+   <table fo:prop="font-family:Arial;">
+    <tgroup cols="1" fo:prop="font-family:Arial;">
+     <tbody fo:prop="font-family:Arial;">
+      <row fo:prop="font-family:Arial;">
+       <entry fo:prop="font-family:Arial;" id="entry_aaa" translate="no"></entry>
+      </row>
+     </tbody>
+    </tgroup>
+   </table>
+   <fig float="left" frame="all" outputclass="ja-only" product="product1" translate="no"></fig>
+   <fig>
+    <figgroup float="left" outputclass="en-only" product="product1"></figgroup>
+    <figgroup float="right" product="product2">
+     <title>figgroup title</title>
+     <desc>figgroup description</desc>
+    </figgroup>
+   </fig>
+   <p><synph><var status="changed" fo:prop="font-family:Courier New;">variable:A</var></synph></p>
+  </section>
+ </refbody>
+</reference>
