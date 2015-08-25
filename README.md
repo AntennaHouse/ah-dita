@@ -1,15 +1,21 @@
 # ah-dita #
-ah-dita is the DITA 1.2 specialization that enables authoring the style information by "fo:prop" property for PDF output.
-It is composed of set of DTD files and it can be used as plug-in for [DITA Open Toolkit] [3].
+ah-dita is the DITA specialization that enables authoring the style information by "fo:prop" property for PDF output.
+It is composed of set of schema files and it can be used as plug-in for [DITA Open Toolkit] [3].
 This specialization works with [PDF5] [7] plug-in V2.1.4 or later.
 
 ## com.antennahouse.dita12.dtd folder ##
 
-This folder contains plug-in files for DTD. To install this plug-in into DITA-OT, copy this folder to [DITA-OT]/plugins folder and run "ant -f integrator.xml".
+This folder contains plug-in files for DITA 1.2 DTD. To install this plug-in into DITA-OT, copy this folder to [DITA-OT]/plugins folder and run "ant -f integrator.xml".
 
 ## com.antennahouse.dita12.xsd folder ##
 
-This folder contains plug-in files for XML Schema. The installation process is the same as plug-in for DTD.
+This folder contains plug-in files for DITA 1.2 XML Schema. The installation process is the same as plug-in for DTD.
+
+## com.antennahouse.dita.dita13.doctypes folder ##
+
+This folder contains plug-in files for DITA 1.3 RELAX NG. The installation process is the same as plug-in for DTD. This plug-in is applicable for DITA-OT 2.0 or later after replacing existing DITA 1.2 schema plug-in (org.oasis-open.dita.v1_2) by DITA 1.3 schema that can be obtained from OASIS or following repository.
+
+https://github.com/dita-community/org.dita-community.doctypes
 
 ## Examples ##
 
