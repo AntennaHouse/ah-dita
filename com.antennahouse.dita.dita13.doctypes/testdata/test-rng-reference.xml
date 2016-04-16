@@ -16,14 +16,28 @@
      </tbody>
     </tgroup>
    </table>
-   <fig float="left" frame="all" outputclass="ja-only" product="product1" translate="no"></fig>
-   <fig>
-    <figgroup float="left" outputclass="en-only" product="product1"></figgroup>
-    <figgroup float="right" product="product2">
-     <title>figgroup title</title>
-     <desc>figgroup description</desc>
-    </figgroup>
-   </fig>
+   <floatfig float="left">
+    <floatfig-group float="left">
+     <title>Title of this floating figure</title>
+     <image href="http://www.antenna.co.jp/images/test-float-left.jpg"></image>
+     <dl>
+      <dlentry>
+       <dt>1</dt>
+       <dd>Description of the figure</dd>
+      </dlentry>
+     </dl>
+    </floatfig-group>
+    <floatfig-group float="right">
+     <title>Title of this floating figure</title>
+     <image href="http://www.antenna.co.jp/images/test-float-right.jpg"></image>
+     <dl>
+      <dlentry>
+       <dt>1</dt>
+       <dd>Description of the figure</dd>
+      </dlentry>
+     </dl>
+    </floatfig-group>
+   </floatfig>
    <p><synph><var status="changed" fo:prop="font-family:Courier New;">variable:A</var></synph></p>
   </section>
  </refbody>

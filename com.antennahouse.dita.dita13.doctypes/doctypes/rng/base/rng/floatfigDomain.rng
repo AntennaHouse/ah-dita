@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="urn:oasis:names:tc:dita:rng:vocabularyModuleDesc.rng"
+            schematypens="http://relaxng.org/ns/structure/1.0"?>
+<grammar xmlns="http://relaxng.org/ns/structure/1.0"
+  xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"
+  xmlns:dita="http://dita.oasis-open.org/architecture/2005/"
+  xmlns:sch="http://purl.oclc.org/dsdl/schematron"
+  datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes">
+  <moduleDesc xmlns="http://dita.oasis-open.org/architecture/2005/">
+    <moduleTitle>DITA Floating Figure Domain</moduleTitle>
+    <headerComment xml:space="preserve">
+============================================================= 
+DITA Float Figure Domain
+
+Purpose: Provides elements for floating positioned figure.
+         
+Creation Date: April 2016
+
+Copyright (c) Antenna House, Inc.
+=============================================================      
+</headerComment>
+    <moduleMetadata>
+      <moduleType>elementdomain</moduleType>
+      <moduleShortName>floatfig-d</moduleShortName>
+      <modulePublicIds>
+        <dtdMod>-//ANTENNA HOUSE//ELEMENTS DITA<var presep=" " name="ditaver"/> Float Figure Domain//EN</dtdMod>
+        <dtdEnt>-//ANTENNA HOUSE//ENTITIES DITA<var presep=" " name="ditaver"/> Float Figure Domain//EN</dtdEnt>
+        <xsdMod>urn:x-antennahouse:dita:xsd:floatfigDomain.xsd<var presep=":" name="ditaver"/></xsdMod>
+        <rncMod>urn:x-antennahouse:dita:rnc:floatfigDomain.rnc<var presep=":" name="ditaver"/></rncMod>
+        <rngMod>urn:x-antennahouse:dita:rng:floatfigDomain.rng<var presep=":" name="ditaver"/></rngMod>
+      </modulePublicIds>
+      <domainsContribution>(topic floatfig-d)</domainsContribution>
+    </moduleMetadata>
+  </moduleDesc>
+  <div>
+    <a:documentation>DOMAIN EXTENSION PATTERNS</a:documentation>
+    <define name="floatfig-d-fig">
+      <ref name="floatfig.element"/>
+    </define>
+
+    <define name="fig" combine="choice">
+      <ref name="floatfig-d-fig"/>
+    </define>
+  </div>
+  <div>
+    <a:documentation>ELEMENT TYPE NAME PATTERNS</a:documentation>
+    <define name="floatfig">
+      <ref name="floatfig.element"/>
+    </define>
+    <define name="floatfiggroup">
+      <ref name="floatfiggroup.element"/>
+    </define>
+  </div>
+  <div>
+    <a:documentation>ELEMENT TYPE DECLARATIONS</a:documentation>
+    <div>
+      <define name="float-atts">
+        <attribute name="float">
+          <choice>
+            <value>none</value>
+            <value>left</value>
+            <value>right</value>
+            <value>-dita-use-conref-target</value>
+          </choice>
+        </attribute>
+      </define>
+    </div>
+    <div>
+      <a:documentation>
+        Note: This specialization does not conform to the DITA specialzation rule beacuse:
+        1. New attribute "@float" is added to &lt;floatfig>.
+        2. New element "floatfig-group is added as the specialization of &lt;figgrop>. But it also has "@float" attribute. And added &lt;desc> element.
+      </a:documentation>
+      <a:documentation>LONG NAME: Floating figure</a:documentation>
+      <define name="floatfig.content">
+        <optional>
+          <ref name="title"/>
+        </optional>
+        <optional>
+          <ref name="desc"/>
+        </optional>
+        <zeroOrMore>
+          <choice>
+            <ref name="floatfiggroup"/>
+            <ref name="fig.cnt"/>
+          </choice>
+        </zeroOrMore>
+      </define>
+      <define name="floatfig.attributes">
+        <ref name="display-atts"/>
+        <ref name="univ-atts"/>
+        <ref name="float-atts"/>
+        <optional>
+          <attribute name="outputclass"/>
+        </optional>
+      </define>
+      <define name="floatfig.element">
+        <element name="floatfig" dita:longName="Floating figure">
+          <a:documentation> The Floating Figure element (&lt;floatfig&gt;) represents
+            an figure to be rendered as a floating figure that fits left or right side. The contents are almost same as fig 
+            without &lt;floatfig-group&gt;.
+          </a:documentation>
+          <sch:pattern name="Test constraints on the floatfig element" id="Test_constraints_on_the_floatfig_element">
+            <sch:rule context="floatfig">
+              <sch:assert test="(string(@float) ne 'none') and exists(child::floatfig-group)">floatfig-group should not appear if floatfig/@float ne 'none'</sch:assert>
+              <!--sch:assert test="true()">Schematron floatfig-group test</sch:assert-->
+            </sch:rule>
+          </sch:pattern>            
+          <ref name="floatfig.content"/>
+          <ref name="floatfig.attlist"/>
+        </element>
+      </define>
+      <define name="floatfig.attlist" combine="interleave">
+        <ref name="floatfig.attributes"/>
+      </define>
+    </div>
+  </div>
+  <div>
+    <a:documentation>LONG NAME: Floating Figure Group</a:documentation>
+    <define name="floatfiggroup.content">
+      <optional>
+        <ref name="title"/>
+      </optional>
+      <optional>
+        <ref name="desc"/>
+      </optional>
+      <zeroOrMore>
+        <choice>
+          <ref name="figgroup.cnt"/>
+        </choice>
+      </zeroOrMore>
+    </define>
+    <define name="floatfiggroup.attributes">
+      <ref name="univ-atts"/>
+      <optional>
+        <attribute name="outputclass"/>
+      </optional>
+    </define>
+    <define name="floatfiggroup.element">
+      <element name="floatfig-group" dita:longName="Floating Figure Group">
+        <a:documentation>
+          The &lt;floatfig-group> element is used to express multiple part of floating figure.
+          If &lt;floatfig> element contains multiple &lt;floatfig-group>, they will be rendered separately.
+          It is not allowed to nest the &lt;floatingfig-group>.
+        </a:documentation>
+        <ref name="floatfiggroup.attlist"/>
+        <ref name="floatfiggroup.content"/>
+      </element>
+    </define>
+    <define name="floatfiggroup.attlist" combine="interleave">
+      <ref name="figgroup.attributes"/>
+      <ref name="float-atts"/>
+    </define>
+  </div>
+  <div>
+    <a:documentation>SPECIALIZATION ATTRIBUTE DECLARATIONS</a:documentation>
+    <define name="floatfig.attlist" combine="interleave">
+      <ref name="global-atts"/>
+      <optional>
+        <attribute name="class" a:defaultValue="+ topic/fig floatfig-d/floatfig "/>
+      </optional>
+    </define>
+    <define name="floatfiggroup.attlist" combine="interleave">
+      <ref name="global-atts"/>
+      <optional>
+        <attribute name="class" a:defaultValue="+ topic/figgroup floatfig-d/floatfig-group "/>
+      </optional>
+    </define>
+  </div>
+</grammar>

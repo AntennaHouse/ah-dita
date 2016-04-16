@@ -90,16 +90,19 @@ ORIGINAL CREATION DATE:
                          (topic ui-d)
                          (topic ut-d)
                          (topic ch-d)
-                         a(props deliveryTarget)"
-        />
+                         (topic floatfig-d)
+                         a(props deliveryTarget)
+                         a(base fo:prop)
+                         a(base css:prop)
+                         "/>
       </optional>
     </define>
 
   </div>
   <div>
     <a:documentation>MODULE INCLUSIONS</a:documentation>
-    <include href="urn:x-antennahouse:dita:rng:topicMod.rng"/>
-    <include href="urn:x-antennahouse:dita:rng:conceptMod.rng">
+    <include href="urn:oasis:names:tc:dita:rng:topicMod.rng"/>
+    <include href="urn:oasis:names:tc:dita:rng:conceptMod.rng">
       <define name="concept-info-types">
         <ref name="concept.element"/>
       </define>
@@ -112,7 +115,7 @@ ORIGINAL CREATION DATE:
     <include href="urn:oasis:names:tc:dita:rng:indexingDomain.rng"/>
     <include href="urn:oasis:names:tc:dita:rng:markupDomain.rng" dita:since="1.3"/>
     <include href="urn:oasis:names:tc:dita:rng:mathmlDomain.rng" dita:since="1.3"/>
-    <include href="urn:x-antennahouse:dita:rng:programmingDomain.rng"/>
+    <include href="urn:oasis:names:tc:dita:rng:programmingDomain.rng"/>
     <include href="urn:oasis:names:tc:dita:rng:releaseManagementDomain.rng" dita:since="1.3"/>
     <include href="urn:oasis:names:tc:dita:rng:softwareDomain.rng"/>
     <include href="urn:oasis:names:tc:dita:rng:svgDomain.rng" dita:since="1.3"/>
@@ -120,6 +123,9 @@ ORIGINAL CREATION DATE:
     <include href="urn:oasis:names:tc:dita:rng:utilitiesDomain.rng"/>
     <include href="urn:oasis:names:tc:dita:rng:xmlDomain.rng"/>
     <include href="urn:x-antennahouse:dita:rng:characterDomain.rng"/>
+    <include href="urn:x-antennahouse:dita:rng:floatFigDomain.rng"/>
+    <include href="urn:x-antennahouse:dita:rng:xslfoAttDomain.rng"/>
+    <include href="urn:x-antennahouse:dita:rng:cssAttDomain.rng"/>
   </div>
   <div>
     <a:documentation>ID-DEFINING-ELEMENT OVERRIDES</a:documentation>

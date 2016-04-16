@@ -89,20 +89,24 @@ ORIGINAL CREATION DATE:
                          (topic ui-d)
                          (topic ut-d)
                          (topic ch-d)
-                         a(props deliveryTarget)"/>
+                         (topic floatfig-d)
+                         a(props deliveryTarget)
+                         a(base fo:prop)
+                         a(base css:prop)
+                         "/>
          </optional>
       </define>
 
   </div>
   <div>
       <a:documentation> MODULE INCLUSIONS </a:documentation>
-      <include href="urn:x-antennahouse:dita:rng:topicMod.rng"/>
-      <include href="urn:x-antennahouse:dita:rng:strictTaskbodyConstraintMod.rng">
+      <include href="urn:oasis:names:tc:dita:rng:topicMod.rng"/>
+      <include href="urn:oasis:names:tc:dita:rng:strictTaskbodyConstraintMod.rng">
         <define name="task-info-types">
           <ref name="task.element"/>
         </define>
       </include>
-      <include href="urn:x-antennahouse:dita:rng:troubleshootingMod.rng">
+      <include href="urn:oasis:names:tc:dita:rng:troubleshootingMod.rng">
          <define name="troubleshooting-info-types">
             <ref name="task.element"/>
          </define>
@@ -115,14 +119,17 @@ ORIGINAL CREATION DATE:
       <include href="urn:oasis:names:tc:dita:rng:indexingDomain.rng"/>
       <include href="urn:oasis:names:tc:dita:rng:markupDomain.rng"/>
       <include href="urn:oasis:names:tc:dita:rng:mathmlDomain.rng"/>
-      <include href="urn:x-antennahouse:dita:rng:programmingDomain.rng"/>
+      <include href="urn:oasis:names:tc:dita:rng:programmingDomain.rng"/>
       <include href="urn:oasis:names:tc:dita:rng:releaseManagementDomain.rng"/>
       <include href="urn:oasis:names:tc:dita:rng:softwareDomain.rng"/>
       <include href="urn:oasis:names:tc:dita:rng:svgDomain.rng"/>
       <include href="urn:oasis:names:tc:dita:rng:uiDomain.rng"/>
       <include href="urn:oasis:names:tc:dita:rng:utilitiesDomain.rng"/>
       <include href="urn:oasis:names:tc:dita:rng:xmlDomain.rng"/>
-     <include href="urn:x-antennahouse:dita:rng:characterDomain.rng"/>
+      <include href="urn:x-antennahouse:dita:rng:characterDomain.rng"/>
+      <include href="urn:x-antennahouse:dita:rng:floatFigDomain.rng"/>
+      <include href="urn:x-antennahouse:dita:rng:xslfoAttDomain.rng"/>
+      <include href="urn:x-antennahouse:dita:rng:cssAttDomain.rng"/>
   </div>
   <div>
       <a:documentation> ID-DEFINING-ELEMENT OVERRIDES </a:documentation>

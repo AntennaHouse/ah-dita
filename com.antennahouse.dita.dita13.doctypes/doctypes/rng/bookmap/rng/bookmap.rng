@@ -94,18 +94,19 @@ ORIGINAL CREATION DATE:
                          (topic ut-d)
                          (topic xnal-d)
                          (topic ch-d)
-                         a(props deliveryTarget)"/>
+                         a(props deliveryTarget)
+                         a(base fo:prop)
+                         a(base css:prop)
+                         "/>
          </optional>
       </define>
 
   </div>
   <div>
       <a:documentation>MODULE INCLUSIONS</a:documentation>
-      <include href="urn:x-antennahouse:dita:rng:mapMod.rng"/>
+      <include href="urn:oasis:names:tc:dita:rng:mapMod.rng"/>
       <include href="urn:oasis:names:tc:dita:rng:mapGroupMod.rng"/>
-
-      <include href="urn:x-antennahouse:dita:rng:bookmapMod.rng"/>
-
+      <include href="urn:oasis:names:tc:dita:rng:bookmapMod.rng"/>
       <include href="urn:oasis:names:tc:dita:rng:abbreviateDomain.rng"/>
       <include href="urn:oasis:names:tc:dita:rng:delayResolutionDomain.rng"/>
       <include href="urn:oasis:names:tc:dita:rng:deliveryTargetAttDomain.rng" dita:since="1.3"/>
@@ -122,6 +123,8 @@ ORIGINAL CREATION DATE:
       <include href="urn:oasis:names:tc:dita:rng:xnalDomain.rng"/>
       <include href="urn:oasis:names:tc:dita:rng:xmlDomain.rng" dita:since="1.3"/>
       <include href="urn:x-antennahouse:dita:rng:characterDomain.rng"/>
+      <include href="urn:x-antennahouse:dita:rng:xslfoAttDomain.rng"/>
+      <include href="urn:x-antennahouse:dita:rng:cssAttDomain.rng"/>
   </div>
   <div>
       <a:documentation>ID-DEFINING-ELEMENT OVERRIDES</a:documentation>

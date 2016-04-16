@@ -100,13 +100,16 @@ ORIGINAL CREATION DATE:
                          (topic ui-d)
                          (topic ut-d)
                          (topic ch-d)
-                         a(props deliveryTarget)"/>
+                         a(props deliveryTarget)
+                         a(base fo:prop)
+                         a(base css:prop)
+                         "/>
          </optional>
       </define>
   </div>
   <div>
       <a:documentation>MODULE INCLUSIONS</a:documentation>
-      <include href="urn:x-antennahouse:dita:rng:mapMod.rng"/>
+      <include href="urn:oasis:names:tc:dita:rng:mapMod.rng"/>
       <include href="urn:oasis:names:tc:dita:rng:mapGroupMod.rng"/>
 
       <include href="urn:oasis:names:tc:dita:rng:abbreviateDomain.rng"/>
@@ -118,13 +121,15 @@ ORIGINAL CREATION DATE:
       <include href="urn:oasis:names:tc:dita:rng:highlightDomain.rng"/>
       <include href="urn:oasis:names:tc:dita:rng:indexingDomain.rng"/>
       <include href="urn:oasis:names:tc:dita:rng:markupDomain.rng" dita:since="1.3"/>
-      <include href="urn:x-antennahouse:dita:rng:programmingDomain.rng"/>
+      <include href="urn:oasis:names:tc:dita:rng:programmingDomain.rng"/>
       <include href="urn:oasis:names:tc:dita:rng:releaseManagementDomain.rng" dita:since="1.3"/>
       <include href="urn:oasis:names:tc:dita:rng:softwareDomain.rng"/>
       <include href="urn:oasis:names:tc:dita:rng:uiDomain.rng"/>
       <include href="urn:oasis:names:tc:dita:rng:utilitiesDomain.rng"/>
       <include href="urn:oasis:names:tc:dita:rng:xmlDomain.rng" dita:since="1.3"/>    
       <include href="urn:x-antennahouse:dita:rng:characterDomain.rng"/>
+      <include href="urn:x-antennahouse:dita:rng:xslfoAttDomain.rng"/>
+      <include href="urn:x-antennahouse:dita:rng:cssAttDomain.rng"/>
   </div>
   <div>
       <a:documentation>ID-DEFINING-ELEMENT OVERRIDES</a:documentation>

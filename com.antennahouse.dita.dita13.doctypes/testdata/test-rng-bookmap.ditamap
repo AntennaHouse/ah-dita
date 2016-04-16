@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-model href="urn:x-antennahouse:dita:rng:bookmap.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<bookmap>
+<bookmap xmlns:fo="http://www.w3.org/1999/XSL/Format">
     <booktitle>
-        <mainbooktitle>Main book title<br/><cm value="yes"/></mainbooktitle>
+        <mainbooktitle fo:prop="font-family:Arial;">Main book title<br/><cm value="yes"/><br/></mainbooktitle>
     </booktitle>
 </bookmap>

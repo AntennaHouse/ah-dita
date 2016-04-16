@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="urn:x-antennahouse:dita:rng:task.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="urn:x-antennahouse:dita:rng:task.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="urn:x-antennahouse:dita:rng:task.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="urn:x-antennahouse:dita:rng:task.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <task id="task_lsr_1nb_qs" xmlns:fo="http://www.w3.org/1999/XSL/Format" fo:prop="font-style:Arial">
     <title fo:prop="font-style:Arial" id="title_001">General task specialization example<br/><cm value="yes"/></title>
     <shortdesc fo:prop="font-style:bold;"></shortdesc>
@@ -25,11 +25,45 @@
                 <stepresult fo:prop="font-style:bold;"></stepresult>
                 <steptroubleshooting fo:prop="font-style:bold;"></steptroubleshooting>
             </step>
-            <stepsection fo:prop="font-style:bold;"></stepsection>
+            <stepsection fo:prop="font-style:bold;">
+                <floatfig float="right">
+                    <title>Title of this floating figure</title>
+                    <image href="http://www.antenna.co.jp/images/test-float.jpg"></image>
+                    <dl>
+                        <dlentry>
+                            <dt>1</dt>
+                            <dd>Description of the figure</dd>
+                        </dlentry>
+                    </dl>
+                </floatfig>
+            </stepsection>
             <step>
                 <cmd></cmd>
             </step>
-            <stepsection>Type A</stepsection>
+            <stepsection>
+                <floatfig float="left">
+                    <floatfig-group float="left">
+                        <title>Title of this floating figure</title>
+                        <image href="http://www.antenna.co.jp/images/test-float-left.jpg"></image>
+                        <dl>
+                            <dlentry>
+                                <dt>1</dt>
+                                <dd>Description of the figure</dd>
+                            </dlentry>
+                        </dl>
+                    </floatfig-group>
+                    <floatfig-group float="right">
+                        <title>Title of this floating figure</title>
+                        <image href="http://www.antenna.co.jp/images/test-float-right.jpg"></image>
+                        <dl>
+                            <dlentry>
+                                <dt>1</dt>
+                                <dd>Description of the figure</dd>
+                            </dlentry>
+                        </dl>
+                    </floatfig-group>
+                </floatfig>
+            </stepsection>
             <step>
                 <cmd>Command 1</cmd>
             </step>

@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="urn:oasis:names:tc:dita:rng:vocabularyModuleDesc.rng"
+                         schematypens="http://relaxng.org/ns/structure/1.0"?>
+<grammar 
+  xmlns="http://relaxng.org/ns/structure/1.0"
+  xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"
+  xmlns:dita="http://dita.oasis-open.org/architecture/2005/"
+  datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes">
+<moduleDesc xmlns="http://dita.oasis-open.org/architecture/2005/">
+   <moduleTitle>DITA CSS Attribute Domain </moduleTitle>
+   <headerComment><![CDATA[
+=============================================================
+                   HEADER                                    
+=============================================================
+ MODULE:    DITA CSS Attribute Domain            
+ VERSION:   1.0                                              
+ DATE:      March 2016                                        
+                                                             
+=============================================================
+
+=============================================================
+                   PUBLIC DOCUMENT TYPE DEFINITION           
+                   TYPICAL INVOCATION                        
+                                                             
+ Refer to this file by the following public identifier or an 
+      appropriate system identifier 
+      
+PUBLIC "-//ANTENNA HOUSE//ENTITIES DITA CSS Attribute Domain//EN"
+      
+=============================================================
+SYSTEM:     Darwin Information Typing Architecture (DITA)    
+                                                             
+PURPOSE:    Declaring the substitution context and domain    
+            entity declarations for the CSS      
+            Attribute Domain                                 
+                                                             
+ORIGINAL CREATION DATE:                                      
+            March 2016                                        
+                                                             
+            (C) Copyright Antenna House 2016.                   
+            All Rights Reserved.                             
+                                                             
+ UPDATES:                                                    
+=============================================================
+]]></headerComment>
+   <moduleMetadata>
+     <moduleType>attributedomain</moduleType>
+     <moduleShortName>cssAtt-d</moduleShortName>
+     <modulePublicIds>
+       <dtdEnt>-//ANTENNA HOUSE//ENTITIES DITA<var presep=" " name="ditaver"/> CSS Attribute Domain//EN</dtdEnt>
+       <xsdMod>urn:x-antennahouse:dita:xsd:cssAttDomain.xsd<var presep=":" name="ditaver"/></xsdMod>
+       <rncMod>urn:x-antennahouse:dita:rnc:cssAttDomain.rnc<var presep=":" name="ditaver"/></rncMod>
+       <rngMod>urn:x-antennahouse:dita:rng:cssAttDomain.rng<var presep=":" name="ditaver"/></rngMod>
+     </modulePublicIds>
+     <domainsContribution>a(base css:prop)</domainsContribution>
+   </moduleMetadata>
+ </moduleDesc>
+  <define name="cssAtt-d-attribute">
+    <optional>
+      <attribute name="prop" ns="http://www.w3.org/TR/CSS2">
+        <a:documentation>Specifies the CSS property to which an element applies.
+        </a:documentation>
+      </attribute>
+    </optional>    
+  </define>
+  
+  <define name="base-attribute-extensions" combine="interleave">
+    <ref name="cssAtt-d-attribute"/>
+  </define>
+  
+</grammar>

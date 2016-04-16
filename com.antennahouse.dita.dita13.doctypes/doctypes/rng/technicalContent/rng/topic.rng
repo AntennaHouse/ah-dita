@@ -48,7 +48,7 @@ ORIGINAL CREATION DATE:
    2007.12.01 EK:  Reformatted DTD modules for DITA 1.2       
    2008.02.12 RDA: Modify imbeds to use specific 1.2 version 
    2008.04.15 RDA: Added hazard domain                       
-   2015.07.07 AH:  Added character domain &amp; style-atts
+   2015.07.07 AH:  Added character/xslfo/css domain
 =============================================================
 </headerComment>
     <moduleMetadata>
@@ -88,7 +88,11 @@ ORIGINAL CREATION DATE:
                          (topic ui-d)
                          (topic ut-d)
                          (topic ch-d)
-                         a(props deliveryTarget)"
+                         (topic floatfig-d)
+                         a(props deliveryTarget)
+                         a(base fo:prop)
+                         a(base css:prop)
+                         "
         />
       </optional>
     </define>
@@ -96,7 +100,7 @@ ORIGINAL CREATION DATE:
 
   <div>
     <a:documentation>INCLUDE MODULES</a:documentation>
-    <include href="urn:x-antennahouse:dita:rng:topicMod.rng">
+    <include href="urn:oasis:names:tc:dita:rng:topicMod.rng">
       <define name="topic-info-types">
         <ref name="topic.element"/>
       </define>
@@ -109,7 +113,7 @@ ORIGINAL CREATION DATE:
     <include href="urn:oasis:names:tc:dita:rng:indexingDomain.rng"/>
     <include href="urn:oasis:names:tc:dita:rng:markupDomain.rng" dita:since="1.3"/>
     <include href="urn:oasis:names:tc:dita:rng:mathmlDomain.rng" dita:since="1.3"/>
-    <include href="urn:x-antennahouse:dita:rng:programmingDomain.rng"/>
+    <include href="urn:oasis:names:tc:dita:rng:programmingDomain.rng"/>
     <include href="urn:oasis:names:tc:dita:rng:releaseManagementDomain.rng" dita:since="1.3"/>
     <include href="urn:oasis:names:tc:dita:rng:softwareDomain.rng"/>
     <include href="urn:oasis:names:tc:dita:rng:svgDomain.rng" dita:since="1.3"/>
@@ -117,6 +121,9 @@ ORIGINAL CREATION DATE:
     <include href="urn:oasis:names:tc:dita:rng:utilitiesDomain.rng"/>
     <include href="urn:oasis:names:tc:dita:rng:xmlDomain.rng" dita:since="1.3"/>
     <include href="urn:x-antennahouse:dita:rng:characterDomain.rng"/>
+    <include href="urn:x-antennahouse:dita:rng:floatfigDomain.rng"/>
+    <include href="urn:x-antennahouse:dita:rng:xslfoAttDomain.rng"/>
+    <include href="urn:x-antennahouse:dita:rng:cssAttDomain.rng"/>
   </div>
   <div>
     <a:documentation>ID-DEFINING-ELEMENT OVERRIDES</a:documentation>

@@ -2,17 +2,39 @@
 <?xml-model href="urn:x-antennahouse:dita:rng:ditabase.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="urn:x-antennahouse:dita:rng:ditabase.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <dita>
-  <topic id="topic_itd_nzr_qs" xmlns:fo="http://www.w3.org/1999/XSL/Format" fo:prop="font-style:Arial">
-    <title fo:prop="font-style:Arial"><br/><cm value="yes"/></title>
-    <body xmlns:fo="http://www.w3.org/1999/XSL/Format" fo:prop="font-style:Arial">
-      <p xmlns:fo="http://www.w3.org/1999/XSL/Format" fo:prop="font-style:Arial"><br/><cm value="yes"/></p>
-      <p xmlns:fo="http://www.w3.org/1999/XSL/Format" fo:prop="font-style:Arial"><br/><cm value="yes"/></p>
+  <topic id="topic_itd_nzr_qs" xmlns:fo="http://www.w3.org/1999/XSL/Format" fo:prop="font-family:Arial">
+    <title fo:prop="font-family:Arial"><br/><cm value="yes"/></title>
+    <body xmlns:fo="http://www.w3.org/1999/XSL/Format" fo:prop="font-family:Arial">
+      <p xmlns:fo="http://www.w3.org/1999/XSL/Format" fo:prop="font-family:Arial"><br/><cm value="yes"/></p>
+      <p xmlns:fo="http://www.w3.org/1999/XSL/Format" fo:prop="font-family:Arial"><br/><cm value="yes"/></p>
+      <floatfig float="left">
+        <floatfig-group float="left">
+          <title>Title of this floating figure</title>
+          <image href="http://www.antenna.co.jp/images/test-float-left.jpg"></image>
+          <dl>
+            <dlentry>
+              <dt>1</dt>
+              <dd>Description of the figure</dd>
+            </dlentry>
+          </dl>
+        </floatfig-group>
+        <floatfig-group float="right">
+          <title>Title of this floating figure</title>
+          <image href="http://www.antenna.co.jp/images/test-float-right.jpg"></image>
+          <dl>
+            <dlentry>
+              <dt>1</dt>
+              <dd>Description of the figure</dd>
+            </dlentry>
+          </dl>
+        </floatfig-group>
+      </floatfig>
     </body>
-    <concept id="concept_itd_nzr_qr" fo:prop="font-style:Arial">
-      <title fo:prop="font-style:Arial"><br/><cm value="yes"/></title>
+    <concept id="concept_itd_nzr_qr" fo:prop="font-family:Arial">
+      <title fo:prop="font-family:Arial"><br/><cm value="yes"/></title>
     </concept>
-    <task id="task_itd_nzr_qt" fo:prop="font-style:Arial">
-      <title fo:prop="font-style:Arial"><br/><cm value="yes"/></title>
+    <task id="task_itd_nzr_qt" fo:prop="font-family:Arial">
+      <title fo:prop="font-family:Arial"><br/><cm value="yes"/></title>
     </task>    
   </topic>
 </dita>
