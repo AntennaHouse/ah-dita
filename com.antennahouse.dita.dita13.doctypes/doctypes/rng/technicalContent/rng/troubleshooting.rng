@@ -127,7 +127,7 @@ ORIGINAL CREATION DATE:
       <include href="urn:oasis:names:tc:dita:rng:utilitiesDomain.rng"/>
       <include href="urn:oasis:names:tc:dita:rng:xmlDomain.rng"/>
       <include href="urn:x-antennahouse:dita:rng:characterDomain.rng"/>
-      <include href="urn:x-antennahouse:dita:rng:floatFigDomain.rng"/>
+      <include href="urn:x-antennahouse:dita:rng:floatfigDomain.rng"/>
       <include href="urn:x-antennahouse:dita:rng:xslfoAttDomain.rng"/>
       <include href="urn:x-antennahouse:dita:rng:cssAttDomain.rng"/>
   </div>
