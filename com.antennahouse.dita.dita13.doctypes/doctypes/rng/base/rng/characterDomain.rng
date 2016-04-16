@@ -5,7 +5,7 @@
     xmlns:dita="http://dita.oasis-open.org/architecture/2005/" 
     xmlns="http://relaxng.org/ns/structure/1.0">
     <moduleDesc xmlns="http://dita.oasis-open.org/architecture/2005/">
-        <moduleTitle>DITA XML Construct Domain</moduleTitle>
+        <moduleTitle>DITA Character Domain</moduleTitle>
         <headerComment xml:space="preserve"><![CDATA[
 ============================================================= 
                     HEADER                                     
@@ -89,7 +89,7 @@
             </define>
             <define name="br.element">
                 <element name="br" dita:longName="Break">
-                    <a:documentation>A br (&lt;<keyword>br</keyword>&gt;) indicates that text line should be breaked at this point.</a:documentation>
+                    <a:documentation>A br (&lt;<keyword>br</keyword>&gt;) indicates that text line should be broken at this point.</a:documentation>
                     <ref name="br.attlist"/>
                     <ref name="br.content"/>
                 </element>
