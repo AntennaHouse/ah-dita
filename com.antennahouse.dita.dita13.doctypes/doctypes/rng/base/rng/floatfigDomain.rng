@@ -100,10 +100,9 @@ Copyright (c) Antenna House, Inc.
             an figure to be rendered as a floating figure that fits left or right side. The contents are almost same as fig 
             without &lt;floatfig-group&gt;.
           </a:documentation>
-          <sch:pattern name="Test constraints on the floatfig element" id="Test_constraints_on_the_floatfig_element">
+          <sch:pattern id="Test_constraints_on_the_floatfig_element">
             <sch:rule context="floatfig">
               <sch:assert test="(string(@float) ne 'none') and exists(child::floatfig-group)">floatfig-group should not appear if floatfig/@float ne 'none'</sch:assert>
-              <!--sch:assert test="true()">Schematron floatfig-group test</sch:assert-->
             </sch:rule>
           </sch:pattern>            
           <ref name="floatfig.content"/>
