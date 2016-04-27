@@ -102,7 +102,7 @@ Copyright (c) Antenna House, Inc.
           </a:documentation>
           <sch:pattern id="Test_constraints_on_the_floatfig_element">
             <sch:rule context="floatfig">
-              <sch:assert test="(string(@float) ne 'none') and exists(child::floatfig-group)">floatfig-group should not appear if floatfig/@float ne 'none'</sch:assert>
+              <sch:report test="(string(@float) ne 'none') and exists(child::floatfig-group)">floatfig-group should not appear if floatfig/@float ne 'none'</sch:report>
             </sch:rule>
           </sch:pattern>            
           <ref name="floatfig.content"/>
