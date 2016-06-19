@@ -16,7 +16,7 @@
         <responsibleParty fo:prop="font-family:Arial"><br/><cm value="yes"/></responsibleParty>
         <steps fo:prop="font-family:Arial">
           <stepsection>
-            <floatfig float="left">
+            <floatfig float="none">
               <floatfig-group float="left">
                 <title>Title of this floating figure</title>
                 <image href="http://www.antenna.co.jp/images/test-float-left.jpg"></image>

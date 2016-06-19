@@ -54,10 +54,27 @@ Copyright (c) Antenna House, Inc.
   <div>
     <a:documentation>ELEMENT TYPE DECLARATIONS</a:documentation>
     <div>
-      <define name="float-atts">
+      <a:documentation>
+        Attribute float expresses how the floatfig or floatfig-group floats.
+        none: No float (intended to be used by floatfig only)
+        auto: Same as preceding-sibling floatfig-group/@float (intended to be used by floatfig-group only)
+        left: Floats left (start)
+        right: Floats right (end)
+      </a:documentation>
+      <define name="floatfig-float-atts">
         <attribute name="float">
           <choice>
             <value>none</value>
+            <value>left</value>
+            <value>right</value>
+            <value>-dita-use-conref-target</value>
+          </choice>
+        </attribute>
+      </define>
+      <define name="floatfiggroup-float-atts">
+        <attribute name="float">
+          <choice>
+            <value>auto</value>
             <value>left</value>
             <value>right</value>
             <value>-dita-use-conref-target</value>
@@ -89,7 +106,7 @@ Copyright (c) Antenna House, Inc.
       <define name="floatfig.attributes">
         <ref name="display-atts"/>
         <ref name="univ-atts"/>
-        <ref name="float-atts"/>
+        <ref name="floatfig-float-atts"/>
         <optional>
           <attribute name="outputclass"/>
         </optional>
@@ -148,7 +165,7 @@ Copyright (c) Antenna House, Inc.
     </define>
     <define name="floatfiggroup.attlist" combine="interleave">
       <ref name="figgroup.attributes"/>
-      <ref name="float-atts"/>
+      <ref name="floatfiggroup-float-atts"/>
     </define>
   </div>
   <div>

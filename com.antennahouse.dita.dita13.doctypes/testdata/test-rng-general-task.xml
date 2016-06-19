@@ -10,7 +10,7 @@
         </context>
         <steps fo:prop="font-style:bold;">
             <stepsection>
-                <floatfig float="left">
+                <floatfig float="none">
                     <floatfig-group float="left">
                         <title>Title of this floating figure</title>
                         <image href="http://www.antenna.co.jp/images/test-float-left.jpg"></image>

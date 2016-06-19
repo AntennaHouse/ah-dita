@@ -4,7 +4,7 @@
 <glossentry id="glossentry_xxq_t5k_qs" xmlns:fo="http://www.w3.org/1999/XSL/Format" fo:prop="font-family:Arial">
     <glossterm fo:prop="font-family:Arial">glossterm<br/><cm value="yes"/></glossterm>
     <glossdef fo:prop="font-family:Arial">glossdef<br/><cm value="yes"/>
-        <floatfig float="left">
+        <floatfig float="none">
             <floatfig-group float="left">
                 <title>Title of this floating figure</title>
                 <image href="http://www.antenna.co.jp/images/test-float-left.jpg"></image>

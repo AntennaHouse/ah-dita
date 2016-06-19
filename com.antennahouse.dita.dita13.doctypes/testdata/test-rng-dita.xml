@@ -7,7 +7,7 @@
     <body xmlns:fo="http://www.w3.org/1999/XSL/Format" fo:prop="font-family:Arial">
       <p xmlns:fo="http://www.w3.org/1999/XSL/Format" fo:prop="font-family:Arial"><br/><cm value="yes"/></p>
       <p xmlns:fo="http://www.w3.org/1999/XSL/Format" fo:prop="font-family:Arial"><br/><cm value="yes"/></p>
-      <floatfig float="left">
+      <floatfig float="none">
         <floatfig-group float="left">
           <title>Title of this floating figure</title>
           <image href="http://www.antenna.co.jp/images/test-float-left.jpg"></image>
