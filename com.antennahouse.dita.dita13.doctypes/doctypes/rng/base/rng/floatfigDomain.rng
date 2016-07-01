@@ -86,7 +86,7 @@ Copyright (c) Antenna House, Inc.
       <a:documentation>
         Note: This specialization does not conform to the DITA specialzation rule beacuse:
         1. New attribute "@float" is added to &lt;floatfig>.
-        2. New element "floatfig-group is added as the specialization of &lt;figgrop>. But it also has "@float" attribute. And added &lt;desc> element.
+        2. New element "floatfig-group is added as the specialization of &lt;figgrop>. But it also has "@float" attribute. 
       </a:documentation>
       <a:documentation>LONG NAME: Floating figure</a:documentation>
       <define name="floatfig.content">
@@ -96,11 +96,16 @@ Copyright (c) Antenna House, Inc.
         <optional>
           <ref name="desc"/>
         </optional>
-        <zeroOrMore>
-          <choice>
+        <choice>
+          <zeroOrMore>
             <ref name="floatfiggroup"/>
+          </zeroOrMore>
+          <zeroOrMore>
             <ref name="fig.cnt"/>
-          </choice>
+          </zeroOrMore>
+        </choice>
+        <zeroOrMore>
+          <ref name="fig.cnt"/>
         </zeroOrMore>
       </define>
       <define name="floatfig.attributes">
@@ -136,9 +141,6 @@ Copyright (c) Antenna House, Inc.
     <define name="floatfiggroup.content">
       <optional>
         <ref name="title"/>
-      </optional>
-      <optional>
-        <ref name="desc"/>
       </optional>
       <zeroOrMore>
         <choice>
