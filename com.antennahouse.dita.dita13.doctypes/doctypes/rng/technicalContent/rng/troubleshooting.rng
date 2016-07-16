@@ -41,7 +41,10 @@ ORIGINAL CREATION DATE:
                                                              
             (C) Copyright OASIS Open 2014             
             All Rights Reserved.                             
-                                                             
+
+UPDATES:                                                    
+   2015.07.09 AH:  Added character/fo/css domain
+   2016.07.16 AH:  Added clear domain
 =============================================================
 </headerComment>
       <moduleMetadata>
@@ -93,6 +96,7 @@ ORIGINAL CREATION DATE:
                          a(props deliveryTarget)
                          a(base fo:prop)
                          a(base css:prop)
+                         a(base clear)
                          "/>
          </optional>
       </define>
@@ -130,6 +134,7 @@ ORIGINAL CREATION DATE:
       <include href="urn:x-antennahouse:dita:rng:floatfigDomain.rng"/>
       <include href="urn:x-antennahouse:dita:rng:xslfoAttDomain.rng"/>
       <include href="urn:x-antennahouse:dita:rng:cssAttDomain.rng"/>
+      <include href="urn:x-antennahouse:dita:rng:clearAttDomain.rng"/>
   </div>
   <div>
       <a:documentation> ID-DEFINING-ELEMENT OVERRIDES </a:documentation>

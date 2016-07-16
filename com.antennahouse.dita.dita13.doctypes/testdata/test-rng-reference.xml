@@ -2,7 +2,7 @@
 <?xml-model href="urn:x-antennahouse:dita:rng:reference.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="urn:x-antennahouse:dita:rng:reference.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <reference id="reference_uhz_gdp_ps" xmlns:fo="http://www.w3.org/1999/XSL/Format" fo:prop="font-family:Arial;">
- <title fo:prop="font-family:Arial;" rev="1.1" id="title_aaa">Reference specialization example<br/><cm value="yes"/></title>
+ <title fo:prop="font-family:Arial;" rev="1.1" id="title_aaa" clear="both">Reference specialization example<br/><cm value="yes"/></title>
  <shortdesc fo:prop="font-style:bold;"></shortdesc>
  <refbody fo:prop="font-style:bold;">
   <section>

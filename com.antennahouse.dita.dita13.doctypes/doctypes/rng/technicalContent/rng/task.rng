@@ -50,7 +50,8 @@ ORIGINAL CREATION DATE:
    2008.02.12 RDA: Modify imbeds to use specific 1.2 version 
    2008.04.15 RDA: Added hazard domain                       
    2014.03.13 WEK: Updated for DITA 1.3, reimplemented as RNG
-   2015.07.09 AH:  Added character domain &amp; style-atts
+   2015.07.09 AH:  Added character/fo/css domain
+   2016.07.16 AH:  Added clear domain
 =============================================================
 </headerComment>
       <moduleMetadata>
@@ -98,6 +99,7 @@ ORIGINAL CREATION DATE:
                          a(props deliveryTarget)
                          a(base fo:prop)
                          a(base css:prop)
+                         a(base clear)
                          "/>
          </optional>
       </define>
@@ -133,7 +135,8 @@ ORIGINAL CREATION DATE:
       <include href="urn:x-antennahouse:dita:rng:characterDomain.rng"/>
       <include href="urn:x-antennahouse:dita:rng:floatfigDomain.rng"/>
       <include href="urn:x-antennahouse:dita:rng:xslfoAttDomain.rng"/>
-      <include href="urn:x-antennahouse:dita:rng:cssAttDomain.rng"/>
+     <include href="urn:x-antennahouse:dita:rng:cssAttDomain.rng"/>
+     <include href="urn:x-antennahouse:dita:rng:clearAttDomain.rng"/>
   </div>
   <div>
       <a:documentation> ID-DEFINING-ELEMENT OVERRIDES </a:documentation>

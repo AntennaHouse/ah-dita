@@ -49,6 +49,7 @@ ORIGINAL CREATION DATE:
    2008.02.12 RDA: Modify imbeds to use specific 1.2 version 
    2008.04.15 RDA: Added hazard domain                       
    2015.07.07 AH:  Added character/xslfo/css domain
+   2016.07.16 AH:  Added clear domain
 =============================================================
 </headerComment>
     <moduleMetadata>
@@ -92,6 +93,7 @@ ORIGINAL CREATION DATE:
                          a(props deliveryTarget)
                          a(base fo:prop)
                          a(base css:prop)
+                         a(base clear)
                          "
         />
       </optional>
@@ -124,6 +126,7 @@ ORIGINAL CREATION DATE:
     <include href="urn:x-antennahouse:dita:rng:floatfigDomain.rng"/>
     <include href="urn:x-antennahouse:dita:rng:xslfoAttDomain.rng"/>
     <include href="urn:x-antennahouse:dita:rng:cssAttDomain.rng"/>
+    <include href="urn:x-antennahouse:dita:rng:clearAttDomain.rng"/>
   </div>
   <div>
     <a:documentation>ID-DEFINING-ELEMENT OVERRIDES</a:documentation>

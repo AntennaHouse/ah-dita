@@ -3,7 +3,7 @@
 <?xml-model href="urn:x-antennahouse:dita:rng:ditabase.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <dita>
   <topic id="topic_itd_nzr_qs" xmlns:fo="http://www.w3.org/1999/XSL/Format" fo:prop="font-family:Arial">
-    <title fo:prop="font-family:Arial"><br/><cm value="yes"/></title>
+    <title fo:prop="font-family:Arial" clear="both"><br/><cm value="yes"/></title>
     <body xmlns:fo="http://www.w3.org/1999/XSL/Format" fo:prop="font-family:Arial">
       <p xmlns:fo="http://www.w3.org/1999/XSL/Format" fo:prop="font-family:Arial"><br/><cm value="yes"/></p>
       <p xmlns:fo="http://www.w3.org/1999/XSL/Format" fo:prop="font-family:Arial"><br/><cm value="yes"/></p>

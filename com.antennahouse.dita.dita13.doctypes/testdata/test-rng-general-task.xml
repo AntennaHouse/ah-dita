@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-model href="urn:x-antennahouse:dita:rng:generalTask.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="urn:x-antennahouse:dita:rng:generalTask.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
-<task id="task_lsr_1nb_qs" xmlns:fo="http://www.w3.org/1999/XSL/Format" fo:prop="font-family:Arial">
+<task id="task_lsr_1nb_qs" xmlns:fo="http://www.w3.org/1999/XSL/Format" fo:prop="font-family:Arial" clear="both">
     <title fo:prop="font-family:Arial" id="title_001">General task specialization example<br/><cm value="yes"/></title>
     <shortdesc fo:prop="font-style:bold;"></shortdesc>
     <taskbody fo:prop="font-style:bold;">
