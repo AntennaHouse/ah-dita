@@ -52,7 +52,7 @@ ORIGINAL CREATION DATE:
        <rncMod>urn:x-antennahouse:dita:rnc:xslfoAttDomain.rnc<var presep=":" name="ditaver"/></rncMod>
        <rngMod>urn:x-antennahouse:dita:rng:xslfoAttDomain.rng<var presep=":" name="ditaver"/></rngMod>
      </modulePublicIds>
-     <domainsContribution>a(base fo:prop)</domainsContribution>
+     <domainsContribution>a(base fo)</domainsContribution>
    </moduleMetadata>
  </moduleDesc>
   <define name="xslfoAtt-d-attribute">

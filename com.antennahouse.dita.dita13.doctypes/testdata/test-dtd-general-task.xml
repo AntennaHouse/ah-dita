@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE task PUBLIC "-//ANTENNA HOUSE//DTD DITA General Task//EN" "../doctypes/dtd/technicalContent/dtd/generalTask.dtd">
+<task id="task_lsr_1nb_qs" fo:prop="font-family:Arial" clear="both">
+    <title fo:prop="font-family:Arial" id="title_001">General task specialization example<br/><cm value="yes"/></title>
+    <shortdesc fo:prop="font-style:bold;"></shortdesc>
+    <taskbody fo:prop="font-style:bold;">
+        <context fo:prop="font-style:bold;">
+            <p fo:prop="font-style:bold;"></p>
+        </context>
+        <steps fo:prop="font-style:bold;" clear="both">
+            <stepsection>
+                <floatfig float="none">
+                    <floatfig-group float="left">
+                        <title>Title of this floating figure</title>
+                        <image href="http://www.antenna.co.jp/images/test-float-left.jpg"></image>
+                        <dl>
+                            <dlentry>
+                                <dt>1</dt>
+                                <dd>Description of the figure</dd>
+                            </dlentry>
+                        </dl>
+                    </floatfig-group>
+                    <floatfig-group float="right">
+                        <title>Title of this floating figure</title>
+                        <image href="http://www.antenna.co.jp/images/test-float-right.jpg"></image>
+                        <dl>
+                            <dlentry>
+                                <dt>1</dt>
+                                <dd>Description of the figure</dd>
+                            </dlentry>
+                        </dl>
+                    </floatfig-group>
+                </floatfig>
+            </stepsection>
+            <step fo:prop="font-style:bold;">
+                <hazardstatement>
+                    <messagepanel>
+                        <typeofhazard></typeofhazard>
+                        <howtoavoid></howtoavoid>
+                    </messagepanel>
+                </hazardstatement>
+                <cmd fo:prop="font-style:bold;"></cmd>
+                <choices fo:prop="font-style:bold;">
+                    <choice fo:prop="font-style:bold;"></choice>
+                </choices>
+                <choicetable fo:prop="font-style:bold;">
+                    <chrow fo:prop="font-style:bold;">
+                        <choption fo:prop="font-style:bold;"></choption>
+                        <chdesc fo:prop="font-style:bold;"></chdesc>
+                    </chrow>
+                </choicetable>
+                <info fo:prop="font-style:bold;"></info>
+                <itemgroup fo:prop="font-style:bold;"></itemgroup>
+                <stepresult fo:prop="font-style:bold;"></stepresult>
+                <steptroubleshooting fo:prop="font-style:bold;"></steptroubleshooting>
+            </step>
+            <stepsection fo:prop="font-style:bold;"></stepsection>
+            <step>
+                <cmd></cmd>
+            </step>
+        </steps>
+        <example fo:prop="font-style:bold;"></example>
+        <postreq fo:prop="font-style:bold;"></postreq>
+    </taskbody>
+</task>

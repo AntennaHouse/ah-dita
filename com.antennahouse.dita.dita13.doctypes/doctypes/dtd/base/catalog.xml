@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<catalog xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog">
+<!--DITA Base Map Shell-->
+
+   <public publicId="-//ANTENNA HOUSE//DTD DITA Base Map//EN" uri="dtd/basemap.dtd"/>
+   <public publicId="-//ANTENNA HOUSE//DTD DITA 1.x Base Map//EN" uri="dtd/basemap.dtd"/>
+   <public publicId="-//ANTENNA HOUSE//DTD DITA 1.3 Base Map//EN" uri="dtd/basemap.dtd"/>
+   <public publicId="-//ANTENNA HOUSE//ELEMENTS DITA Character Domain//EN" uri="dtd/characterDomain.mod"/>
+   <public publicId="-//ANTENNA HOUSE//ELEMENTS DITA 1.x Character Domain//EN" uri="dtd/characterDomain.mod"/>
+   <public publicId="-//ANTENNA HOUSE//ELEMENTS DITA 1.3 Character Domain//EN" uri="dtd/characterDomain.mod"/>
+   <public publicId="-//ANTENNA HOUSE//ENTITIES DITA Character Domain//EN" uri="dtd/characterDomain.ent"/>
+   <public publicId="-//ANTENNA HOUSE//ENTITIES DITA 1.x Character Domain//EN" uri="dtd/characterDomain.ent"/>
+   <public publicId="-//ANTENNA HOUSE//ENTITIES DITA 1.3 Character Domain//EN" uri="dtd/characterDomain.ent"/>
+   <public publicId="-//ANTENNA HOUSE//ENTITIES DITA Clear Attribute Domain//EN" uri="dtd/clearAttDomain.ent"/>
+   <public publicId="-//ANTENNA HOUSE//ENTITIES DITA 1.x Clear Attribute Domain//EN" uri="dtd/clearAttDomain.ent"/>
+   <public publicId="-//ANTENNA HOUSE//ENTITIES DITA 1.3 Clear Attribute Domain//EN" uri="dtd/clearAttDomain.ent"/>
+   <public publicId="-//ANTENNA HOUSE//ENTITIES DITA CSS Attribute Domain//EN" uri="dtd/cssAttDomain.ent"/>
+   <public publicId="-//ANTENNA HOUSE//ENTITIES DITA 1.x CSS Attribute Domain//EN" uri="dtd/cssAttDomain.ent"/>
+   <public publicId="-//ANTENNA HOUSE//ENTITIES DITA 1.3 CSS Attribute Domain//EN" uri="dtd/cssAttDomain.ent"/>
+   <public publicId="-//ANTENNA HOUSE//ELEMENTS DITA Float Figure Domain//EN" uri="dtd/floatfigDomain.mod"/>
+   <public publicId="-//ANTENNA HOUSE//ELEMENTS DITA 1.x Float Figure Domain//EN" uri="dtd/floatfigDomain.mod"/>
+   <public publicId="-//ANTENNA HOUSE//ELEMENTS DITA 1.3 Float Figure Domain//EN" uri="dtd/floatfigDomain.mod"/>
+   <public publicId="-//ANTENNA HOUSE//ENTITIES DITA Float Figure Domain//EN" uri="dtd/floatfigDomain.ent"/>
+   <public publicId="-//ANTENNA HOUSE//ENTITIES DITA 1.x Float Figure Domain//EN" uri="dtd/floatfigDomain.ent"/>
+   <public publicId="-//ANTENNA HOUSE//ENTITIES DITA 1.3 Float Figure Domain//EN" uri="dtd/floatfigDomain.ent"/>
+   <public publicId="-//ANTENNA HOUSE//ENTITIES DITA XSL-FO Attribute Domain//EN" uri="dtd/xslfoAttDomain.ent"/>
+   <public publicId="-//ANTENNA HOUSE//ENTITIES DITA 1.x XSL-FO Attribute Domain//EN" uri="dtd/xslfoAttDomain.ent"/>
+   <public publicId="-//ANTENNA HOUSE//ENTITIES DITA 1.3 XSL-FO Attribute Domain//EN" uri="dtd/xslfoAttDomain.ent"/>
+   <public publicId="-//ANTENNA HOUSE//ELEMENTS DITA 1.3 Map//EN" uri="dtd/map.mod"/>
+   <public publicId="-//ANTENNA HOUSE//ELEMENTS DITA Map//EN" uri="dtd/map.mod"/>
+   <public publicId="-//ANTENNA HOUSE//ELEMENTS DITA 1.3 Topic//EN" uri="dtd/topic.mod"/>
+   <public publicId="-//ANTENNA HOUSE//ELEMENTS DITA Topic//EN" uri="dtd/topic.mod"/>
+   <public publicId="-//ANTENNA HOUSE//ELEMENTS DITA 1.3 Common Elements//EN" uri="dtd/commonElements.mod"/>
+   <public publicId="-//ANTENNA HOUSE//ELEMENTS DITA Common Elements//EN" uri="dtd/commonElements.mod"/>
+
+</catalog>

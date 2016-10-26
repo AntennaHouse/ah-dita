@@ -1,0 +1,388 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- ============================================================= -->
+<!--                    HEADER                                      -->
+<!-- =============================================================  -->
+<!--  MODULE:    DITA Glossary Group Shell                          -->
+<!--  VERSION:   1.3                                               -->
+<!--  DATE:      March 2014                                        -->
+<!--                                                                -->
+<!-- =============================================================  -->
+<!-- =============================================================  -->
+<!--                    PUBLIC DOCUMENT TYPE DEFINITION             -->
+<!--                    TYPICAL INVOCATION                          -->
+<!--                                                                -->
+<!--  Refer to this file by the following public identifier or an  -->
+<!--       appropriate system identifier                           -->
+<!--                                                               -->
+<!-- PUBLIC "-//OASIS//ELEMENTS DITA Glossary Group//EN"           -->
+<!-- =============================================================  -->
+<!-- SYSTEM:     Darwin Information Typing Architecture (DITA)      -->
+<!--                                                                -->
+<!-- PURPOSE:    Define elements and specialization atttributes     -->
+<!--             for Glossary Group topics                          -->
+<!--                                                                -->
+<!-- ORIGINAL CREATION DATE:                                        -->
+<!--             June 2008                                          -->
+<!--                                                                -->
+<!--             (C) Copyright OASIS Open 2008, 2014.               -->
+<!--             All Rights Reserved.                               -->
+<!--                                                                -->
+<!--  UPDATES:                                                      -->
+<!--    2015.07.09 AH:  Added character/fo/css domain              -->
+<!--    2016.07.16 AH:  Added clear domain                         -->
+<!-- =============================================================  -->
+<!--                                                               -->
+
+<!-- ============================================================= -->
+<!--              TOPIC ENTITY DECLARATIONS                        -->
+<!-- ============================================================= -->
+
+<!ENTITY % concept-dec
+  PUBLIC "-//OASIS//ENTITIES DITA 1.3 Concept//EN"
+         "../../../../../org.oasis-open.dita.v1_3/dtd/technicalContent/dtd/concept.ent"
+>%concept-dec;
+
+<!ENTITY % glossentry-dec
+  PUBLIC "-//OASIS//ENTITIES DITA 1.3 Glossary Entry//EN"
+         "../../../../../org.oasis-open.dita.v1_3/dtd/technicalContent/dtd/glossentry.ent"
+>%glossentry-dec;
+
+<!ENTITY % glossgroup-dec
+  PUBLIC "-//OASIS//ENTITIES DITA 1.3 Glossary Group//EN"
+         "../../../../../org.oasis-open.dita.v1_3/dtd/technicalContent/dtd/glossgroup.ent"
+>%glossgroup-dec;
+
+<!-- ============================================================= -->
+<!--             DOMAIN ENTITY DECLARATIONS                        -->
+<!-- ============================================================= -->
+
+<!ENTITY % equation-d-dec
+  PUBLIC "-//OASIS//ENTITIES DITA 1.3 Equation Domain//EN"
+         "../../../../../org.oasis-open.dita.v1_3/dtd/technicalContent/dtd/equationDomain.ent"
+>%equation-d-dec;
+
+<!ENTITY % hazard-d-dec
+  PUBLIC "-//OASIS//ENTITIES DITA 1.3 Hazard Statement Domain//EN"
+         "../../../../../org.oasis-open.dita.v1_3/dtd/base/dtd/hazardstatementDomain.ent"
+>%hazard-d-dec;
+
+<!ENTITY % hi-d-dec
+  PUBLIC "-//OASIS//ENTITIES DITA 1.3 Highlight Domain//EN"
+         "../../../../../org.oasis-open.dita.v1_3/dtd/base/dtd/highlightDomain.ent"
+>%hi-d-dec;
+
+<!ENTITY % indexing-d-dec
+  PUBLIC "-//OASIS//ENTITIES DITA 1.3 Indexing Domain//EN"
+         "../../../../../org.oasis-open.dita.v1_3/dtd/base/dtd/indexingDomain.ent"
+>%indexing-d-dec;
+
+<!ENTITY % abbrev-d-dec
+  PUBLIC "-//OASIS//ENTITIES DITA 1.3 Abbreviated Form Domain//EN"
+         "../../../../../org.oasis-open.dita.v1_3/dtd/technicalContent/dtd/abbreviateDomain.ent"
+>%abbrev-d-dec;
+
+<!ENTITY % markup-d-dec
+  PUBLIC "-//OASIS//ENTITIES DITA 1.3 Markup Domain//EN"
+         "../../../../../org.oasis-open.dita.v1_3/dtd/technicalContent/dtd/markupDomain.ent"
+>%markup-d-dec;
+
+<!ENTITY % mathml-d-dec
+  PUBLIC "-//OASIS//ENTITIES DITA 1.3 MathML Domain//EN"
+         "../../../../../org.oasis-open.dita.v1_3/dtd/technicalContent/dtd/mathmlDomain.ent"
+>%mathml-d-dec;
+
+<!ENTITY % pr-d-dec
+  PUBLIC "-//OASIS//ENTITIES DITA 1.3 Programming Domain//EN"
+         "../../../../../org.oasis-open.dita.v1_3/dtd/technicalContent/dtd/programmingDomain.ent"
+>%pr-d-dec;
+
+<!ENTITY % relmgmt-d-dec
+  PUBLIC "-//OASIS//ENTITIES DITA 1.3 Release Management Domain//EN"
+         "../../../../../org.oasis-open.dita.v1_3/dtd/technicalContent/dtd/releaseManagementDomain.ent"
+>%relmgmt-d-dec;
+
+<!ENTITY % sw-d-dec
+  PUBLIC "-//OASIS//ENTITIES DITA 1.3 Software Domain//EN"
+         "../../../../../org.oasis-open.dita.v1_3/dtd/technicalContent/dtd/softwareDomain.ent"
+>%sw-d-dec;
+
+<!ENTITY % svg-d-dec
+  PUBLIC "-//OASIS//ENTITIES DITA 1.3 SVG Domain//EN"
+         "../../../../../org.oasis-open.dita.v1_3/dtd/technicalContent/dtd/svgDomain.ent"
+>%svg-d-dec;
+
+<!ENTITY % ui-d-dec
+  PUBLIC "-//OASIS//ENTITIES DITA 1.3 User Interface Domain//EN"
+         "../../../../../org.oasis-open.dita.v1_3/dtd/technicalContent/dtd/uiDomain.ent"
+>%ui-d-dec;
+
+<!ENTITY % ut-d-dec
+  PUBLIC "-//OASIS//ENTITIES DITA 1.3 Utilities Domain//EN"
+         "../../../../../org.oasis-open.dita.v1_3/dtd/base/dtd/utilitiesDomain.ent"
+>%ut-d-dec;
+
+<!ENTITY % xml-d-dec
+  PUBLIC "-//OASIS//ENTITIES DITA 1.3 XML Domain//EN"
+         "../../../../../org.oasis-open.dita.v1_3/dtd/technicalContent/dtd/xmlDomain.ent"
+>%xml-d-dec;
+
+<!ENTITY % ch-d-dec
+  PUBLIC "-//ANTENNA HOUSE//ENTITIES DITA 1.3 Character Domain//EN"
+         "../../base/dtd/characterDomain.ent"
+>%ch-d-dec;
+
+<!ENTITY % floatfig-d-dec
+  PUBLIC "-//ANTENNA HOUSE//ENTITIES DITA 1.3 Float Figure Domain//EN"
+         "../../base/dtd/floatfigDomain.ent"
+>%floatfig-d-dec;
+
+<!-- ============================================================= -->
+<!--             DOMAIN ATTRIBUTES DECLARATIONS                    -->
+<!-- ============================================================= -->
+
+<!ENTITY % deliveryTargetAtt-d-dec
+  PUBLIC "-//OASIS//ENTITIES DITA 1.3 Delivery Target Attribute Domain//EN"
+         "../../../../../org.oasis-open.dita.v1_3/dtd/base/dtd/deliveryTargetAttDomain.ent"
+>%deliveryTargetAtt-d-dec;
+
+<!ENTITY % xslfoAtt-d-dec
+  PUBLIC "-//ANTENNA HOUSE//ENTITIES DITA 1.3 XSL-FO Attribute Domain//EN"
+         "../../base/dtd/xslfoAttDomain.ent"
+>%xslfoAtt-d-dec;
+
+<!ENTITY % cssAtt-d-dec
+  PUBLIC "-//ANTENNA HOUSE//ENTITIES DITA 1.3 CSS Attribute Domain//EN"
+         "../../base/dtd/cssAttDomain.ent"
+>%cssAtt-d-dec;
+
+<!ENTITY % clearAtt-d-dec
+  PUBLIC "-//ANTENNA HOUSE//ENTITIES DITA 1.3 Clear Attribute Domain//EN"
+         "../../base/dtd/clearAttDomain.ent"
+>%clearAtt-d-dec;
+
+<!-- ============================================================= -->
+<!--                    DOMAIN EXTENSIONS                          -->
+<!-- ============================================================= -->
+<!--                    One for each extended base element, with
+                        the name of the domain(s) in which the
+                        extension was declared                     -->
+
+<!ENTITY % index-base   "index-base |
+                         %indexing-d-index-base;
+                        ">
+<!ENTITY % note         "note |
+                         %hazard-d-note;
+                        ">
+<!ENTITY % ph           "ph |
+                         %hi-d-ph; |
+                         %ch-d-ph; |
+                         %pr-d-ph; |
+                         %sw-d-ph; |
+                         %ui-d-ph; |
+                         %equation-d-ph;
+                        ">
+<!ENTITY % fig          "fig |
+                         %ut-d-fig; |
+                         %pr-d-fig; |
+                         %equation-d-fig; |
+                         %floatfig-d-fig;
+                        ">
+<!ENTITY % data         "data |
+                         %ut-d-data;
+                        ">
+<!ENTITY % term         "term |
+                         %abbrev-d-term;
+                        ">
+<!ENTITY % keyword      "keyword |
+                         %markup-d-keyword; |
+                         %pr-d-keyword; |
+                         %sw-d-keyword; |
+                         %ui-d-keyword; |
+                         %xml-d-keyword;
+                        ">
+<!ENTITY % pre          "pre |
+                         %pr-d-pre; |
+                         %sw-d-pre; |
+                         %ui-d-pre;
+                        ">
+<!ENTITY % dl           "dl |
+                         %pr-d-dl;
+                        ">
+<!ENTITY % metadata     "metadata |
+                         %relmgmt-d-metadata;
+                        ">
+<!ENTITY % div          "div |
+                         %equation-d-div;
+                        ">
+<!ENTITY % foreign      "foreign |
+                         %mathml-d-foreign; |
+                         %svg-d-foreign;
+                        ">
+
+<!-- ============================================================= -->
+<!--                    DOMAIN ATTRIBUTE EXTENSIONS                -->
+<!-- ============================================================= -->
+
+<!ENTITY % props-attribute-extensions
+  "%deliveryTargetAtt-d-attribute;"
+>
+<!ENTITY % base-attribute-extensions
+  "%xslfoAtt-d-attribute;
+   %cssAtt-d-attribute;
+   %clearAtt-d-attribute;
+  "
+>
+
+<!-- ============================================================= -->
+<!--                    TOPIC NESTING OVERRIDE                     -->
+<!-- ============================================================= -->
+
+
+<!ENTITY % glossentry-info-types
+"no-topic-nesting"
+
+>
+<!ENTITY % glossgroup-info-types
+              "glossgroup |
+               glossentry"
+>
+
+<!-- ============================================================= -->
+<!--                    DOMAINS ATTRIBUTE OVERRIDE                 -->
+<!-- ============================================================= -->
+
+<!ENTITY included-domains
+                          "&concept-att;
+                           &glossentry-att;
+                           &glossgroup-att;
+                           &deliveryTargetAtt-d-att;
+                           &equation-d-att;
+                           &hazard-d-att;
+                           &hi-d-att;
+                           &indexing-d-att;
+                           &abbrev-d-att;
+                           &markup-d-att;
+                           &mathml-d-att;
+                           &pr-d-att;
+                           &relmgmt-d-att;
+                           &sw-d-att;
+                           &svg-d-att;
+                           &ui-d-att;
+                           &ut-d-att;
+                           &xml-d-att;
+                           &ch-d-att;
+                           &floatfig-d-att;
+                           &xslfoAtt-d-att;
+                           &cssAtt-d-att;
+                           &clearAtt-d-att;
+  "
+>
+
+<!-- ============================================================= -->
+<!--                    CONTENT CONSTRAINT INTEGRATION             -->
+<!-- ============================================================= -->
+
+<!-- ============================================================= -->
+<!--                    TOPIC ELEMENT INTEGRATION                  -->
+<!-- ============================================================= -->
+
+<!ENTITY % topic-type
+  PUBLIC "-//ANTENNA HOUSE//ELEMENTS DITA 1.3 Topic//EN"
+         "../../base/dtd/topic.mod"
+>%topic-type;
+
+<!ENTITY % concept-type
+  PUBLIC "-//ANTENNA HOUSE//ELEMENTS DITA 1.3 Concept//EN"
+         "../../technicalContent/dtd/concept.mod"
+>%concept-type;
+
+<!ENTITY % glossentry-type
+  PUBLIC "-//ANTENNA HOUSE//ELEMENTS DITA 1.3 Glossary Entry//EN"
+         "./glossentry.mod"
+>%glossentry-type;
+
+<!ENTITY % glossgroup-type
+  PUBLIC "-//ANTENNA HOUSE//ELEMENTS DITA 1.3 Glossary Group//EN"
+         "./glossgroup.mod"
+>%glossgroup-type;
+
+<!-- ============================================================= -->
+<!--                    DOMAIN ELEMENT INTEGRATION                 -->
+<!-- ============================================================= -->
+
+<!ENTITY % equation-d-def
+  PUBLIC "-//OASIS//ELEMENTS DITA 1.3 Equation Domain//EN"
+         "../../../../../org.oasis-open.dita.v1_3/dtd/technicalContent/dtd/equationDomain.mod"
+>%equation-d-def;
+
+<!ENTITY % hi-d-def
+  PUBLIC "-//OASIS//ELEMENTS DITA 1.3 Highlight Domain//EN"
+         "../../../../../org.oasis-open.dita.v1_3/dtd/base/dtd/highlightDomain.mod"
+>%hi-d-def;
+
+<!ENTITY % indexing-d-def
+  PUBLIC "-//OASIS//ELEMENTS DITA 1.3 Indexing Domain//EN"
+         "../../../../../org.oasis-open.dita.v1_3/dtd/base/dtd/indexingDomain.mod"
+>%indexing-d-def;
+
+<!ENTITY % abbrev-d-def
+  PUBLIC "-//OASIS//ELEMENTS DITA 1.3 Abbreviated Form Domain//EN"
+         "../../../../../org.oasis-open.dita.v1_3/dtd/technicalContent/dtd/abbreviateDomain.mod"
+>%abbrev-d-def;
+
+<!ENTITY % markup-d-def
+  PUBLIC "-//OASIS//ELEMENTS DITA 1.3 Markup Domain//EN"
+         "../../../../../org.oasis-open.dita.v1_3/dtd/technicalContent/dtd/markupDomain.mod"
+>%markup-d-def;
+
+<!ENTITY % mathml-d-def
+  PUBLIC "-//OASIS//ELEMENTS DITA 1.3 MathML Domain//EN"
+         "../../../../../org.oasis-open.dita.v1_3/dtd/technicalContent/dtd/mathmlDomain.mod"
+>%mathml-d-def;
+
+<!ENTITY % pr-d-def
+  PUBLIC "-//OASIS//ELEMENTS DITA 1.3 Programming Domain//EN"
+         "../../../../../org.oasis-open.dita.v1_3/dtd/technicalContent/dtd/programmingDomain.mod"
+>%pr-d-def;
+
+<!ENTITY % relmgmt-d-def
+  PUBLIC "-//OASIS//ELEMENTS DITA 1.3 Release Management Domain//EN"
+         "../../../../../org.oasis-open.dita.v1_3/dtd/technicalContent/dtd/releaseManagementDomain.mod"
+>%relmgmt-d-def;
+
+<!ENTITY % sw-d-def
+  PUBLIC "-//OASIS//ELEMENTS DITA 1.3 Software Domain//EN"
+         "../../../../../org.oasis-open.dita.v1_3/dtd/technicalContent/dtd/softwareDomain.mod"
+>%sw-d-def;
+
+<!ENTITY % svg-d-def
+  PUBLIC "-//OASIS//ELEMENTS DITA 1.3 SVG Domain//EN"
+         "../../../../../org.oasis-open.dita.v1_3/dtd/technicalContent/dtd/svgDomain.mod"
+>%svg-d-def;
+
+<!ENTITY % ui-d-def
+  PUBLIC "-//OASIS//ELEMENTS DITA 1.3 User Interface Domain//EN"
+         "../../../../../org.oasis-open.dita.v1_3/dtd/technicalContent/dtd/uiDomain.mod"
+>%ui-d-def;
+
+<!ENTITY % ut-d-def
+  PUBLIC "-//OASIS//ELEMENTS DITA 1.3 Utilities Domain//EN"
+         "../../../../../org.oasis-open.dita.v1_3/dtd/base/dtd/utilitiesDomain.mod"
+>%ut-d-def;
+
+<!ENTITY % xml-d-def
+  PUBLIC "-//OASIS//ELEMENTS DITA 1.3 XML Domain//EN"
+         "../../../../../org.oasis-open.dita.v1_3/dtd/technicalContent/dtd/xmlDomain.mod"
+>%xml-d-def;
+
+<!ENTITY % ch-d-def
+  PUBLIC "-//ANTENNA HOUSE//ELEMENTS DITA 1.3 Character Domain//EN"
+         "../../base/dtd/characterDomain.mod"
+>%ch-d-def;
+
+<!ENTITY % floatfig-d-def
+  PUBLIC "-//ANTENNA HOUSE//ELEMENTS DITA 1.3 Float Figure Domain//EN"
+         "../../base/dtd/floatfigDomain.mod"
+>%floatfig-d-def;
+
+<!-- ================= End of DITA Glossary Group Shell ================= -->

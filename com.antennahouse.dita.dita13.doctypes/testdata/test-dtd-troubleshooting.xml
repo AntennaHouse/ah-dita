@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE troubleshooting PUBLIC "-//ANTENNA HOUSE//DTD DITA Troubleshooting//EN" "../doctypes/dtd/technicalContent/dtd/troubleshooting.dtd">
+<troubleshooting id="trouble_mqt_22d_qs" fo:prop="font-family:Arial">
+  <title fo:prop="font-family:Arial" clear="none">Troubleshooting specialization example<br/><cm value="yes"/></title>
+  <troublebody fo:prop="font-family:Arial">
+    <condition fo:prop="font-family:Arial">
+      <p fo:prop="font-family:Arial"></p>
+    </condition>
+    <troubleSolution fo:prop="font-family:Arial">
+      <cause fo:prop="font-family:Arial">
+        <title fo:prop="font-family:Arial"><br/><cm value="yes"/></title>
+        <p fo:prop="font-family:Arial"><br/><cm value="yes"/></p>
+      </cause>
+      <remedy fo:prop="font-family:Arial">
+        <responsibleParty fo:prop="font-family:Arial"><br/><cm value="yes"/></responsibleParty>
+        <steps fo:prop="font-family:Arial">
+          <stepsection>
+            <floatfig float="none">
+              <floatfig-group float="left">
+                <title>Title of this floating figure</title>
+                <image href="http://www.antenna.co.jp/images/test-float-left.jpg"></image>
+                <dl>
+                  <dlentry>
+                    <dt>1</dt>
+                    <dd>Description of the figure</dd>
+                  </dlentry>
+                </dl>
+              </floatfig-group>
+              <floatfig-group float="right">
+                <title>Title of this floating figure</title>
+                <image href="http://www.antenna.co.jp/images/test-float-right.jpg"></image>
+                <dl>
+                  <dlentry>
+                    <dt>1</dt>
+                    <dd>Description of the figure</dd>
+                  </dlentry>
+                </dl>
+              </floatfig-group>
+            </floatfig>
+          </stepsection>
+          <step fo:prop="font-family:Arial">
+            <cmd fo:prop="font-family:Arial"><br/><cm value="yes"/></cmd>
+          </step>
+        </steps>
+      </remedy>
+    </troubleSolution>
+  </troublebody>
+</troubleshooting>

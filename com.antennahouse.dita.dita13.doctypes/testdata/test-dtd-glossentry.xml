@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<?xml-model href="urn:x-antennahouse:dita:rng:glossentry.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="urn:x-antennahouse:dita:rng:glossentry.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
-<glossentry id="glossentry_xxq_t5k_qs" fo:prop="font-family:Arial" xmlns:fo="http://www.w3.org/1999/XSL/Format">
+<!DOCTYPE glossentry PUBLIC "-//ANTENNA HOUSE//DTD DITA Glossary Entry//EN" "../doctypes/dtd/technicalContent/dtd/glossentry.dtd">
+<glossentry id="glossentry_xxq_t5k_qs" fo:prop="font-family:Arial">
     <glossterm fo:prop="font-family:Arial" clear="both">glossterm<br/><cm value="yes"/></glossterm>
     <glossdef fo:prop="font-family:Arial">glossdef<br/><cm value="yes"/>
         <floatfig float="none">

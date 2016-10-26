@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<catalog xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog">
+    <public publicId="-//ANTENNA HOUSE//DTD DITA Concept//EN" uri="dtd/concept.dtd"/>
+    <public publicId="-//ANTENNA HOUSE//DTD DITA 1.x Concept//EN" uri="dtd/concept.dtd"/>
+    <public publicId="-//ANTENNA HOUSE//DTD DITA 1.3 Concept//EN" uri="dtd/concept.dtd"/>
+    <public publicId="-//ANTENNA HOUSE//ELEMENTS DITA 1.3 Concept//EN" uri="dtd/concept.mod"/>
+    <public publicId="-//ANTENNA HOUSE//ELEMENTS DITA Concept//EN" uri="dtd/concept.mod"/>
+    <public publicId="-//ANTENNA HOUSE//DTD DITA Composite//EN" uri="dtd/ditabase.dtd"/>
+    <public publicId="-//ANTENNA HOUSE//DTD DITA 1.x Composite//EN" uri="dtd/ditabase.dtd"/>
+    <public publicId="-//ANTENNA HOUSE//DTD DITA 1.3 Composite//EN" uri="dtd/ditabase.dtd"/>
+    <public publicId="-//ANTENNA HOUSE//DTD DITA General Task//EN" uri="dtd/generalTask.dtd"/>
+    <public publicId="-//ANTENNA HOUSE//DTD DITA 1.x General Task//EN" uri="dtd/generalTask.dtd"/>
+    <public publicId="-//ANTENNA HOUSE//DTD DITA 1.3 General Task//EN" uri="dtd/generalTask.dtd"/>
+    <public publicId="-//ANTENNA HOUSE//DTD DITA Glossary//EN" uri="dtd/glossary.dtd"/>
+    <public publicId="-//ANTENNA HOUSE//DTD DITA 1.x Glossary//EN" uri="dtd/glossary.dtd"/>
+    <public publicId="-//ANTENNA HOUSE//DTD DITA 1.3 Glossary//EN" uri="dtd/glossary.dtd"/>
+    <public publicId="-//ANTENNA HOUSE//DTD DITA Glossary Entry//EN" uri="dtd/glossentry.dtd"/>
+    <public publicId="-//ANTENNA HOUSE//DTD DITA 1.x Glossary Entry//EN" uri="dtd/glossentry.dtd"/>
+    <public publicId="-//ANTENNA HOUSE//DTD DITA 1.3 Glossary Entry//EN" uri="dtd/glossentry.dtd"/>
+    <public publicId="-//ANTENNA HOUSE//ELEMENTS DITA 1.3 Glossary Entry//EN" uri="dtd/glossentry.mod"/>
+    <public publicId="-//ANTENNA HOUSE//ELEMENTS DITA Glossary Entry//EN" uri="dtd/glossentry.mod"/>
+    <public publicId="-//ANTENNA HOUSE//DTD DITA Glossary Group//EN" uri="dtd/glossgroup.dtd"/>
+    <public publicId="-//ANTENNA HOUSE//DTD DITA 1.x Glossary Group//EN" uri="dtd/glossgroup.dtd"/>
+    <public publicId="-//ANTENNA HOUSE//DTD DITA 1.3 Glossary Group//EN" uri="dtd/glossgroup.dtd"/>
+    <public publicId="-//ANTENNA HOUSE//ELEMENTS DITA 1.3 Glossary Group//EN" uri="dtd/glossgroup.mod"/>
+    <public publicId="-//ANTENNA HOUSE//ELEMENTS DITA Glossary Group//EN" uri="dtd/glossgroup.mod"/>
+    <public publicId="-//ANTENNA HOUSE//DTD DITA Map//EN" uri="dtd/map.dtd"/>
+    <public publicId="-//ANTENNA HOUSE//DTD DITA 1.x Map//EN" uri="dtd/map.dtd"/>
+    <public publicId="-//ANTENNA HOUSE//DTD DITA 1.3 Map//EN" uri="dtd/map.dtd"/>
+    <public publicId="-//ANTENNA HOUSE//DTD DITA Reference//EN" uri="dtd/reference.dtd"/>
+    <public publicId="-//ANTENNA HOUSE//DTD DITA 1.x Reference//EN" uri="dtd/reference.dtd"/>
+    <public publicId="-//ANTENNA HOUSE//DTD DITA 1.3 Reference//EN" uri="dtd/reference.dtd"/>
+    <public publicId="-//ANTENNA HOUSE//ELEMENTS DITA 1.3 Reference//EN" uri="dtd/reference.mod"/>
+    <public publicId="-//ANTENNA HOUSE//ELEMENTS DITA Reference//EN" uri="dtd/reference.mod"/>
+    <public publicId="-//ANTENNA HOUSE//DTD DITA Task//EN" uri="dtd/task.dtd"/>
+    <public publicId="-//ANTENNA HOUSE//DTD DITA 1.x Task//EN" uri="dtd/task.dtd"/>
+    <public publicId="-//ANTENNA HOUSE//DTD DITA 1.3 Task//EN" uri="dtd/task.dtd"/>
+    <public publicId="-//ANTENNA HOUSE//ELEMENTS DITA 1.3 Task//EN" uri="dtd/task.mod"/>
+    <public publicId="-//ANTENNA HOUSE//ELEMENTS DITA Task//EN" uri="dtd/task.mod"/>
+    <public publicId="-//ANTENNA HOUSE//DTD DITA Topic//EN" uri="dtd/topic.dtd"/>
+    <public publicId="-//ANTENNA HOUSE//DTD DITA 1.x Topic//EN" uri="dtd/topic.dtd"/>
+    <public publicId="-//ANTENNA HOUSE//DTD DITA 1.3 Topic//EN" uri="dtd/topic.dtd"/>
+    <public publicId="-//ANTENNA HOUSE//DTD DITA Troubleshooting//EN" uri="dtd/troubleshooting.dtd"/>
+    <public publicId="-//ANTENNA HOUSE//DTD DITA 1.x Troubleshooting//EN" uri="dtd/troubleshooting.dtd"/>
+    <public publicId="-//ANTENNA HOUSE//DTD DITA 1.3 Troubleshooting//EN" uri="dtd/troubleshooting.dtd"/>
+    <public publicId="-//ANTENNA HOUSE//ELEMENTS DITA 1.3 Troubleshooting//EN" uri="dtd/troubleshooting.mod"/>
+    <public publicId="-//ANTENNA HOUSE//ELEMENTS DITA Troubleshooting//EN" uri="dtd/troubleshooting.mod"/>
+</catalog>

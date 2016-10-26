@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "../doctypes/dtd/technicalContent/dtd/concept.dtd">
+<concept id="concept_uhz_gdp_ps">
+ <title rev="1.1" id="title_aaa">Concept specialization example</title>
+ <shortdesc></shortdesc>
+ <conbody>
+  <p>Paragraph with<ph></ph></p>
+  <p><synph><var status="changed">variable:A</var></synph></p>
+  <hazardstatement>
+   <messagepanel>
+    <typeofhazard></typeofhazard>
+    <howtoavoid></howtoavoid>
+   </messagepanel>
+  </hazardstatement>
+ </conbody>
+</concept>

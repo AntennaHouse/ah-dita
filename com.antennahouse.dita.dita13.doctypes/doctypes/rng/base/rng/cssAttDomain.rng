@@ -52,12 +52,12 @@ ORIGINAL CREATION DATE:
        <rncMod>urn:x-antennahouse:dita:rnc:cssAttDomain.rnc<var presep=":" name="ditaver"/></rncMod>
        <rngMod>urn:x-antennahouse:dita:rng:cssAttDomain.rng<var presep=":" name="ditaver"/></rngMod>
      </modulePublicIds>
-     <domainsContribution>a(base css:prop)</domainsContribution>
+     <domainsContribution>a(base css)</domainsContribution>
    </moduleMetadata>
  </moduleDesc>
   <define name="cssAtt-d-attribute">
     <optional>
-      <attribute name="prop" ns="http://www.w3.org/TR/CSS2">
+      <attribute name="style" ns="http://www.w3.org/TR/CSS2">
         <a:documentation>Specifies the CSS property to which an element applies.
         </a:documentation>
       </attribute>

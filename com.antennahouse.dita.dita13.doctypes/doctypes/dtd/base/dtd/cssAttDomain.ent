@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- ============================================================= -->
+<!--                    HEADER                                     -->
+<!-- ============================================================= -->
+<!--  MODULE:    DITA CSS Attribute Domain                         -->
+<!--  VERSION:   1.0                                               -->
+<!--  DATE:      March 2016                                         -->
+<!--                                                               -->
+<!-- ============================================================= -->
+<!-- ============================================================= -->
+<!--                    PUBLIC DOCUMENT TYPE DEFINITION            -->
+<!--                    TYPICAL INVOCATION                         -->
+<!--                                                               -->
+<!--  Refer to this file by the following public identifier or an  -->
+<!--       appropriate system identifier                           -->
+<!--                                                               -->
+<!-- PUBLIC "-//ANTENNA HOUSE//ENTITIES DITA CSS Attribute Domain//EN" -->
+<!--                                                               -->
+<!-- ============================================================= -->
+<!-- SYSTEM:     Darwin Information Typing Architecture (DITA)     -->
+<!--                                                               -->
+<!-- PURPOSE:    Declaring the substitution context and domain     -->
+<!--             entity declarations for the CSS                   -->
+<!--             Attribute Domain                                  -->
+<!--                                                               -->
+<!-- ORIGINAL CREATION DATE:                                       -->
+<!--             March 2016                                         -->
+<!--                                                               -->
+<!--             (C) Copyright Antenna House 2016.                    -->
+<!--             All Rights Reserved.                              -->
+<!--                                                               -->
+<!--  UPDATES:                                                     -->
+<!-- ============================================================= -->
+<!ENTITY % cssAtt-d-attribute
+  "css:style
+                          CDATA
+                                    #IMPLIED"
+>
+
+<!-- ============================================================= -->
+<!--                    DOMAIN ENTITY DECLARATION                  -->
+<!-- ============================================================= -->
+
+<!ENTITY cssAtt-d-att
+  "a(base css:style)"
+>
+
+<!-- ================ End DITA CSS Attribute Domain  ================== -->
+ 

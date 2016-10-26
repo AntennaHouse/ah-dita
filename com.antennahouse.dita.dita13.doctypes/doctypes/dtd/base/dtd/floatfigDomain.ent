@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- =============================================================  -->
+<!-- DITA Float Figure Domain                                      -->
+<!-- Purpose: Provides elements for floating positioned figure.    -->
+<!--                                                               -->
+<!-- Creation Date: April 2016                                     -->
+<!-- Copyright (c) Antenna House, Inc.                             -->
+<!-- =============================================================       -->
+
+<!-- ============================================================= -->
+<!--                    ELEMENT EXTENSION ENTITY DECLARATIONS      -->
+<!-- ============================================================= -->
+
+<!ENTITY % floatfig-d-fig
+  "floatfig"
+>
+
+<!-- ============================================================= -->
+<!--                    DOMAIN ENTITY DECLARATION                  -->
+<!-- ============================================================= -->
+
+<!ENTITY floatfig-d-att
+  "(topic floatfig-d)"
+>
+
+<!-- ================ End DITA Floating Figure Domain ================== -->
+ 

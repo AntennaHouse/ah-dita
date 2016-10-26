@@ -2,5 +2,5 @@
 <?xml-model href="urn:x-antennahouse:dita:rng:basemap.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="urn:x-antennahouse:dita:rng:basemap.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <map xmlns:fo="http://www.w3.org/1999/XSL/Format">
- <title fo:prop="font-family:Arial;">DITA Topic Map<br/><cm value="yes"/></title>
+ <title fo="font-family:Arial;">DITA Topic Map<br/><cm value="yes"/></title>
 </map>

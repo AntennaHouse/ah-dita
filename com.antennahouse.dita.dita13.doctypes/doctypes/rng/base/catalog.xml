@@ -4,14 +4,10 @@
 
    <group>
       <!-- System ID (URL) catalog entries -->
-      <system systemId="urn:x-antennahouse:dita:rng:characterDomain.rng"
-         uri="rng/characterDomain.rng"/>
-      <system systemId="urn:x-antennahouse:dita:rng:characterDomain.rng:1.3"
-         uri="rng/characterDomain.rng"/>
-      <system systemId="urn:x-antennahouse:dita:rng:floatfigDomain.rng"
-         uri="rng/floatfigDomain.rng"/>
-      <system systemId="urn:x-antennahouse:dita:rng:floatfigDomain.rng:1.3"
-         uri="rng/floatfigDomain.rng"/>
+      <system systemId="urn:x-antennahouse:dita:rng:characterDomain.rng" uri="rng/characterDomain.rng"/>
+      <system systemId="urn:x-antennahouse:dita:rng:characterDomain.rng:1.3" uri="rng/characterDomain.rng"/>
+      <system systemId="urn:x-antennahouse:dita:rng:floatfigDomain.rng" uri="rng/floatfigDomain.rng"/>
+      <system systemId="urn:x-antennahouse:dita:rng:floatfigDomain.rng:1.3" uri="rng/floatfigDomain.rng"/>
       <system systemId="urn:x-antennahouse:dita:rng:basemap.rng:1.3" uri="rng/basemap.rng"/>
       <system systemId="urn:x-antennahouse:dita:rng:basemap.rng" uri="rng/basemap.rng"/>
       <!--system systemId="urn:oasis:names:tc:dita:rng:basetopic.rng:1.3" uri="rng/basetopic.rng"/>
