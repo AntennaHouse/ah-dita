@@ -1,7 +1,7 @@
 # ah-dita #
 ah-dita is the DITA specialization that enables authoring the style information by "fo:prop" property for PDF output.
 It is composed of set of schema files and it can be used as plug-in for [DITA Open Toolkit] [3].
-This specialization works with [PDF5] [7] plug-in V2.1.4 or later.
+This specialization works with [PDF5-ML] [8] plug-in.
 
 ## com.antennahouse.dita12.dtd folder ##
 
@@ -13,9 +13,9 @@ This folder contains plug-in files for DITA 1.2 XML Schema. The installation pro
 
 ## com.antennahouse.dita.dita13.doctypes folder ##
 
-This folder contains plug-in files for DITA 1.3 RELAX NG. The installation process is the same as plug-in for DTD. This plug-in is applicable for DITA-OT 2.0 or later after replacing existing DITA 1.2 schema plug-in (org.oasis-open.dita.v1_2) by DITA 1.3 schema that can be obtained from OASIS or following repository.
+This folder contains plug-in files for DITA 1.3 RELAX NG and DTD specialization. The installation process is the same as plug-in for DTD. This plug-in is applicable for DITA-OT 2.2 or later that bundles DITA 1.3 schema plug-in (org.oasis-open.dita.v1_3). This plug-in has several limitations about the parser. See ReadMe.txt in this folder for details.
 
-https://github.com/dita-community/org.dita-community.doctypes
+This specialization also contains floating-figure support by newly introduced floatfig, floatfig-group element. You can see the floating-figure examples from [9]. 
 
 ## Examples ##
 
@@ -113,3 +113,5 @@ This software is licenced under the [Apache License, Version 2.0] [1].
 [5]: https://www.oasis-open.org/committees/tc_home.php?wg_abbrev=dita "OASIS Darwin Information Typing Architecture (DITA)"
 [6]: http://www.w3.org/TR/xsl/ "XSL Formatting Object"
 [7]: https://github.com/AntennaHouse/pdf5 "DITA Open Toolkit PDF5 plug-in"
+[8]: https://github.com/AntennaHouse/pdf5-ml "DITA Open Toolkit PDF5-ML plug-in"
+[9]: https://github.com/AntennaHouse/pdf5-ml/tree/master/samples/sample_floatfig/out "PDF5-ML floating figure examples"
