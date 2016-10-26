@@ -15,7 +15,7 @@ This folder contains plug-in files for DITA 1.2 XML Schema. The installation pro
 
 This folder contains plug-in files for DITA 1.3 RELAX NG and DTD specialization. The installation process is the same as plug-in for DTD. This plug-in is applicable for DITA-OT 2.2 or later that bundles DITA 1.3 schema plug-in (org.oasis-open.dita.v1_3). This plug-in has several limitations about the parser. See ReadMe.txt in this folder for details.
 
-This specialization also contains floating-figure support by newly introduced floatfig, floatfig-group element. You can see the floating-figure examples from [9]. 
+This specialization also contains floating-figure support by newly introduced floatfig, floatfig-group element. You can see the floating-figure examples from [PDF5-ML floating figure examples][9]. 
 
 ## Examples ##
 
