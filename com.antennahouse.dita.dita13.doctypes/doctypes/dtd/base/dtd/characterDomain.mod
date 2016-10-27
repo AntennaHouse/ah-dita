@@ -23,7 +23,8 @@
 
 <!--                    LONG NAME: Check Mark                      -->
 <!ENTITY % cm.content
-                       "EMPTY"
+                       "(#PCDATA |
+                         %text;)*"
 >
 <!ENTITY % cm.attributes
               "%univ-atts;
@@ -35,7 +36,7 @@
                            no |
                            dc |
                            -dita-use-conref-target)
-                                    #REQUIRED"
+                                    #IMPLIED"
 >
 <!ELEMENT  cm %cm.content;>
 <!ATTLIST  cm %cm.attributes;>

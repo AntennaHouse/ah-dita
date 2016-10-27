@@ -48,21 +48,28 @@
         <div>
             <a:documentation xml:space="preserve"> LONG NAME: Check mark</a:documentation>
             <define name="cm.content">
-                <empty/>
+                <zeroOrMore>
+                    <choice>
+                        <text/>
+                        <ref name="text"/>
+                    </choice>
+                </zeroOrMore>
             </define>
             <define name="cm.attributes">
                 <ref name="univ-atts"/>
                 <optional>
                     <attribute name="outputclass"/>
                 </optional>
-                <attribute name="value">
-                    <choice>
-                        <value>yes</value>
-                        <value>no</value>
-                        <value>dc</value>
-                        <value>-dita-use-conref-target</value>
-                    </choice>
-                </attribute>
+                <optional>
+                    <attribute name="value">
+                        <choice>
+                            <value>yes</value>
+                            <value>no</value>
+                            <value>dc</value>
+                            <value>-dita-use-conref-target</value>
+                        </choice>
+                    </attribute>
+                </optional>
             </define>
             <define name="cm.element">
                 <element name="cm" dita:longName="Check Mark">
