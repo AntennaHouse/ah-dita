@@ -94,7 +94,7 @@ The namespace prefix "fo" is declared in the DTD as follows:
 xmlns:fo="http://www.w3.org/1999/XSL/Format"
 ```
 
-You can publish it using [PDF5] [7] plug-in.
+You can publish it using [PDF5-ML] [8] plug-in.
 
 
 ## Copyright ##
