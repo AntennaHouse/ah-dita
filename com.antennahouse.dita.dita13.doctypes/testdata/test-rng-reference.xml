@@ -6,7 +6,7 @@
  <shortdesc fo:prop="font-style:bold;"></shortdesc>
  <refbody fo:prop="font-style:bold;">
   <section>
-   <p>Paragraph with<ph><br/><cm value="yes"/></ph></p>
+   <p deliveryDestination="USA CAN">Paragraph with<ph><br/><cm value="yes"/></ph></p>
    <table fo:prop="font-family:Arial;">
     <tgroup cols="1" fo:prop="font-family:Arial;">
      <tbody fo:prop="font-family:Arial;">

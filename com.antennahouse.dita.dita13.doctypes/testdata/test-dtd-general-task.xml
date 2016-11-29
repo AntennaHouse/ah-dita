@@ -8,7 +8,7 @@
             <p fo:prop="font-style:bold;"></p>
         </context>
         <steps fo:prop="font-style:bold;" clear="both">
-            <stepsection>
+            <stepsection deliveryDestination="USA CAN">
                 <floatfig float="none">
                     <floatfig-group float="left">
                         <title>Title of this floating figure</title>

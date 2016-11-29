@@ -5,7 +5,7 @@
   <topic id="topic_itd_nzr_qs" xmlns:fo="http://www.w3.org/1999/XSL/Format" fo:prop="font-family:Arial">
     <title fo:prop="font-family:Arial" clear="both"><br/><cm value="yes"/></title>
     <body fo:prop="font-family:Arial">
-      <p fo:prop="font-family:Arial"><br/><cm value="yes"/></p>
+      <p fo:prop="font-family:Arial" deliveryDestination="USA CAN"><br/><cm value="yes"/></p>
       <p fo:prop="font-family:Arial"><br/><cm value="yes"/></p>
       <floatfig float="none">
         <floatfig-group float="left">

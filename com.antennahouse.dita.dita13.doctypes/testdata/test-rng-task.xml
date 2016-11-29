@@ -9,7 +9,7 @@
             <p fo:prop="font-style:bold;"></p>
         </context>
         <steps fo:prop="font-style:bold;">
-            <step fo:prop="font-style:bold;">
+            <step fo:prop="font-style:bold;" deliveryDestination="USA CAN">
                 <cmd fo:prop="font-style:bold;"></cmd>
                 <choices fo:prop="font-style:bold;">
                     <choice fo:prop="font-style:bold;"></choice>

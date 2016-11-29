@@ -8,7 +8,7 @@
   <table fo:prop="font-family:Arial;">
    <tgroup cols="1" fo:prop="font-family:Arial;">
     <tbody fo:prop="font-family:Arial;">
-     <row fo:prop="font-family:Arial;">
+     <row fo:prop="font-family:Arial;" deliveryDestination="USA CAN">
       <entry fo:prop="font-family:Arial;" css:style="font-family:Arial;" id="entry_aaa" translate="no"></entry>
      </row>
     </tbody>

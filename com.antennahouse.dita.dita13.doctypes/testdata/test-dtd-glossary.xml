@@ -14,7 +14,7 @@
                     </dlentry>
                 </dl>
             </floatfig-group>
-            <floatfig-group float="right">
+            <floatfig-group float="right" deliveryDestination="USA CAN">
                 <title>Title of this floating figure</title>
                 <image href="http://www.antenna.co.jp/images/test-float-right.jpg"></image>
                 <dl>

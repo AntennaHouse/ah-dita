@@ -15,7 +15,7 @@
       <remedy fo:prop="font-family:Arial">
         <responsibleParty fo:prop="font-family:Arial"><br/><cm value="yes"/></responsibleParty>
         <steps fo:prop="font-family:Arial">
-          <stepsection>
+          <stepsection deliveryDestination="USA CAN">
             <floatfig float="none">
               <floatfig-group float="left">
                 <title>Title of this floating figure</title>

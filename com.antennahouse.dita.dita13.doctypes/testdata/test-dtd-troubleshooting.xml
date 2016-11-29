@@ -38,7 +38,7 @@
               </floatfig-group>
             </floatfig>
           </stepsection>
-          <step fo:prop="font-family:Arial">
+          <step fo:prop="font-family:Arial" deliveryDestination="USA CAN">
             <cmd fo:prop="font-family:Arial"><br/><cm value="yes"/></cmd>
           </step>
         </steps>

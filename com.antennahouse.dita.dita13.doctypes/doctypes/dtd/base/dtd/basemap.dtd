@@ -102,6 +102,11 @@
          "cssAttDomain.ent"
 >%cssAtt-d-dec;
 
+<!ENTITY % deliveryDestinationAtt-d-dec
+  PUBLIC "-//ANTENNA HOUSE//ENTITIES DITA 1.3 Delivery Destination Attribute Domain//EN"
+         "deliveryDestinationAttDomain.ent"
+>%deliveryDestinationAtt-d-dec;
+
 <!-- ============================================================= -->
 <!--                    DOMAIN EXTENSIONS                          -->
 <!-- ============================================================= -->
@@ -138,7 +143,9 @@
 <!-- ============================================================= -->
 
 <!ENTITY % props-attribute-extensions
-  "%deliveryTargetAtt-d-attribute;"
+  "%deliveryTargetAtt-d-attribute;
+   %deliveryDestinationAtt-d-attribute;
+  "
 >
 <!ENTITY % base-attribute-extensions
   "%xslfoAtt-d-attribute;
@@ -162,7 +169,8 @@
                            &ch-d-att;
                            &xslfoAtt-d-att;
                            &cssAtt-d-att;
-  "
+                           %deliveryDestinationAtt-d-att;
+                           "
 >
 
 <!-- ============================================================= -->

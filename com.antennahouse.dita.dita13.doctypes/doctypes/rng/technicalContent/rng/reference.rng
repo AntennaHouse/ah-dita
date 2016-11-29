@@ -96,6 +96,7 @@ ORIGINAL CREATION DATE:
                          a(base fo:prop)
                          a(base css:prop)
                          a(base clear)
+                         a(props deliveryDestination)
                          "
         />
       </optional>
@@ -130,6 +131,7 @@ ORIGINAL CREATION DATE:
     <include href="urn:x-antennahouse:dita:rng:xslfoAttDomain.rng"/>
     <include href="urn:x-antennahouse:dita:rng:cssAttDomain.rng"/>
     <include href="urn:x-antennahouse:dita:rng:clearAttDomain.rng"/>
+    <include href="urn:x-antennahouse:dita:rng:deliveryDestinationAttDomain.rng"/>
   </div>
   <div>
     <a:documentation>ID-DEFINING-ELEMENT OVERRIDES</a:documentation>

@@ -4,13 +4,13 @@
   <topic id="topic_itd_nzr_qs" fo:prop="font-family:Arial">
     <title fo:prop="font-family:Arial" clear="both"><br/><cm value="yes"/></title>
     <body fo:prop="font-family:Arial">
-      <p fo:prop="font-family:Arial"><br/><cm value="yes"/></p>
+      <p fo:prop="font-family:Arial" deliveryDestination="USA CAN"><br/><cm value="yes"/></p>
       <p fo:prop="font-family:Arial"><br/><cm value="yes"/></p>
       <floatfig float="none">
         <floatfig-group float="left">
           <title>Title of this floating figure</title>
           <image href="http://www.antenna.co.jp/images/test-float-left.jpg"></image>
-          <dl>
+          <dl deliveryDestination="USA CAN">
             <dlentry>
               <dt>1</dt>
               <dd>Description of the figure</dd>
@@ -31,9 +31,19 @@
     </body>
     <concept id="concept_itd_nzr_qr" fo:prop="font-family:Arial">
       <title fo:prop="font-family:Arial"><br/><cm value="yes"/></title>
+      <conbody>
+        <p deliveryDestination="USA CAN">AAA</p>
+      </conbody>
     </concept>
     <task id="task_itd_nzr_qt" fo:prop="font-family:Arial">
       <title fo:prop="font-family:Arial"><br/><cm value="yes"/></title>
+      <taskbody>
+        <steps>
+          <step deliveryDestination="USA CAN">
+            <cmd></cmd>
+          </step>
+        </steps>
+      </taskbody>
     </task>    
   </topic>
 </dita>

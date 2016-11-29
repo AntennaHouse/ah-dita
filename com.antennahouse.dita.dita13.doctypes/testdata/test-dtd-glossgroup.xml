@@ -5,7 +5,7 @@
   <glossentry id="ddl" fo:prop="font-family:Arial">
     <glossterm fo:prop="font-family:Arial" clear="both">glossterm<br/><cm value="yes"/></glossterm>
     <glossdef fo:prop="font-family:Arial">glossdef<br/><cm value="yes"/>
-      <floatfig float="none">
+      <floatfig float="none" deliveryDestination="USA CAN">
         <floatfig-group float="left">
           <title>Title of this floating figure</title>
           <image href="http://www.antenna.co.jp/images/test-float-left.jpg"></image>
