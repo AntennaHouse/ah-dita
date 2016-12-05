@@ -255,7 +255,7 @@
                            &ch-d-att;
                            &xslfoAtt-d-att;
                            &cssAtt-d-att;
-                           %deliveryDestinationAtt-d-att;
+                           &deliveryDestinationAtt-d-att;
                            "
 >
 
@@ -271,6 +271,11 @@
   PUBLIC "-//ANTENNA HOUSE//ELEMENTS DITA 1.3 Map//EN"
          "../../base/dtd/map.mod"
 >%map-type;
+
+<!ENTITY % map-type-oasis
+  PUBLIC "-//OASIS//ELEMENTS DITA 1.3 Map//EN"
+         "../../../../../org.oasis-open.dita.v1_3/dtd/base/dtd/map.mod"
+>%map-type-oasis;
 
 <!ENTITY % bookmap-type
   PUBLIC "-//ANTENNA HOUSE//ELEMENTS DITA 1.3 BookMap//EN"

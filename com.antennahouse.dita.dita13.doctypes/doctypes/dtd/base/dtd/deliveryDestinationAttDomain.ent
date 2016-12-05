@@ -41,7 +41,7 @@
 <!--                    DOMAIN ENTITY DECLARATION                  -->
 <!-- ============================================================= -->
 
-<!ENTITY % deliveryDestinationAtt-d-att
+<!ENTITY deliveryDestinationAtt-d-att
   "a(props deliveryDestination)"
 >
 

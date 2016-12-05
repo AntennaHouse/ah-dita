@@ -77,15 +77,6 @@ PUBLIC "-//ANTENNA HOUSE//ELEMENTS DITA Map//EN"
 >%commonElementsAh;
 
 <!-- ============================================================= -->
-<!--                    MAP ELEMENT INTEGRATION                    -->
-<!-- ============================================================= -->
-
-<!ENTITY % map-type-oasis
-  PUBLIC "-//OASIS//ELEMENTS DITA 1.3 Map//EN"
-         "../../../../../org.oasis-open.dita.v1_3/dtd/base/dtd/map.mod"
->%map-type-oasis;
-
-<!-- ============================================================= -->
 <!--                    ELEMENT DECLARATIONS                       -->
 <!-- ============================================================= -->
 <!ATTLIST  map %style-ns-atts;

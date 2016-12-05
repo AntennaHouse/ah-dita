@@ -282,7 +282,7 @@
                            &xslfoAtt-d-att;
                            &cssAtt-d-att;
                            &clearAtt-d-att;
-                           %deliveryDestinationAtt-d-att;
+                           &deliveryDestinationAtt-d-att;
                            "
 >
 
