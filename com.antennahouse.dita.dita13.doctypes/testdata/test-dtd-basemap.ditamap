@@ -3,4 +3,5 @@
 <map xmlns:fo="http://www.w3.org/1999/XSL/Format">
  <title fo:prop="font-family:Arial;">DITA Topic Map<br/><cm value="yes"/></title>
  <topicref deliveryDestination="USA CAN"></topicref>
+ <keydef keys="aaa" href="http://www.antenna.co.jp/temp/dummy.jpg"/>
 </map>

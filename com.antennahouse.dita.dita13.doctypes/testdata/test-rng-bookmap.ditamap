@@ -4,4 +4,8 @@
     <booktitle>
         <mainbooktitle fo:prop="font-family:Arial;" deliveryDestination="USA CAN">Main book title<br/><cm value="yes"/><br/></mainbooktitle>
     </booktitle>
+    <frontmatter>
+        <keydef keys="KEY_AAA" href="http://www.antenna.co.jp/temp/dummy.jpg"/>
+        <topicref></topicref>
+    </frontmatter>
 </bookmap>

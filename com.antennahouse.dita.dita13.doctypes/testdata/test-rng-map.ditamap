@@ -3,4 +3,5 @@
 <?xml-model href="urn:x-antennahouse:dita:rng:map.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <map xmlns:fo="http://www.w3.org/1999/XSL/Format">
  <title fo:prop="font-family:Arial;" deliveryDestination="USA CAN">DITA Topic Map<br/><cm value="yes"/><synph><var status="changed" fo:prop="font-family:Courier New;">variable:A</var></synph></title>
+ <keydef keys="KEY_AAA" href="http://www.antenna.co.jp/temp/dummy.jpg"/>
 </map>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE map PUBLIC "-//OASIS//DTD DITA Map//EN" "../doctypes/dtd/technicalContent/dtd/map.dtd">
+<map>
+ <title>DITA Topic Map</title>
+ <keydef keys="KEY_AAA" href="http://www.antenna.co.jp/temp/dummy.jpg"/>
+ <topicref></topicref>
+</map>

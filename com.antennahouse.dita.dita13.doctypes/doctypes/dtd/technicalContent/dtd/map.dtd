@@ -277,6 +277,11 @@
 <!--                    DOMAIN ELEMENT INTEGRATION                 -->
 <!-- ============================================================= -->
 
+<!ENTITY % mapgroup-d-def
+  PUBLIC "-//OASIS//ELEMENTS DITA 1.3 Map Group Domain//EN"
+         "../../../../../org.oasis-open.dita.v1_3/dtd/base/dtd/mapGroup.mod"
+>%mapgroup-d-def;
+
 <!ENTITY % abbrev-d-def
   PUBLIC "-//OASIS//ELEMENTS DITA 1.3 Abbreviated Form Domain//EN"
          "../../../../../org.oasis-open.dita.v1_3/dtd/technicalContent/dtd/abbreviateDomain.mod"
@@ -296,6 +301,11 @@
   PUBLIC "-//OASIS//ELEMENTS DITA 1.3 Glossary Reference Domain//EN"
          "../../../../../org.oasis-open.dita.v1_3/dtd/technicalContent/dtd/glossrefDomain.mod"
 >%glossref-d-def;
+
+<!ENTITY % hazard-d-def
+  PUBLIC "-//OASIS//ELEMENTS DITA 1.3 Hazard Statement Domain//EN"
+         "../../../../../org.oasis-open.dita.v1_3/dtd/base/dtd/hazardstatementDomain.mod"
+>%hazard-d-def;
 
 <!ENTITY % hi-d-def
   PUBLIC "-//OASIS//ELEMENTS DITA 1.3 Highlight Domain//EN"
