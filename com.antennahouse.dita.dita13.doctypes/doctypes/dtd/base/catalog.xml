@@ -23,6 +23,12 @@
    <public publicId="-//ANTENNA HOUSE//ENTITIES DITA Float Figure Domain//EN" uri="dtd/floatfigDomain.ent"/>
    <public publicId="-//ANTENNA HOUSE//ENTITIES DITA 1.x Float Figure Domain//EN" uri="dtd/floatfigDomain.ent"/>
    <public publicId="-//ANTENNA HOUSE//ENTITIES DITA 1.3 Float Figure Domain//EN" uri="dtd/floatfigDomain.ent"/>
+   <public publicId="-//ANTENNA HOUSE//ELEMENTS DITA Glossary Table Domain//EN" uri="dtd/glossaryTableDomain.mod"/>
+   <public publicId="-//ANTENNA HOUSE//ELEMENTS DITA 1.x Glossary Table Domain//EN" uri="dtd/glossaryTableDomain.mod"/>
+   <public publicId="-//ANTENNA HOUSE//ELEMENTS DITA 1.3 Glossary Table Domain//EN" uri="dtd/glossaryTableDomain.mod"/>
+   <public publicId="-//ANTENNA HOUSE//ENTITIES DITA Glossary Table Domain//EN" uri="dtd/glossaryTableDomain.ent"/>
+   <public publicId="-//ANTENNA HOUSE//ENTITIES DITA 1.x Glossary Table Domain//EN" uri="dtd/glossaryTableDomain.ent"/>
+   <public publicId="-//ANTENNA HOUSE//ENTITIES DITA 1.3 Glossary Table Domain//EN" uri="dtd/glossaryTableDomain.ent"/>
    <public publicId="-//ANTENNA HOUSE//ENTITIES DITA XSL-FO Attribute Domain//EN" uri="dtd/xslfoAttDomain.ent"/>
    <public publicId="-//ANTENNA HOUSE//ENTITIES DITA 1.x XSL-FO Attribute Domain//EN" uri="dtd/xslfoAttDomain.ent"/>
    <public publicId="-//ANTENNA HOUSE//ENTITIES DITA 1.3 XSL-FO Attribute Domain//EN" uri="dtd/xslfoAttDomain.ent"/>

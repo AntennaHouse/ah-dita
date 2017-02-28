@@ -2,7 +2,7 @@
 <!-- ============================================================= -->
 <!--                    HEADER                                     -->
 <!-- ============================================================= -->
-<!--  MODULE:    DITA Concept Shell                                  -->
+<!--  MODULE:    DITA Concept Shell                                -->
 <!--  VERSION:   1.3                                               -->
 <!--  DATE:      March 2014                                        -->
 <!--                                                               -->
@@ -17,7 +17,7 @@
 <!-- PUBLIC "-//OASIS//DTD DITA Concept//EN"                       -->
 <!-- The public ID above refers to the latest version of this DTD. -->
 <!--      To refer to this specific version, you may use this value: -->
-<!-- PUBLIC "-//OASIS//DTD DITA 1.3 Concept//EN"                        -->
+<!-- PUBLIC "-//ANTENNA HOUSE//DTD DITA 1.3 Concept//EN"           -->
 <!-- ============================================================= -->
 <!-- SYSTEM:     Darwin Information Typing Architecture (DITA)     -->
 <!--                                                               -->
@@ -39,12 +39,17 @@
 <!--                    RELAX NG                                   -->
 <!--    2015.07.09 AH:  Added character/fo/css domain              -->
 <!--    2016.07.16 AH:  Added clear domain                         -->
+<!--    2017.02.22 AH:  Added glossarytable domain                 -->
 <!-- ============================================================= -->
 <!--                                                               -->
 
 <!-- ============================================================= -->
 <!--              TOPIC ENTITY DECLARATIONS                        -->
 <!-- ============================================================= -->
+<!ENTITY % glossentry-dec
+  PUBLIC "-//ANTENNA HOUSE//ENTITIES DITA 1.3 Glossary Entry//EN"
+         "../../../../../org.oasis-open.dita.v1_3/dtd/technicalContent/dtd/glossentry.ent"
+>%glossentry-dec;
 
 <!ENTITY % concept-dec
   PUBLIC "-//OASIS//ENTITIES DITA 1.3 Concept//EN"
@@ -135,6 +140,11 @@
          "../../base/dtd/floatfigDomain.ent"
 >%floatfig-d-dec;
 
+<!ENTITY % glossarytable-d-dec
+  PUBLIC "-//ANTENNA HOUSE//ENTITIES DITA 1.3 Glossary Table Domain//EN"
+         "../../base/dtd/glossaryTableDomain.ent"
+>%glossarytable-d-dec;
+
 <!-- ============================================================= -->
 <!--             DOMAIN ATTRIBUTES DECLARATIONS                    -->
 <!-- ============================================================= -->
@@ -222,6 +232,9 @@
                          %mathml-d-foreign; |
                          %svg-d-foreign;
                         ">
+<!ENTITY % simpletable  "simpletable |
+                         %glossarytable-d-table; 
+                        ">
 
 <!-- ============================================================= -->
 <!--                    DOMAIN ATTRIBUTE EXTENSIONS                -->
@@ -274,6 +287,7 @@
                            &cssAtt-d-att;
                            &clearAtt-d-att;
                            &deliveryDestinationAtt-d-att;
+                           &glossarytable-d-att;
                            "
 >
 
@@ -294,6 +308,11 @@
   PUBLIC "-//ANTENNA HOUSE//ELEMENTS DITA 1.3 Concept//EN"
          "./concept.mod"
 >%concept-type;
+
+<!ENTITY % glossentry-type
+  PUBLIC "-//ANTENNA HOUSE//ELEMENTS DITA 1.3 Glossary Entry//EN"
+         "./glossentry.mod"
+>%glossentry-type;
 
 <!-- ============================================================= -->
 <!--                    DOMAIN ELEMENT INTEGRATION                 -->
@@ -378,5 +397,10 @@
   PUBLIC "-//ANTENNA HOUSE//ELEMENTS DITA 1.3 Float Figure Domain//EN"
          "../../base/dtd/floatfigDomain.mod"
 >%floatfig-d-def;
+
+<!ENTITY % glossarytable-d-def
+  PUBLIC "-//ANTENNA HOUSE//ELEMENTS DITA 1.3 Glossary Table Domain//EN"
+         "../../base/dtd/glossaryTableDomain.mod"
+>%glossarytable-d-def;
 
 <!-- ================= End of DITA Concept Shell ================= -->

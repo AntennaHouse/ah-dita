@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE reference PUBLIC "-//ANTENNA HOUSE//DTD DITA Reference//EN" "../doctypes/dtd/technicalContent/dtd/reference.dtd">
+<reference id="reference_glossaryTable" xml:lang="en-US">
+ <title>glossaryTable test</title>
+ <refbody>
+  <section>
+   <title>Glossary table</title>
+   <glossaryTable>
+    <gtHead>
+     <gtEntryHd>Acronym</gtEntryHd>
+     <gtEntryHd>Formal Name</gtEntryHd>
+     <gtEntryHd>Definition</gtEntryHd>
+     <gtEntryHd>Usage</gtEntryHd>
+    </gtHead>
+    <gtRow>
+     <gtEntry><glossAcronym conref="test-dtd-glossentry-abs.xml#glossentry_abs/acronym"/></gtEntry>
+     <gtEntry><glossterm conref="test-dtd-glossentry-abs.xml#glossentry_abs/term"/></gtEntry>
+     <gtEntry><glossdef conref="test-dtd-glossentry-abs.xml#glossentry_abs/def"/></gtEntry>
+     <gtEntry><glossUsage conref="test-dtd-glossentry-abs.xml#glossentry_abs/usage"/></gtEntry>
+    </gtRow>
+    <gtRow>
+     <gtEntry><glossAcronym conref="test-dtd-glossentry-aiss.xml#glossentry_aiss/acronym"/></gtEntry>
+     <gtEntry><glossterm conref="test-dtd-glossentry-aiss.xml#glossentry_aiss/term"/></gtEntry>
+     <gtEntry><glossdef conref="test-dtd-glossentry-aiss.xml#glossentry_aiss/def"/></gtEntry>
+     <gtEntry><glossUsage conref="test-dtd-glossentry-aiss.xml#glossentry_aiss/usage"/></gtEntry>
+    </gtRow>
+   </glossaryTable>
+  </section>
+ </refbody>
+</reference>
