@@ -55,7 +55,6 @@
 <!--    2008.02.13 RDA: Create .content and .attributes entities   -->
 <!--    2008.11.10 RDA: Make href optional on image                -->
 <!--    2016.10.09 AH:  Add style-ns-attr                          -->
-<!--    2017.02.21 AH:  Add simpleAbbrevTable                      -->
 <!-- ============================================================= -->
 <!--                                                               -->
 

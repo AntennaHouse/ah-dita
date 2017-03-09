@@ -234,19 +234,19 @@
 <!-- ============================================================= -->
 <!--             SPECIALIZATION ATTRIBUTE DECLARATIONS             -->
 <!-- ============================================================= -->
-<!ATTLIST  abbrevTable        %global-atts;  class CDATA "- topic/simpletable glossarytable-d/abbrevtable ">
-<!ATTLIST  atHead             %global-atts;  class CDATA "- topic/sthead glossarytable-d/athead ">
-<!ATTLIST  atRow              %global-atts;  class CDATA "- topic/strow glossarytable-d/atrow ">
-<!ATTLIST  atAcronymHd        %global-atts;  class CDATA "- topic/stentry glossarytable-d/atacronymhd ">
-<!ATTLIST  atTermHd           %global-atts;  class CDATA "- topic/stentry glossarytable-d/attermhd ">
-<!ATTLIST  atAcronym          %global-atts;  class CDATA "- topic/stentry glossarytable-d/atacronym ">
-<!ATTLIST  atTerm             %global-atts;  class CDATA "- topic/stentry glossarytable-d/atterm ">
+<!ATTLIST  abbrevTable        %global-atts;  class CDATA "+ topic/simpletable glossarytable-d/abbrevtable ">
+<!ATTLIST  atHead             %global-atts;  class CDATA "+ topic/sthead glossarytable-d/athead ">
+<!ATTLIST  atRow              %global-atts;  class CDATA "+ topic/strow glossarytable-d/atrow ">
+<!ATTLIST  atAcronymHd        %global-atts;  class CDATA "+ topic/stentry glossarytable-d/atacronymhd ">
+<!ATTLIST  atTermHd           %global-atts;  class CDATA "+ topic/stentry glossarytable-d/attermhd ">
+<!ATTLIST  atAcronym          %global-atts;  class CDATA "+ topic/stentry glossarytable-d/atacronym ">
+<!ATTLIST  atTerm             %global-atts;  class CDATA "+ topic/stentry glossarytable-d/atterm ">
 
-<!ATTLIST  glossaryTable      %global-atts;  class CDATA "- topic/simpletable glossarytable-d/glossarytable ">
-<!ATTLIST  gtHead             %global-atts;  class CDATA "- topic/sthead glossarytable-d/gthead ">
-<!ATTLIST  gtEntryHd          %global-atts;  class CDATA "- topic/stentry glossarytable-d/gtentryhd ">
-<!ATTLIST  gtRow              %global-atts;  class CDATA "- topic/strow glossarytable-d/gtrow ">
-<!ATTLIST  gtEntry            %global-atts;  class CDATA "- topic/stentry glossarytable-d/gtentry ">
+<!ATTLIST  glossaryTable      %global-atts;  class CDATA "+ topic/simpletable glossarytable-d/glossarytable ">
+<!ATTLIST  gtHead             %global-atts;  class CDATA "+ topic/sthead glossarytable-d/gthead ">
+<!ATTLIST  gtEntryHd          %global-atts;  class CDATA "+ topic/stentry glossarytable-d/gtentryhd ">
+<!ATTLIST  gtRow              %global-atts;  class CDATA "+ topic/strow glossarytable-d/gtrow ">
+<!ATTLIST  gtEntry            %global-atts;  class CDATA "+ topic/stentry glossarytable-d/gtentry ">
 
 <!-- ================== End of DITA Floating Figure Domain ==================== -->
  

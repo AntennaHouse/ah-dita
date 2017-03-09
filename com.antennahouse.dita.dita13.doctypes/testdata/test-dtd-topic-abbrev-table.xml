@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE topic PUBLIC "-//ANTENNA HOUSE//DTD DITA Topic//EN" "../doctypes/dtd/technicalContent/dtd/topic.dtd">
 <topic id="topic_abbrevTable">
- <title>abbrevTable test（略語テーブルテスト）</title>
+ <title>abbrevTable test</title>
  <body>
   <p>Abbreviation table</p>
   <abbrevTable>
    <atHead>
-    <atAcronymHd>略語</atAcronymHd>
-    <atTermHd>正式名称</atTermHd>
+    <atAcronymHd>Acronym</atAcronymHd>
+    <atTermHd>Formal name</atTermHd>
    </atHead>
    <atRow>
     <atAcronym><glossAcronym conref="test-dtd-glossentry-abs.xml#glossentry_abs/acronym"/></atAcronym>

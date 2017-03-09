@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE topic PUBLIC "-//ANTENNA HOUSE//DTD DITA Topic//EN" "../doctypes/dtd/technicalContent/dtd/topic.dtd">
 <topic id="topic_glossaryTable">
- <title>glossaryTable test（用語テーブルテスト）</title>
+ <title>glossaryTable test</title>
  <body>
   <p>Glossary table</p>
   <glossaryTable>
    <gtHead>
-    <gtEntryHd>略語</gtEntryHd>
-    <gtEntryHd>正式名称</gtEntryHd>
-    <gtEntryHd>意味</gtEntryHd>
-    <gtEntryHd>用途</gtEntryHd>
+    <gtEntryHd>Acronym</gtEntryHd>
+    <gtEntryHd>Formal name</gtEntryHd>
+    <gtEntryHd>Definition</gtEntryHd>
+    <gtEntryHd>Usage</gtEntryHd>
    </gtHead>
    <gtRow>
     <gtEntry><glossAcronym conref="test-dtd-glossentry-abs.xml#glossentry_abs/acronym"/></gtEntry>

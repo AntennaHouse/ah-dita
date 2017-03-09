@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-model href="urn:x-antennahouse:dita:rng:glossentry.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="urn:x-antennahouse:dita:rng:glossentry.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<glossentry id="glossentry_aiss" xml:lang="en-US">
+    <glossterm id="term">Automatic Idling Setting System</glossterm>
+    <glossdef id="def">An automobile system that controls the idling revolutions automatically.
+    </glossdef>
+    <glossBody>
+        <glossUsage id="usage">Engine</glossUsage>
+        <glossAlt>
+            <glossAcronym id="acronym">AISS</glossAcronym>
+        </glossAlt>
+    </glossBody>
+</glossentry>

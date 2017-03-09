@@ -1,0 +1,544 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="urn:oasis:names:tc:dita:rng:vocabularyModuleDesc.rng"
+            schematypens="http://relaxng.org/ns/structure/1.0"?>
+<grammar xmlns="http://relaxng.org/ns/structure/1.0"
+  xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"
+  xmlns:dita="http://dita.oasis-open.org/architecture/2005/"
+  xmlns:sch="http://purl.oclc.org/dsdl/schematron"
+  datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes">
+  <moduleDesc xmlns="http://dita.oasis-open.org/architecture/2005/">
+    <moduleTitle>DITA Floating Figure Domain</moduleTitle>
+    <headerComment xml:space="preserve">
+============================================================= 
+DITA Float Figure Domain
+
+Purpose: Provides elements for glossary table.
+         
+Creation Date: March 2017
+
+Copyright (c) Antenna House, Inc.
+=============================================================      
+</headerComment>
+    <moduleMetadata>
+      <moduleType>elementdomain</moduleType>
+      <moduleShortName>glossarytable-d</moduleShortName>
+      <modulePublicIds>
+        <dtdMod>-//ANTENNA HOUSE//ELEMENTS DITA<var presep=" " name="ditaver"/> Glossary Table
+          Domain//EN</dtdMod>
+        <dtdEnt>-//ANTENNA HOUSE//ENTITIES DITA<var presep=" " name="ditaver"/> Glossary Table
+          Domain//EN</dtdEnt>
+        <xsdMod>urn:x-antennahouse:dita:xsd:glossaryTableDomain.xsd<var presep=":" name="ditaver"
+          /></xsdMod>
+        <rncMod>urn:x-antennahouse:dita:rnc:glossaryTableDomain.rnc<var presep=":" name="ditaver"
+          /></rncMod>
+        <rngMod>urn:x-antennahouse:dita:rng:glossaryTableDomain.rng<var presep=":" name="ditaver"
+          /></rngMod>
+      </modulePublicIds>
+      <domainsContribution>(topic glossarytable-d)</domainsContribution>
+    </moduleMetadata>
+  </moduleDesc>
+  <div>
+    <a:documentation>DOMAIN EXTENSION PATTERNS</a:documentation>
+    <define name="glossarytable-d-table">
+      <zeroOrMore>
+        <choice>
+          <ref name="abbrevTable.element"/>
+          <ref name="glossaryTable.element"/>
+        </choice>
+      </zeroOrMore>
+    </define>
+
+    <define name="simpletable" combine="choice">
+      <ref name="glossarytable-d-table"/>
+    </define>
+  </div>
+  <div>
+    <a:documentation>ELEMENT TYPE NAME PATTERNS</a:documentation>
+    <define name="abbrevTable">
+      <ref name="abbrevTable.element"/>
+    </define>
+    <define name="atHead">
+      <ref name="atHead.element"/>
+    </define>
+    <define name="atAcronymHd">
+      <ref name="atAcronymHd.element"/>
+    </define>
+    <define name="atTermHd">
+      <ref name="atTermHd.element"/>
+    </define>
+    <define name="atRow">
+      <ref name="atRow.element"/>
+    </define>
+    <define name="atAcronym">
+      <ref name="atAcronym.element"/>
+    </define>
+    <define name="atTerm">
+      <ref name="atTerm.element"/>
+    </define>
+    <define name="glossaryTable">
+      <ref name="glossaryTable.element"/>
+    </define>
+    <define name="gtHead">
+      <ref name="gtHead.element"/>
+    </define>
+    <define name="gtEntryHd">
+      <ref name="gtEntryHd.element"/>
+    </define>
+    <define name="gtRow">
+      <ref name="gtRow.element"/>
+    </define>
+    <define name="gtEntry">
+      <ref name="gtEntry.element"/>
+    </define>
+  </div>
+  <div>
+    <a:documentation>ELEMENT TYPE DECLARATIONS</a:documentation>
+    <div>
+      <a:documentation> This specialization defines two tables: 1. abbrevTable 2. glossaryTable </a:documentation>
+      <a:documentation>LONG NAME: Abbreviation Table</a:documentation>
+      <define name="abbrevTable.content">
+        <optional>
+          <ref name="atHead"/>
+        </optional>
+        <choice>
+          <oneOrMore>
+            <ref name="atRow"/>
+          </oneOrMore>
+        </choice>
+      </define>
+      <define name="abbrevTable.attributes">
+        <optional>
+          <attribute name="relcolwidth"/>
+        </optional>
+        <optional>
+          <attribute name="keycol" a:defaultValue="1">
+            <data type="NMTOKEN"/>
+          </attribute>
+        </optional>
+        <optional>
+          <attribute name="refcols">
+            <data type="NMTOKENS"/>
+          </attribute>
+        </optional>
+        <optional>
+          <attribute name="spectitle"/>
+        </optional>
+        <ref name="display-atts"/>
+        <ref name="univ-atts"/>
+        <optional>
+          <attribute name="outputclass"/>
+        </optional>
+      </define>
+      <define name="abbrevTable.element">
+        <element name="abbrevTable" dita:longName="Abbreviation Table">
+          <a:documentation> The Abbreviation Table element (&lt;abbrevTable&gt;) represents an table
+            with two columns. The first column is a acronym and second column is a definition. </a:documentation>
+          <ref name="abbrevTable.content"/>
+          <ref name="abbrevTable.attlist"/>
+        </element>
+      </define>
+      <define name="abbrevTable.attlist" combine="interleave">
+        <ref name="abbrevTable.attributes"/>
+      </define>
+    </div>
+    <div>
+      <a:documentation>LONG NAME: Abbreviation Table Header</a:documentation>
+      <define name="atHead.content">
+        <ref name="atAcronymHd"/>
+        <ref name="atTermHd"/>
+      </define>
+      <define name="atHead.attributes">
+        <ref name="univ-atts"/>
+        <optional>
+          <attribute name="outputclass"/>
+        </optional>
+      </define>
+      <define name="atHead.element">
+        <element name="atHead" dita:longName="Abbreviation Table Header">
+          <a:documentation> The &lt;atHead&gt; element is used to express the header part of
+            abbreviation table. </a:documentation>
+          <ref name="atHead.attlist"/>
+          <ref name="atHead.content"/>
+        </element>
+      </define>
+      <define name="atHead.attlist" combine="interleave">
+        <ref name="atHead.attributes"/>
+      </define>
+    </div>
+    <div>
+      <a:documentation>LONG NAME: Abbreviation Table Header (atAcronym)</a:documentation>
+      <define name="atAcronymHd.content">
+        <zeroOrMore>
+          <ref name="tblcell.cnt"/>
+        </zeroOrMore>
+      </define>
+      <define name="atAcronymHd.attributes">
+        <optional>
+          <attribute name="specentry"/>
+        </optional>
+        <ref name="univ-atts"/>
+        <optional>
+          <attribute name="outputclass"/>
+        </optional>
+      </define>
+      <define name="atAcronymHd.element">
+        <element name="atAcronymHd" dita:longName="Abbreviation Table Head Acronym">
+          <a:documentation> The &lt;atAcronymHd&gt; element is used to express the header acronym
+            part of abbreviation table. </a:documentation>
+          <ref name="atAcronymHd.attlist"/>
+          <ref name="atAcronymHd.content"/>
+        </element>
+      </define>
+      <define name="atAcronymHd.attlist" combine="interleave">
+        <ref name="atAcronymHd.attributes"/>
+      </define>
+    </div>
+    <div>
+      <a:documentation>LONG NAME: Abbreviation Table Header (atTerm)</a:documentation>
+      <define name="atTermHd.content">
+        <zeroOrMore>
+          <ref name="tblcell.cnt"/>
+        </zeroOrMore>
+      </define>
+      <define name="atTermHd.attributes">
+        <optional>
+          <attribute name="specentry"/>
+        </optional>
+        <ref name="univ-atts"/>
+        <optional>
+          <attribute name="outputclass"/>
+        </optional>
+      </define>
+      <define name="atTermHd.element">
+        <element name="atTermHd" dita:longName="Abbreviation Table Header Term">
+          <a:documentation> The &lt;atTermHd&gt; element is used to express the header term part of
+            abbreviation table. </a:documentation>
+          <ref name="atTermHd.attlist"/>
+          <ref name="atTermHd.content"/>
+        </element>
+      </define>
+      <define name="atTermHd.attlist" combine="interleave">
+        <ref name="atTermHd.attributes"/>
+      </define>
+    </div>
+    <div>
+      <a:documentation>LONG NAME: Abbreviation Table Row</a:documentation>
+      <define name="atRow.content">
+        <ref name="atAcronym"/>
+        <ref name="atTerm"/>
+      </define>
+      <define name="atRow.attributes">
+        <ref name="univ-atts"/>
+        <optional>
+          <attribute name="outputclass"/>
+        </optional>
+      </define>
+      <define name="atRow.element">
+        <element name="atRow" dita:longName="Abbreviation Table Row">
+          <a:documentation> The &lt;atRow&gt; element is used to express the row part of
+            abbreviation table. </a:documentation>
+          <ref name="atRow.attlist"/>
+          <ref name="atRow.content"/>
+        </element>
+      </define>
+      <define name="atRow.attlist" combine="interleave">
+        <ref name="atRow.attributes"/>
+      </define>
+    </div>
+    <div>
+      <a:documentation>LONG NAME: Abbreviation Table Acronym</a:documentation>
+      <define name="atAcronym.content">
+        <zeroOrMore>
+          <ref name="tblcell.cnt"/>
+          <ref name="glossAcronym"/>
+        </zeroOrMore>
+      </define>
+      <define name="atAcronym.attributes">
+        <optional>
+          <attribute name="specentry"/>
+        </optional>
+        <ref name="univ-atts"/>
+        <optional>
+          <attribute name="outputclass"/>
+        </optional>
+      </define>
+      <define name="atAcronym.element">
+        <element name="atAcronym" dita:longName="Abbreviation Table Acronym">
+          <a:documentation> The &lt;atAcronym&gt; element is used to express the acronym part of
+            abbreviation table. </a:documentation>
+          <ref name="atAcronym.attlist"/>
+          <ref name="atAcronym.content"/>
+        </element>
+      </define>
+      <define name="atAcronym.attlist" combine="interleave">
+        <ref name="atAcronym.attributes"/>
+      </define>
+    </div>
+    <div>
+      <a:documentation>LONG NAME: Abbreviation Table Term</a:documentation>
+      <define name="atTerm.content">
+        <zeroOrMore>
+          <ref name="tblcell.cnt"/>
+          <ref name="glossterm"/>
+        </zeroOrMore>
+      </define>
+      <define name="atTerm.attributes">
+        <optional>
+          <attribute name="specentry"/>
+        </optional>
+        <ref name="univ-atts"/>
+        <optional>
+          <attribute name="outputclass"/>
+        </optional>
+      </define>
+      <define name="atTerm.element">
+        <element name="atTerm" dita:longName="Abbreviation Table Term">
+          <a:documentation> The &lt;atTerm&gt; element is used to express the term part of
+            abbreviation table. </a:documentation>
+          <ref name="atTerm.attlist"/>
+          <ref name="atTerm.content"/>
+        </element>
+      </define>
+      <define name="atTerm.attlist" combine="interleave">
+        <ref name="atTerm.attributes"/>
+      </define>
+    </div>
+    <div>
+      <a:documentation>LONG NAME: Glossary Table</a:documentation>
+      <define name="glossaryTable.content">
+        <optional>
+          <ref name="gtHead"/>
+        </optional>
+        <choice>
+          <oneOrMore>
+            <ref name="gtRow"/>
+          </oneOrMore>
+        </choice>
+      </define>
+      <define name="glossaryTable.attributes">
+        <optional>
+          <attribute name="relcolwidth"/>
+        </optional>
+        <optional>
+          <attribute name="keycol">
+            <data type="NMTOKEN"/>
+          </attribute>
+        </optional>
+        <optional>
+          <attribute name="refcols">
+            <data type="NMTOKENS"/>
+          </attribute>
+        </optional>
+        <optional>
+          <attribute name="spectitle"/>
+        </optional>
+        <ref name="display-atts"/>
+        <ref name="univ-atts"/>
+        <optional>
+          <attribute name="outputclass"/>
+        </optional>
+      </define>
+      <define name="glossaryTable.element">
+        <element name="glossaryTable" dita:longName="Glossary Table">
+          <a:documentation> The Glossary Table element (&lt;glossaryTable&gt;) represents an table
+            with several columns. Each column references the elements that is defined as a underlaying glossentry element.</a:documentation>
+          <ref name="glossaryTable.content"/>
+          <ref name="glossaryTable.attlist"/>
+        </element>
+      </define>
+      <define name="glossaryTable.attlist" combine="interleave">
+        <ref name="glossaryTable.attributes"/>
+      </define>
+    </div>
+    <div>
+      <a:documentation>LONG NAME: Glossary Table Header</a:documentation>
+      <define name="gtHead.content">
+        <oneOrMore>
+          <ref name="gtEntryHd"/>
+        </oneOrMore>
+      </define>
+      <define name="gtHead.attributes">
+        <ref name="univ-atts"/>
+        <optional>
+          <attribute name="outputclass"/>
+        </optional>
+      </define>
+      <define name="gtHead.element">
+        <element name="gtHead" dita:longName="Glossary Table Header">
+          <a:documentation> The &lt;gtHead&gt; element is used to express the header part of
+            glossary table. </a:documentation>
+          <ref name="gtHead.attlist"/>
+          <ref name="gtHead.content"/>
+        </element>
+      </define>
+      <define name="gtHead.attlist" combine="interleave">
+        <ref name="gtHead.attributes"/>
+      </define>
+    </div>
+    <div>
+      <a:documentation>LONG NAME: Glossary Table Header Entry</a:documentation>
+      <define name="gtEntryHd.content">
+        <zeroOrMore>
+          <ref name="tblcell.cnt"/>
+        </zeroOrMore>
+      </define>
+      <define name="gtEntryHd.attributes">
+        <optional>
+          <attribute name="specentry"/>
+        </optional>
+        <ref name="univ-atts"/>
+        <optional>
+          <attribute name="outputclass"/>
+        </optional>
+      </define>
+      <define name="gtEntryHd.element">
+        <element name="gtEntryHd" dita:longName="Glossary Table Header Entry">
+          <a:documentation> The &lt;gtEntryHd&gt; element is used to express the header cell
+            of abbreviation table. </a:documentation>
+          <ref name="gtEntryHd.attlist"/>
+          <ref name="gtEntryHd.content"/>
+        </element>
+      </define>
+      <define name="gtEntryHd.attlist" combine="interleave">
+        <ref name="gtEntryHd.attributes"/>
+      </define>
+    </div>
+    <div>
+      <a:documentation>LONG NAME: Glossary Table Row</a:documentation>
+      <define name="gtRow.content">
+        <oneOrMore>
+          <ref name="gtEntry"/>
+        </oneOrMore>
+      </define>
+      <define name="gtRow.attributes">
+        <ref name="univ-atts"/>
+        <optional>
+          <attribute name="outputclass"/>
+        </optional>
+      </define>
+      <define name="gtRow.element">
+        <element name="gtRow" dita:longName="Glossary Table Row">
+          <a:documentation> The &lt;gtRow&gt; element is used to express the row part of
+            glossary table. </a:documentation>
+          <ref name="gtRow.attlist"/>
+          <ref name="gtRow.content"/>
+        </element>
+      </define>
+      <define name="gtRow.attlist" combine="interleave">
+        <ref name="gtRow.attributes"/>
+      </define>
+    </div>
+    <div>
+      <a:documentation>LONG NAME: Glossary Table Entry</a:documentation>
+      <define name="gtEntry.content">
+        <zeroOrMore>
+          <choice>
+            <ref name="tblcell.cnt"/>
+            <ref name="glossterm"/>
+            <ref name="glossdef"/>
+            <ref name="glossUsage"/>
+            <ref name="glossSymbol"/>
+            <ref name="glossAcronym"/>
+            <ref name="glossShortForm"/>
+            <ref name="glossSynonym"/>
+          </choice>
+        </zeroOrMore>
+      </define>
+      <define name="gtEntry.attributes">
+        <optional>
+          <attribute name="specentry"/>
+        </optional>
+        <ref name="univ-atts"/>
+        <optional>
+          <attribute name="outputclass"/>
+        </optional>
+      </define>
+      <define name="gtEntry.element">
+        <element name="gtEntry" dita:longName="Glossary Table Entry">
+          <a:documentation> The &lt;gtEntry&gt; element is used to express the cell of
+            glossary table. </a:documentation>
+          <ref name="gtEntry.attlist"/>
+          <ref name="gtEntry.content"/>
+        </element>
+      </define>
+      <define name="gtEntry.attlist" combine="interleave">
+        <ref name="gtEntry.attributes"/>
+      </define>
+    </div>
+  </div>
+  <div>
+    <a:documentation>SPECIALIZATION ATTRIBUTE DECLARATIONS</a:documentation>
+    <define name="abbrevTable.attlist" combine="interleave">
+      <ref name="global-atts"/>
+      <optional>
+        <attribute name="class" a:defaultValue="+ topic/simpletable glossarytable-d/abbrevtable "/>
+      </optional>
+    </define>
+    <define name="atHead.attlist" combine="interleave">
+      <ref name="global-atts"/>
+      <optional>
+        <attribute name="class" a:defaultValue="+ topic/sthead glossarytable-d/athead "/>
+      </optional>
+    </define>
+    <define name="atAcronymHd.attlist" combine="interleave">
+      <ref name="global-atts"/>
+      <optional>
+        <attribute name="class" a:defaultValue="+ topic/stentry glossarytable-d/atacronymhd "/>
+      </optional>
+    </define>
+    <define name="atTermHd.attlist" combine="interleave">
+      <ref name="global-atts"/>
+      <optional>
+        <attribute name="class" a:defaultValue="+ topic/stentry glossarytable-d/attermhd "/>
+      </optional>
+    </define>
+    <define name="atRow.attlist" combine="interleave">
+      <ref name="global-atts"/>
+      <optional>
+        <attribute name="class" a:defaultValue="+ topic/strow glossarytable-d/atrow "/>
+      </optional>
+    </define>
+    <define name="atAcronym.attlist" combine="interleave">
+      <ref name="global-atts"/>
+      <optional>
+        <attribute name="class" a:defaultValue="+ topic/stentry glossarytable-d/atacronym "/>
+      </optional>
+    </define>
+    <define name="atTerm.attlist" combine="interleave">
+      <ref name="global-atts"/>
+      <optional>
+        <attribute name="class" a:defaultValue="+ topic/stentry glossarytable-d/atterm "/>
+      </optional>
+    </define>
+    <define name="glossaryTable.attlist" combine="interleave">
+      <ref name="global-atts"/>
+      <optional>
+        <attribute name="class" a:defaultValue="+ topic/simpletable glossarytable-d/glossarytable "/>
+      </optional>
+    </define>
+    <define name="gtHead.attlist" combine="interleave">
+      <ref name="global-atts"/>
+      <optional>
+        <attribute name="class" a:defaultValue="+ topic/sthead glossarytable-d/gthead "/>
+      </optional>
+    </define>
+    <define name="gtEntryHd.attlist" combine="interleave">
+      <ref name="global-atts"/>
+      <optional>
+        <attribute name="class" a:defaultValue="+ topic/stentry glossarytable-d/gtentryhd "/>
+      </optional>
+    </define>
+    <define name="gtRow.attlist" combine="interleave">
+      <ref name="global-atts"/>
+      <optional>
+        <attribute name="class" a:defaultValue="+ topic/strow glossarytable-d/gtrow "/>
+      </optional>
+    </define>
+    <define name="gtEntry.attlist" combine="interleave">
+      <ref name="global-atts"/>
+      <optional>
+        <attribute name="class" a:defaultValue="+ topic/stentry glossarytable-d/gtentry "/>
+      </optional>
+    </define>
+  </div>
+</grammar>
