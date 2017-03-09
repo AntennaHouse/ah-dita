@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- ============================================================= -->
+<!-- DITA Glossary Table Domain                                    -->
+<!-- Purpose: Provides elements for glossary table.                -->
+<!--                                                               -->
+<!-- Creation Date: Feb 2017                                       -->
+<!-- Copyright (c) Antenna House, Inc.                             -->
+<!-- ============================================================= -->
+
+<!-- ============================================================= -->
+<!--                    ELEMENT EXTENSION ENTITY DECLARATIONS      -->
+<!-- ============================================================= -->
+
+<!ENTITY % glossarytable-d-table
+  "abbrevTable | glossaryTable"
+>
+
+<!-- ============================================================= -->
+<!--                    DOMAIN ENTITY DECLARATION                  -->
+<!-- ============================================================= -->
+
+<!ENTITY glossarytable-d-att
+  "(topic glossarytable-d)"
+>
+
+<!-- ================ End DITA Abbrevation Table Domain ========== -->
+ 

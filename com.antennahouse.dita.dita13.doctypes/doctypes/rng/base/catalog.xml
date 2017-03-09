@@ -18,6 +18,8 @@
       <system systemId="urn:x-antennahouse:dita:rng:clearAttDomain.rng" uri="rng/clearAttDomain.rng"/>
       <system systemId="urn:x-antennahouse:dita:rng:deliveryDestinationAttDomain.rng:1.3" uri="rng/deliveryDestinationAttDomain.rng"/>
       <system systemId="urn:x-antennahouse:dita:rng:deliveryDestinationAttDomain.rng" uri="rng/deliveryDestinationAttDomain.rng"/>
+      <system systemId="urn:x-antennahouse:dita:rng:glossaryTableDomain.rng" uri="rng/glossaryTableDomain.rng"/>
+      <system systemId="urn:x-antennahouse:dita:rng:glossaryTableDomain.rng:1.3" uri="rng/glossaryTableDomain.rng"/>
    </group>
    <group>
       <!-- Public ID (URN) catalog entries -->
@@ -35,6 +37,8 @@
       <uri name="urn:x-antennahouse:dita:rng:clearAttDomain.rng" uri="rng/clearAttDomain.rng"/>
       <uri name="urn:x-antennahouse:dita:rng:deliveryDestinationAttDomain.rng:1.3" uri="rng/deliveryDestinationAttDomain.rng"/>
       <uri name="urn:x-antennahouse:dita:rng:deliveryDestinationAttDomain.rng" uri="rng/deliveryDestinationAttDomain.rng"/>
+      <uri name="urn:x-antennahouse:dita:rng:glossaryTableDomain.rng" uri="rng/glossaryTableDomain.rng"/>
+      <uri name="urn:x-antennahouse:dita:rng:glossaryTableDomain.rng:1.3" uri="rng/glossaryTableDomain.rng"/>
    </group>
 
 </catalog>

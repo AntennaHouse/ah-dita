@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="urn:x-antennahouse:dita:rng:reference.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="urn:x-antennahouse:dita:rng:reference.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<reference id="reference_abbrevTable">
+ <title>abbrevTable test</title>
+ <refbody>
+  <section>
+   <title>Abbreviation table</title>
+   <abbrevTable>
+    <atHead>
+     <atAcronymHd>Acronym</atAcronymHd>
+     <atTermHd>Formal name</atTermHd>
+    </atHead>
+    <atRow>
+     <atAcronym><glossAcronym conref="test-rng-glossentry-abs.xml#glossentry_abs/acronym"/></atAcronym>
+     <atTerm><glossterm conref="test-rng-glossentry-abs.xml#glossentry_abs/term"/></atTerm>
+    </atRow>
+    <atRow>
+     <atAcronym><glossAcronym conref="test-rng-glossentry-aiss.xml#glossentry_aiss/acronym"/></atAcronym>
+     <atTerm><glossterm conref="test-rng-glossentry-aiss.xml#glossentry_aiss/term"/></atTerm>
+    </atRow>
+   </abbrevTable>
+  </section>
+ </refbody>
+</reference>

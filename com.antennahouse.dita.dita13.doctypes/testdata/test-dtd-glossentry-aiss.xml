@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE glossentry PUBLIC "-//ANTENNA HOUSE//DTD DITA Glossary Entry//EN" "../doctypes/dtd/technicalContent/dtd/glossentry.dtd">
+<glossentry id="glossentry_aiss" xml:lang="en-US">
+    <glossterm id="term">Automatic Idling Setting System</glossterm>
+    <glossdef id="def">An automobile system that controls the idling revolutions automatically.
+    </glossdef>
+    <glossBody>
+        <glossUsage id="usage">Engine</glossUsage>
+        <glossAlt>
+            <glossAcronym id="acronym">AISS</glossAcronym>
+        </glossAlt>
+    </glossBody>
+</glossentry>

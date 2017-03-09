@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//ANTENNA HOUSE//DTD DITA Concept//EN" "../doctypes/dtd/technicalContent/dtd/concept.dtd">
+<concept id="concept_glossaryTable">
+ <title>glossaryTable test（用語テーブルテスト）</title>
+ <conbody>
+  <p>Glossary table</p>
+  <glossaryTable>
+   <gtHead>
+    <gtEntryHd>略語</gtEntryHd>
+    <gtEntryHd>正式名称</gtEntryHd>
+    <gtEntryHd>意味</gtEntryHd>
+    <gtEntryHd>用途</gtEntryHd>
+   </gtHead>
+   <gtRow>
+    <gtEntry><glossAcronym conref="test-dtd-glossentry-abs.xml#glossentry_abs/acronym"/></gtEntry>
+    <gtEntry><glossterm conref="test-dtd-glossentry-abs.xml#glossentry_abs/term"/></gtEntry>
+    <gtEntry><glossdef conref="test-dtd-glossentry-abs.xml#glossentry_abs/def"/></gtEntry>
+    <gtEntry><glossUsage conref="test-dtd-glossentry-abs.xml#glossentry_abs/usage"/></gtEntry>
+   </gtRow>
+   <gtRow>
+    <gtEntry><glossAcronym conref="test-dtd-glossentry-aiss.xml#glossentry_aiss/acronym"/></gtEntry>
+    <gtEntry><glossterm conref="test-dtd-glossentry-aiss.xml#glossentry_aiss/term"/></gtEntry>
+    <gtEntry><glossdef conref="test-dtd-glossentry-aiss.xml#glossentry_aiss/def"/></gtEntry>
+    <gtEntry><glossUsage conref="test-dtd-glossentry-aiss.xml#glossentry_aiss/usage"/></gtEntry>
+   </gtRow>
+  </glossaryTable>
+ </conbody>
+</concept>

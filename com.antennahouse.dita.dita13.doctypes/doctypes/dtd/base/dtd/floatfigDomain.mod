@@ -40,8 +40,7 @@
                        "((%title;)?,
                          (%desc;)?,
                          (%floatfig-group;|
-                          %fig.cnt;)*,
-                         (%fig.cnt;)*)"
+                          %fig.cnt;)*)"
 >
 <!ENTITY % floatfig.attributes
               "%display-atts;

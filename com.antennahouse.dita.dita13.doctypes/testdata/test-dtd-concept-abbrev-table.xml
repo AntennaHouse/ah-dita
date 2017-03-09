@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//ANTENNA HOUSE//DTD DITA Concept//EN" "../doctypes/dtd/technicalContent/dtd/concept.dtd">
+<concept id="concept_abbrevTable">
+ <title>abbrevTable test（略語テーブルテスト）</title>
+ <conbody>
+  <p>Abbreviation table</p>
+  <abbrevTable>
+   <atHead>
+    <atAcronymHd>略語</atAcronymHd>
+    <atTermHd>正式名称</atTermHd>
+   </atHead>
+   <atRow>
+    <atAcronym><glossAcronym conref="test-dtd-glossentry-abs.xml#glossentry_abs/acronym"/></atAcronym>
+    <atTerm><glossterm conref="test-dtd-glossentry-abs.xml#glossentry_abs/term"/></atTerm>
+   </atRow>
+   <atRow>
+    <atAcronym><glossAcronym conref="test-dtd-glossentry-aiss.xml#glossentry_aiss/acronym"/></atAcronym>
+    <atTerm><glossterm conref="test-dtd-glossentry-aiss.xml#glossentry_aiss/term"/></atTerm>
+   </atRow>
+  </abbrevTable>
+ </conbody>
+</concept>

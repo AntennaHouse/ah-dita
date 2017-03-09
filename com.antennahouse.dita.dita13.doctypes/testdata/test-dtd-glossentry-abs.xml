@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE glossentry PUBLIC "-//ANTENNA HOUSE//DTD DITA Glossary Entry//EN" "../doctypes/dtd/technicalContent/dtd/glossentry.dtd">
+<glossentry id="glossentry_abs" xml:lang="en-US">
+    <glossterm id="term">Anti-skid Brake System</glossterm>
+    <glossdef id="def">An automobile safety system that allows the wheels on a motor vehicle to maintain tractive contact with the road surface according to driver inputs while braking, preventing the wheels from locking up (ceasing rotation) and avoiding uncontrolled skidding. 
+    </glossdef>
+    <glossBody>
+        <glossUsage id="usage">
+            <p>Brake</p>
+        </glossUsage>
+        <glossAlt>
+            <glossAcronym id="acronym">ABS</glossAcronym>
+        </glossAlt>
+    </glossBody>
+</glossentry>
