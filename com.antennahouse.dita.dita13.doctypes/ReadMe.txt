@@ -2,7 +2,7 @@ Antenna House DITA 1.3 Specialization
 com.antennahouse.dita.dita13.doctypes folder
 
 2017-03-09 
-- Added glossaryTable specialization via\ RELAX NG.
+- Added glossaryTable specialization via RELAX NG.
 
 2017-02-28 
 - Added glossaryTable specialization via DTD.
