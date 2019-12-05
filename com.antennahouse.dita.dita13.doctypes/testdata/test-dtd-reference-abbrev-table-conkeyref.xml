@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE reference PUBLIC "-//ANTENNA HOUSE//DTD DITA Reference//EN" "../doctypes/dtd/technicalContent/dtd/reference.dtd">
+<reference id="reference_abbrevTable" xml:lang="en-US">
+ <title>abbrevTable test</title>
+ <refbody>
+  <section>
+   <title>Abbreviation table</title>
+   <abbrevTable>
+    <atHead>
+     <atAcronymHd>Acronym</atAcronymHd>
+     <atTermHd>Formal Name</atTermHd>
+    </atHead>
+    <atRow>
+     <atAcronym><glossAcronym conkeyref="gABS/acronym"/></atAcronym>
+     <atTerm><glossterm conkeyref="gABS/term"/></atTerm>
+    </atRow>
+    <atRow>
+     <atAcronym><glossAcronym conkeyref="gAISS/acronym"/></atAcronym>
+     <atTerm><glossterm conkeyref="gAISS/term"/></atTerm>
+    </atRow>
+   </abbrevTable>
+  </section>
+ </refbody>
+</reference>

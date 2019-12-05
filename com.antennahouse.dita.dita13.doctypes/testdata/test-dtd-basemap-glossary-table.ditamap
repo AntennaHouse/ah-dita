@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE map PUBLIC "-//OASIS//DTD DITA Map//EN" "map.dtd">
+<map>
+    <title>Test RELAX NG basemap for glossary table</title>
+    <keydef keys="gABS" href="test-dtd-glossentry-abs.xml"/>
+    <keydef keys="gAISS" href="test-dtd-glossentry-aiss.xml"/>
+    <topicref href="test-dtd-reference-abbrev-table-conkeyref.xml"/>    
+</map>
