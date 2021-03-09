@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE reference PUBLIC "-//ANTENNA HOUSE//DTD DITA Reference//EN" "reference.dtd">
+<reference id="topic_foDescTable">
+ <title>XSL-FO description table test</title>
+ <refbody>
+  <section>
+   <title>Property description table</title>
+   <propDescTable option="no">
+    <pdName>axf:font-feature-settings</pdName>
+    <pdValue><codeph>normal</codeph> | <varname>feature-tag-value</varname>#</pdValue>
+    <pdInitial>normal</pdInitial>
+    <pdAppliesTo>all elements</pdAppliesTo>
+    <pdInherited>yes</pdInherited>
+   </propDescTable>
+  </section>
+  <section>
+   <title>Element description table</title>
+   <elemDescTable>
+    <edName><xmlelement>formatter-settings</xmlelement></edName>
+    <edProperty><xmlatt>abbreviation-character-count</xmlatt>, <xmlatt>append-non-end-of-line-characters</xmlatt></edProperty>
+    <edParent><xmlelement>formatter-config</xmlelement></edParent>
+   </elemDescTable>
+  </section>
+ </refbody>
+</reference>
