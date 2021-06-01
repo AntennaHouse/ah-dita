@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//ANTENNA HOUSE//DTD DITA Topic//EN" "../doctypes/dtd/technicalContent/dtd/topic.dtd">
+<topic id="topic_uhz_gdp_pt" fo:prop="font-family:Arial;">
+ <title fo:prop="font-family:Arial;" clear="left">Topic specialization example<br/><cm value="yes"/><uc expand="yes">P</uc></title>
+ <shortdesc fo:prop="font-style:bold;"></shortdesc>
+ <body fo:prop="font-style:bold;">
+  <p>Paragraph with<ph><br/><cm value="yes"/></ph><cm>✔<text>✘</text></cm><cm>○<text>×</text></cm></p>
+  <table fo:prop="font-family:Arial;">
+   <tgroup cols="1" fo:prop="font-family:Arial;">
+    <tbody fo:prop="font-family:Arial;">
+     <row fo:prop="font-family:Arial;" deliveryDestination="USA CAN">
+      <entry fo:prop="font-family:Arial;" css:style="font-family:Arial;" id="entry_aaa" translate="no"></entry>
+     </row>
+    </tbody>
+   </tgroup>
+  </table>
+  <floatfig float="none" frame="all" outputclass="ja-only" product="product1" translate="no">
+   <floatfig-group float="left">
+    <image href="http://www.antenna.co.jp/images/float-left.png"></image>
+   </floatfig-group>
+   <floatfig-group float="right" product="product2">
+    <title>figgroup title</title>
+    <image href="http://www.antenna.co.jp/images/float-right.png"></image>
+   </floatfig-group>
+  </floatfig>
+  <floatfig float="none" frame="all" outputclass="ja-only" product="product1" translate="no">
+   <floatfig-group float="left">
+    <image href="http://www.antenna.co.jp/images/float-left.png"></image>
+   </floatfig-group>
+   <floatfig-group float="right" product="product2">
+    <title>figgroup title</title>
+    <image href="http://www.antenna.co.jp/images/float-right.png"></image>
+   </floatfig-group>
+  </floatfig>
+  <p><synph><var status="changed" fo:prop="font-family:Courier New;">variable:A</var></synph><uc expand="no">@</uc></p>
+  <hazardstatement>
+   <messagepanel>
+    <typeofhazard></typeofhazard>
+    <howtoavoid></howtoavoid>
+   </messagepanel>
+  </hazardstatement>
+ </body>
+</topic>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//ANTENNA HOUSE//DTD DITA Concept//EN" "../doctypes/dtd/technicalContent/dtd/concept.dtd">
+<concept id="concept_uhz_gdp_ps" fo:prop="font-family:Arial;" clear="both">
+ <title fo:prop="font-family:Arial;" rev="1.1" id="title_aaa">Concept specialization example<br/><cm value="yes"/></title>
+ <shortdesc fo:prop="font-style:bold;"></shortdesc>
+ <conbody fo:prop="font-style:bold;">
+  <p>Paragraph with<ph><br/><cm value="yes"/></ph><uc>&#x0A;</uc></p>
+  <table fo:prop="font-family:Arial;" deliveryDestination="USA CAN">
+   <tgroup cols="1" fo:prop="font-family:Arial;">
+    <tbody fo:prop="font-family:Arial;">
+     <row fo:prop="font-family:Arial;">
+      <entry fo:prop="font-family:Arial;" id="entry_aaa" translate="no"></entry>
+     </row>
+    </tbody>
+   </tgroup>
+  </table>
+  <floatfig float="none" clear="none">
+   <floatfig-group float="left">
+    <title>Title of this floating figure</title>
+    <image href="http://www.antenna.co.jp/images/test-float-left.jpg"></image>
+    <dl>
+     <dlentry>
+      <dt>1</dt>
+      <dd>Description of the figure<uc>-</uc></dd>
+     </dlentry>
+    </dl>
+   </floatfig-group>
+   <floatfig-group float="right">
+    <title>Title of this floating figure<uc>A</uc></title>
+    <image href="http://www.antenna.co.jp/images/test-float-right.jpg"></image>
+    <dl>
+     <dlentry>
+      <dt>1</dt>
+      <dd>Description of the figure</dd>
+     </dlentry>
+    </dl>
+   </floatfig-group>
+  </floatfig>
+  <p><synph><var status="changed" fo:prop="font-family:Courier New;">variable:A</var></synph></p>
+ </conbody>
+</concept>

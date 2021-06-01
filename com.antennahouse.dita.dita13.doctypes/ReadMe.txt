@@ -1,6 +1,12 @@
 Antenna House DITA 1.3 Specialization 
 com.antennahouse.dita.dita13.doctypes folder
 
+2021-06-01 
+- Added uc (Unicode) specialization via DTD.
+
+2021-03-09 
+- Added FO description table specialization via DTD.
+
 2017-03-09 
 - Added glossaryTable specialization via RELAX NG.
 
