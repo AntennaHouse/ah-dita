@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- ============================================================= -->
+<!-- DITA XSL-FO Property And Element Table Domain                 -->
+<!-- Purpose: Provides elements for property and element table.    -->
+<!--                                                               -->
+<!-- Creation Date: Mar 2021                                       -->
+<!-- Copyright (c) Antenna House, Inc.                             -->
+<!-- ============================================================= -->
+
+<!-- ============================================================= -->
+<!--                    ELEMENT EXTENSION ENTITY DECLARATIONS      -->
+<!-- ============================================================= -->
+
+<!ENTITY % fodesctable-d-table
+  "propDescTable | elemDescTable"
+>
+
+<!-- ============================================================= -->
+<!--                    DOMAIN ENTITY DECLARATION                  -->
+<!-- ============================================================= -->
+
+<!ENTITY fodesctable-d-att
+  "(topic fodesctable-d)"
+>
+
+<!-- ===== End DITA XSL-FO Property And Element Table Domain ===== -->
+ 
