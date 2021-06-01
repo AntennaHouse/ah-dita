@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- ============================================================= -->
+<!-- DITA Unicode Domain                                           -->
+<!-- Purpose: Provides elements for property and element.          -->
+<!--                                                               -->
+<!-- Creation Date: Jun 2021                                       -->
+<!-- Copyright (c) Antenna House, Inc.                             -->
+<!-- ============================================================= -->
+
+<!-- ============================================================= -->
+<!--                    ELEMENT EXTENSION ENTITY DECLARATIONS      -->
+<!-- ============================================================= -->
+
+<!ENTITY % unicode-d-ph
+  "uc"
+>
+
+<!-- ============================================================= -->
+<!--                    DOMAIN ENTITY DECLARATION                  -->
+<!-- ============================================================= -->
+
+<!ENTITY unicode-d-att
+  "(topic unicode-d)"
+>
+
+<!-- ===== End DITA XSL-FO Property And Element Table Domain ===== -->
+ 

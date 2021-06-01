@@ -37,6 +37,13 @@
    <public publicId="-//ANTENNA HOUSE//ENTITIES DITA XSL-FO Description Table Domain//EN" uri="dtd/foDescTableDomain.ent"/>
    <public publicId="-//ANTENNA HOUSE//ENTITIES DITA 1.x XSL-FO Description Table Domain//EN" uri="dtd/foDescTableDomain.ent"/>
    <public publicId="-//ANTENNA HOUSE//ENTITIES DITA 1.3 XSL-FO Description Table Domain//EN" uri="dtd/foDescTableDomain.ent"/>
+
+   <public publicId="-//ANTENNA HOUSE//ELEMENTS DITA Unicode Domain//EN" uri="dtd/unicodeDomain.mod"/>
+   <public publicId="-//ANTENNA HOUSE//ELEMENTS DITA 1.x Unicode Domain//EN" uri="dtd/unicodeDomain.mod"/>
+   <public publicId="-//ANTENNA HOUSE//ELEMENTS DITA 1.3 Unicode Domain//EN" uri="dtd/unicodeDomain.mod"/>
+   <public publicId="-//ANTENNA HOUSE//ENTITIES DITA Unicode Domain//EN" uri="dtd/unicodeDomain.ent"/>
+   <public publicId="-//ANTENNA HOUSE//ENTITIES DITA 1.x Unicode Domain//EN" uri="dtd/unicodeDomain.ent"/>
+   <public publicId="-//ANTENNA HOUSE//ENTITIES DITA 1.3 Unicode Domain//EN" uri="dtd/unicodeDomain.ent"/>
    
    <public publicId="-//ANTENNA HOUSE//ENTITIES DITA XSL-FO Attribute Domain//EN" uri="dtd/xslfoAttDomain.ent"/>
    <public publicId="-//ANTENNA HOUSE//ENTITIES DITA 1.x XSL-FO Attribute Domain//EN" uri="dtd/xslfoAttDomain.ent"/>

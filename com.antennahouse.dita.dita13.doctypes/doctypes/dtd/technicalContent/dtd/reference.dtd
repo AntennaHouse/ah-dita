@@ -152,6 +152,11 @@
          "../../base/dtd/foDescTableDomain.ent"
 >%fodesctable-d-dec;
 
+<!ENTITY % unicode-d-dec
+  PUBLIC "-//ANTENNA HOUSE//ENTITIES DITA 1.3 Unicode Domain//EN"
+         "../../base/dtd/unicodeDomain.ent"
+>%unicode-d-dec;
+
 <!-- ============================================================= -->
 <!--             DOMAIN ATTRIBUTES DECLARATIONS                    -->
 <!-- ============================================================= -->
@@ -200,7 +205,8 @@
                          %pr-d-ph; |
                          %sw-d-ph; |
                          %ui-d-ph; |
-                         %equation-d-ph;
+                         %equation-d-ph; |
+                         %unicode-d-ph;
                         ">
 <!ENTITY % fig          "fig |
                          %ut-d-fig; |
@@ -299,6 +305,7 @@
                            &deliveryDestinationAtt-d-att;
                            &glossarytable-d-att;
                            &fodesctable-d-att;
+                           &unicode-d-att;
                            "
 >
 
@@ -418,5 +425,10 @@
   PUBLIC "-//ANTENNA HOUSE//ELEMENTS DITA 1.3 XSL-FO Description Table Domain//EN"
          "../../base/dtd/foDescTableDomain.mod"
 >%fodesctable-d-def;
+
+<!ENTITY % unicode-d-def
+  PUBLIC "-//ANTENNA HOUSE//ELEMENTS DITA 1.3 Unicode Domain//EN"
+         "../../base/dtd/unicodeDomain.mod"
+>%unicode-d-def;
 
 <!-- ================= End of DITA Reference Topic Shell ================= -->
