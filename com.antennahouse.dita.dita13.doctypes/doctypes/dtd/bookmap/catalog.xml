@@ -5,4 +5,7 @@
    <public publicId="-//ANTENNA HOUSE//DTD DITA BookMap//EN" uri="dtd/bookmap.dtd"/>
    <public publicId="-//ANTENNA HOUSE//DTD DITA 1.x BookMap//EN" uri="dtd/bookmap.dtd"/>
    <public publicId="-//ANTENNA HOUSE//DTD DITA 1.3 BookMap//EN" uri="dtd/bookmap.dtd"/>
+   <public publicId="-//ANTENNA HOUSE//ELEMENTS DITA BookMap//EN" uri="dtd/bookmap.mod"/>
+   <public publicId="-//ANTENNA HOUSE//ELEMENTS DITA 1.x BookMap//EN" uri="dtd/bookmap.mod"/>
+   <public publicId="-//ANTENNA HOUSE//ELEMENTS DITA 1.3 BookMap//EN" uri="dtd/bookmap.mod"/>
 </catalog>
