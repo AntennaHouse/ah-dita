@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- ============================================================= -->
+<!--                    HEADER                                     -->
+<!-- ============================================================= -->
+<!--  MODULE:    DITA Flowchart Task Entity                        -->
+<!--  VERSION:   1.2                                               -->
+<!--  DATE:      December 2022                                     -->
+<!--                                                               -->
+<!-- ============================================================= -->
+
+<!-- ============================================================= -->
+<!--                    PUBLIC DOCUMENT TYPE DEFINITION            -->
+<!--                    TYPICAL INVOCATION                         -->
+<!--                                                               -->
+<!--  Refer to this file by the following public identifier or an 
+      appropriate system identifier 
+PUBLIC "-//ANTENNA HOUSE//ENTITIES DITA Flowchart Task Constraint//EN"
+      Delivered as file "fc-task-constraint.ent"                   -->
+
+<!-- ============================================================= -->
+<!-- SYSTEM:     Darwin Information Typing Architecture (DITA)     -->
+<!--                                                               -->
+<!-- PURPOSE:    Declaring the domain element entity               -->
+<!--             for Flowchart Task                                -->
+<!--                                                               -->
+<!-- ORIGINAL CREATION DATE:                                       -->
+<!--             December 2022                                     -->
+<!--                                                               -->
+<!--             (C) Copyright Antenna House 2022, 2022.           -->
+<!--             All Rights Reserved.                              -->
+<!--                                                               -->
+<!--  UPDATES:                                                     -->
+<!-- ============================================================= -->
+
+<!-- ============================================================= -->
+<!--                    ELEMENT NAME ENTITIES                      -->
+<!-- ============================================================= -->
+
+<!ENTITY taskbody-constraints
+  "(topic task strictTaskbody-c)"
+>
+
+<!ENTITY % choicecond  "choicecond"                                  >
+<!ENTITY % choiceproc  "choiceproc"                                  >
+<!ENTITY % nextstep    "nextstep"                                    >
+
+<!ENTITY % data "data"                                               >
+<!ENTITY % draft-comment "draft-comment"                             >
+<!ENTITY % required-cleanup "required-cleanup"                       >
+<!ENTITY % ph "ph"                                                   >
+<!ENTITY % term "term"                                               >
+<!ENTITY % xref "xref"                                               >
+<!ENTITY % cite "cite"                                               >
+<!ENTITY % q "q"                                                     >
+<!ENTITY % boolean "boolean"                                         >
+<!ENTITY % state "state"                                             >
+<!ENTITY % keyword "keyword"                                         >
+<!ENTITY % tm "tm"                                                   >
+<!ENTITY % basic.ph    "%ph; | %term; | %xref; | %cite; | %q; |
+                        %boolean; | %state; | %keyword; | %tm;"      >
+<!ENTITY % dl "dl"                                                   >
+<!ENTITY % ol "ol"                                                   >
+<!ENTITY % ul "ul"                                                   >
+<!ENTITY % p "p"                                                     >
+<!ENTITY % note "note"                                               >
+
+<!-- ============================================================= -->
+<!--                    ELEMENT ENTITIES                           -->
+<!-- ============================================================= -->
+
+<!ENTITY % fc.data.elements.incl
+  "%data;
+  "
+>
+
+<!ENTITY  % fc.txt.incl
+  "%draft-comment; |
+   %required-cleanup;
+  "
+>
+
+<!ENTITY % basic.fc.ph.cnt
+  "#PCDATA | 
+   %basic.ph; | 
+   %fc.data.elements.incl; | 
+   %fc.txt.incl;
+  "
+>
+
+<!ENTITY % basic.fc.block
+  "%dl; | 
+   %ol; |
+   %p;  | 
+   %ul; |
+   %note; 
+  "
+>
+
+<!ENTITY % basic.cs.cnt
+  "%basic.fc.block; | 
+   %basic.ph; | 
+   %fc.data.elements.incl; | 
+   %fc.txt.incl;
+  "
+>
+
+<!ENTITY % basic.fc.with.pcdata.cnt
+  "#PCDATA|
+   %basic.fc.block; | 
+   %basic.ph; | 
+   %fc.data.elements.incl; | 
+   %fc.txt.incl;
+  "
+>
+
+<!-- ======== End ConSite Alarm Cover Entities =================== -->
