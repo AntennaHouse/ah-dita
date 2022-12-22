@@ -306,12 +306,22 @@
                            &glossarytable-d-att;
                            &fodesctable-d-att;
                            &unicode-d-att;
+                           &para-constraints;
+                           &section-constraints;
                            "
 >
 
 <!-- ============================================================= -->
 <!--                    CONTENT CONSTRAINT INTEGRATION             -->
 <!-- ============================================================= -->
+<!ENTITY % strictPara-c-def 
+  PUBLIC "-//ANTENNA HOUSE//ELEMENTS DITA Strict Paragraph Constraint//EN" 
+         "./strictParagraphConstraint.mod"
+>%strictPara-c-def;
+<!ENTITY % strictSection-c-def 
+  PUBLIC "-//ANTENNA HOUSE//ELEMENTS DITA Strict Section Constraint//EN" 
+         "./strictSectionConstraint.mod"
+>%strictSection-c-def;
 
 <!-- ============================================================= -->
 <!--                    TOPIC ELEMENT INTEGRATION                  -->

@@ -37,5 +37,9 @@
    </floatfig-group>
   </floatfig>
   <p><synph><var status="changed" fo:prop="font-family:Courier New;">variable:A</var></synph></p>
+  <section>
+   <title>Section Title</title>
+   <p>Paragraph content<br/><i>Italic text</i></p>
+  </section>
  </conbody>
 </concept>

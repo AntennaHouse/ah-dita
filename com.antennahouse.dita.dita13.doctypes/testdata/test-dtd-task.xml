@@ -22,7 +22,9 @@
                 <info fo:prop="font-style:bold;"></info>
                 <itemgroup fo:prop="font-style:bold;"></itemgroup>
                 <stepresult fo:prop="font-style:bold;"></stepresult>
-                <steptroubleshooting fo:prop="font-style:bold;"></steptroubleshooting>
+                <steptroubleshooting fo:prop="font-style:bold;">
+                    <p>Paragraph Text</p>
+                </steptroubleshooting>
             </step>
             <stepsection fo:prop="font-style:bold;">
                 <floatfig float="right">

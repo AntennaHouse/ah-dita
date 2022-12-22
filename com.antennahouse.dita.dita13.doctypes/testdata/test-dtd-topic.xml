@@ -39,5 +39,9 @@
     <howtoavoid></howtoavoid>
    </messagepanel>
   </hazardstatement>
+  <section>
+   <title>AAA</title>
+   <p>BBB</p>
+  </section>
  </body>
 </topic>

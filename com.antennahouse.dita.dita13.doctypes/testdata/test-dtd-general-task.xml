@@ -60,6 +60,8 @@
             </step>
         </steps>
         <example fo:prop="font-style:bold;"></example>
-        <postreq fo:prop="font-style:bold;"></postreq>
+        <postreq fo:prop="font-style:bold;">
+            <p>Paragraph Text <ph>Pharase</ph></p>
+        </postreq>
     </taskbody>
 </task>

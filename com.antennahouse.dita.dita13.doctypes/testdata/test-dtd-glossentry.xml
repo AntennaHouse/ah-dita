@@ -2,7 +2,7 @@
 <!DOCTYPE glossentry PUBLIC "-//ANTENNA HOUSE//DTD DITA Glossary Entry//EN" "../doctypes/dtd/technicalContent/dtd/glossentry.dtd">
 <glossentry id="glossentry_xxq_t5k_qs" fo:prop="font-family:Arial">
     <glossterm fo:prop="font-family:Arial" clear="both">glossterm<br/><cm value="yes"/></glossterm>
-    <glossdef fo:prop="font-family:Arial">glossdef<br/><cm value="yes"/>
+    <glossdef fo:prop="font-family:Arial">glossdef<br/><cm value="yes"/><p>Paragraph Text</p>
         <floatfig float="none">
             <floatfig-group float="left">
                 <title>Title of this floating figure</title>

@@ -276,6 +276,8 @@
                            &clearAtt-d-att;
                            &taskbody-constraints;
                            &deliveryDestinationAtt-d-att;
+                           &para-constraints;
+                           &section-constraints;
                            "
 >
 
@@ -287,6 +289,16 @@
   PUBLIC "-//ANTENNA HOUSE//ENTITIES DITA Flowchart Task Constraint//EN"
          "./fc-task-constraint.mod"
 >%strictTaskbody-def;
+
+<!ENTITY % strictPara-c-def 
+  PUBLIC "-//ANTENNA HOUSE//ELEMENTS DITA Strict Paragraph Constraint//EN" 
+         "./strictParagraphConstraint.mod"
+>%strictPara-c-def;
+
+<!ENTITY % strictSection-c-def 
+  PUBLIC "-//ANTENNA HOUSE//ELEMENTS DITA Strict Section Constraint//EN" 
+         "./strictSectionConstraint.mod"
+>%strictSection-c-def;
 
 <!-- ============================================================= -->
 <!--                    TOPIC ELEMENT INTEGRATION                  -->
