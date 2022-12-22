@@ -225,8 +225,7 @@
 <!ENTITY % steps.content
                        "((%data; |
                           %data-about;)*,
-                         ((%stepsection;)?,
-                          (%step;))+)"
+                         (%step;)+)"
 >
 <!ENTITY % steps.attributes
               "%univ-atts;
